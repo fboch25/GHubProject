@@ -1,0 +1,10 @@
+framework module CircleMenu {
+  umbrella header "CircleMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module CircleMenu.__Swift {
+    exclude header "CircleMenu-Swift.h"
+}

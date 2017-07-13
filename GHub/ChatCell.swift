@@ -7,3 +7,11 @@
 //
 
 import Foundation
+import UIKit
+
+class ChatCell: UICollectionViewCell {
+    
+    @IBOutlet weak var chatImage: UIImageView!
+    @IBOutlet weak var chatLabel: UILabel!
+    
+}

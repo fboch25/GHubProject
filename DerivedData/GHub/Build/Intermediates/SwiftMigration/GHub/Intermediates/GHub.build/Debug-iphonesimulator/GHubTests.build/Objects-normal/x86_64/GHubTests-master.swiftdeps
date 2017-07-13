@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "34c35a26d7f1bfa12cda4d06825b7f63"
+build_time: [552806972, 684510000]
+inputs:
+  "/Users/Mrbochiballs1/Develop/Software/GHub/GHubTests/GHubTests.swift": !dirty [552803719, 0]

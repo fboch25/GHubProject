@@ -1,0 +1,87 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/SwiftMigration/GHub/Products/Debug-iphonesimulator/CircleMenu/CircleMenu.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CircleMenu-Swift.h",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/SwiftMigration/GHub/Products/Debug-iphonesimulator/CircleMenu/CircleMenu.framework/Headers/CircleMenu-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "CircleMenu-umbrella.h",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Target Support Files/CircleMenu/CircleMenu-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/SwiftMigration/GHub/Products/Debug-iphonesimulator/CircleMenu/CircleMenu.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/SwiftMigration/GHub/Intermediates/Pods.build/Debug-iphonesimulator/CircleMenu.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/SwiftMigration/GHub/Products/Debug-iphonesimulator/Pods_GHub.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-GHub-umbrella.h",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Target Support Files/Pods-GHub/Pods-GHub-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_GHub-Swift.h",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/SwiftMigration/GHub/Products/Debug-iphonesimulator/Pods_GHub.framework/Headers/Pods_GHub-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/SwiftMigration/GHub/Products/Debug-iphonesimulator/Pods_GHub.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/SwiftMigration/GHub/Intermediates/Pods.build/Debug-iphonesimulator/Pods-GHub.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/SwiftMigration/GHub/Products/Debug-iphonesimulator/Pods_GHubTests.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-GHubTests-umbrella.h",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Target Support Files/Pods-GHubTests/Pods-GHubTests-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_GHubTests-Swift.h",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/SwiftMigration/GHub/Products/Debug-iphonesimulator/Pods_GHubTests.framework/Headers/Pods_GHubTests-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/SwiftMigration/GHub/Products/Debug-iphonesimulator/Pods_GHubTests.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/SwiftMigration/GHub/Intermediates/Pods.build/Debug-iphonesimulator/Pods-GHubTests.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

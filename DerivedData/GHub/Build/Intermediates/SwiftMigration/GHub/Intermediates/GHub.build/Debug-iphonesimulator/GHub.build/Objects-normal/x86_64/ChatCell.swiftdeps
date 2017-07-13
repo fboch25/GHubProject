@@ -1,0 +1,177 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ChatCell"
+provides-nominal:
+- "C4GHub8ChatCell"
+provides-member:
+- ["C4GHub8ChatCell", ""]
+provides-dynamic-lookup:
+- "chatLabel"
+- "chatImage"
+depends-top-level:
+- "ChatCell"
+- "UIImageView"
+- "UILabel"
+- "UICollectionViewCell"
+depends-member:
+- ["Ps9AnyObject", "chatImage"]
+- ["Ps9AnyObject", "chatLabel"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
+- ["PSo15CALayerDelegate", "chatImage"]
+- ["PSo15CALayerDelegate", "chatLabel"]
+- !private ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", ""]
+- ["VSC6CGRect", "deinit"]
+- ["Ps7CVarArg", "chatImage"]
+- ["Ps7CVarArg", "chatLabel"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", ""]
+- ["C4GHub8ChatCell", "UIImageView"]
+- ["C4GHub8ChatCell", "UILabel"]
+- ["C4GHub8ChatCell", "chatImage"]
+- ["C4GHub8ChatCell", "chatLabel"]
+- ["C4GHub8ChatCell", "deinit"]
+- ["C4GHub8ChatCell", "init"]
+- ["Ps28CustomDebugStringConvertible", "chatImage"]
+- ["Ps28CustomDebugStringConvertible", "chatLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "chatImage"]
+- ["Ps23CustomStringConvertible", "chatLabel"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "chatImage"]
+- ["Ps9Equatable", "chatLabel"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "chatImage"]
+- ["Ps8Hashable", "chatLabel"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["CSo7NSCoder", "deinit"]
+- ["PSo8NSCoding", "chatImage"]
+- ["PSo8NSCoding", "chatLabel"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "chatImage"]
+- ["CSo8NSObject", "chatLabel"]
+- ["CSo8NSObject", "init"]
+- ["PSo16NSObjectProtocol", "chatImage"]
+- ["PSo16NSObjectProtocol", "chatLabel"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- ["PSo29UIAccessibilityIdentification", "chatImage"]
+- ["PSo29UIAccessibilityIdentification", "chatLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "chatImage"]
+- ["PSo12UIAppearance", "chatLabel"]
+- !private ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "chatImage"]
+- ["PSo21UIAppearanceContainer", "chatLabel"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo24UICollectionReusableView", "UIImageView"]
+- ["CSo24UICollectionReusableView", "UILabel"]
+- ["CSo24UICollectionReusableView", "chatImage"]
+- ["CSo24UICollectionReusableView", "chatLabel"]
+- ["CSo24UICollectionReusableView", "init"]
+- ["CSo20UICollectionViewCell", "UIImageView"]
+- ["CSo20UICollectionViewCell", "UILabel"]
+- ["CSo20UICollectionViewCell", "chatImage"]
+- ["CSo20UICollectionViewCell", "chatLabel"]
+- ["CSo20UICollectionViewCell", "deinit"]
+- ["CSo20UICollectionViewCell", "init"]
+- ["CSo20UICollectionViewCell", ""]
+- ["PSo17UICoordinateSpace", "chatImage"]
+- ["PSo17UICoordinateSpace", "chatLabel"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "chatImage"]
+- ["PSo13UIDynamicItem", "chatLabel"]
+- !private ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "chatImage"]
+- ["PSo18UIFocusEnvironment", "chatLabel"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["PSo11UIFocusItem", "chatImage"]
+- ["PSo11UIFocusItem", "chatLabel"]
+- !private ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", ""]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "chatImage"]
+- ["CSo11UIResponder", "chatLabel"]
+- ["CSo11UIResponder", "init"]
+- ["PSo30UIResponderStandardEditActions", "chatImage"]
+- ["PSo30UIResponderStandardEditActions", "chatLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- ["PSo18UITraitEnvironment", "chatImage"]
+- ["PSo18UITraitEnvironment", "chatLabel"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "chatImage"]
+- ["CSo6UIView", "chatLabel"]
+- ["CSo6UIView", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "chatImage"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "chatLabel"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- ["Ps9_Hashable", "chatImage"]
+- ["Ps9_Hashable", "chatLabel"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "PSo15CALayerDelegate"
+- "VSC6CGRect"
+- "Ps7CVarArg"
+- "C4GHub8ChatCell"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "SQ"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo24UICollectionReusableView"
+- "CSo20UICollectionViewCell"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "334ea04189f45045edde0d766611b8bf"

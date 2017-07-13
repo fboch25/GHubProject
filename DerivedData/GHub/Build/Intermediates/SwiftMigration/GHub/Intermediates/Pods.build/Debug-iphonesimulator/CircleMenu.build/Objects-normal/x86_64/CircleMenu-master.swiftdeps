@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "55243bef7a02de5958d02470f46bdf54"
+build_time: [552806966, 25819000]
+inputs:
+  "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/CircleMenu/CircleMenuLib/CircleMenu.swift": [552806723, 0]
+  "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/CircleMenu/CircleMenuLib/CircleMenuButton/CircleMenuButton.swift": [552806723, 0]
+  "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/CircleMenu/CircleMenuLib/CircleMenuLoader/CircleMenuLoader.swift": [552806723, 0]

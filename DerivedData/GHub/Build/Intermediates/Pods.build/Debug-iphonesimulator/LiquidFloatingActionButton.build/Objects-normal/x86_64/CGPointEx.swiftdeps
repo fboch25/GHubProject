@@ -1,0 +1,259 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["VSC7CGPoint", ""]
+- ["VSC7CGPoint", "plus"]
+- ["VSC7CGPoint", "minus"]
+- ["VSC7CGPoint", "minusX"]
+- ["VSC7CGPoint", "minusY"]
+- ["VSC7CGPoint", "mul"]
+- ["VSC7CGPoint", "div"]
+- ["VSC7CGPoint", "length"]
+- ["VSC7CGPoint", "normalized"]
+- ["VSC7CGPoint", "dot"]
+- ["VSC7CGPoint", "cross"]
+- ["VSC7CGPoint", "split"]
+- ["VSC7CGPoint", "mid"]
+- ["VSC7CGPoint", "intersection"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private ">="
+- "CGPoint"
+- !private "FloatLiteralType"
+- !private "abs"
+- "CGFloat"
+- !private "-"
+- !private "+"
+- !private "sqrt"
+- !private "*"
+- !private "/"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "RawValue"]
+- !private ["Ps16AbsoluteValuable", "Stride"]
+- !private ["Ps19BinaryFloatingPoint", "RawValue"]
+- !private ["Ps19BinaryFloatingPoint", "Stride"]
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["V12CoreGraphics7CGFloat", "RawValue"]
+- !private ["V12CoreGraphics7CGFloat", "Stride"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["VSC7CGPoint", "CGFloat"]
+- ["VSC7CGPoint", "CGPoint"]
+- !private ["VSC7CGPoint", "abs"]
+- ["VSC7CGPoint", "cross"]
+- ["VSC7CGPoint", "deinit"]
+- ["VSC7CGPoint", "div"]
+- ["VSC7CGPoint", "dot"]
+- !private ["VSC7CGPoint", "init"]
+- ["VSC7CGPoint", "intersection"]
+- ["VSC7CGPoint", "length"]
+- ["VSC7CGPoint", "mid"]
+- ["VSC7CGPoint", "minus"]
+- ["VSC7CGPoint", "minusX"]
+- ["VSC7CGPoint", "minusY"]
+- ["VSC7CGPoint", "mul"]
+- ["VSC7CGPoint", "normalized"]
+- ["VSC7CGPoint", "plus"]
+- ["VSC7CGPoint", "split"]
+- !private ["VSC7CGPoint", "sqrt"]
+- !private ["VSC7CGPoint", "x"]
+- !private ["VSC7CGPoint", "y"]
+- !private ["Ps7CVarArg", "RawValue"]
+- !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps10Comparable", "RawValue"]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps28CustomDebugStringConvertible", "CGPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "Stride"]
+- !private ["Ps28CustomDebugStringConvertible", "abs"]
+- !private ["Ps28CustomDebugStringConvertible", "cross"]
+- !private ["Ps28CustomDebugStringConvertible", "div"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "length"]
+- !private ["Ps28CustomDebugStringConvertible", "mul"]
+- !private ["Ps28CustomDebugStringConvertible", "plus"]
+- !private ["Ps28CustomDebugStringConvertible", "split"]
+- !private ["Ps28CustomDebugStringConvertible", "sqrt"]
+- !private ["Ps28CustomDebugStringConvertible", "x"]
+- !private ["Ps28CustomDebugStringConvertible", "y"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "CGPoint"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "abs"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "cross"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "div"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "length"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "mul"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "plus"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "split"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "sqrt"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "x"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "y"]
+- !private ["Ps17CustomReflectable", "CGPoint"]
+- !private ["Ps17CustomReflectable", "RawValue"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "abs"]
+- !private ["Ps17CustomReflectable", "cross"]
+- !private ["Ps17CustomReflectable", "div"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "length"]
+- !private ["Ps17CustomReflectable", "mul"]
+- !private ["Ps17CustomReflectable", "plus"]
+- !private ["Ps17CustomReflectable", "split"]
+- !private ["Ps17CustomReflectable", "sqrt"]
+- !private ["Ps17CustomReflectable", "x"]
+- !private ["Ps17CustomReflectable", "y"]
+- !private ["Ps23CustomStringConvertible", "RawValue"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Sd", "Stride"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "CGPoint"]
+- !private ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "abs"]
+- !private ["Ps9Equatable", "cross"]
+- !private ["Ps9Equatable", "div"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "length"]
+- !private ["Ps9Equatable", "mul"]
+- !private ["Ps9Equatable", "plus"]
+- !private ["Ps9Equatable", "split"]
+- !private ["Ps9Equatable", "sqrt"]
+- !private ["Ps9Equatable", "x"]
+- !private ["Ps9Equatable", "y"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps25ExpressibleByFloatLiteral", "RawValue"]
+- !private ["Ps25ExpressibleByFloatLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "RawValue"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Ps13FloatingPoint", "RawValue"]
+- !private ["Ps13FloatingPoint", "Stride"]
+- !private ["Ps8Hashable", "RawValue"]
+- !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["VV10Foundation8IndexSet5Index", "deinit"]
+- !private ["V10Foundation9IndexPath", "deinit"]
+- !private ["Si", "Stride"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int32", "Stride"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Vs15LazyFilterIndex", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "Stride"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps10MirrorPath", "Stride"]
+- ["Sq", "deinit"]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps12SignedNumber", "RawValue"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps10Strideable", "RawValue"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Ps15_CVarArgAligned", "RawValue"]
+- !private ["Ps15_CVarArgAligned", "Stride"]
+- !private ["Ps22_CVarArgPassedAsDouble", "RawValue"]
+- !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
+- !private ["Ps9_Hashable", "RawValue"]
+- !private ["Ps9_Hashable", "Stride"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "CGPoint"]
+- !private ["Ps21_ObjectiveCBridgeable", "RawValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "abs"]
+- !private ["Ps21_ObjectiveCBridgeable", "cross"]
+- !private ["Ps21_ObjectiveCBridgeable", "div"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "length"]
+- !private ["Ps21_ObjectiveCBridgeable", "mul"]
+- !private ["Ps21_ObjectiveCBridgeable", "plus"]
+- !private ["Ps21_ObjectiveCBridgeable", "split"]
+- !private ["Ps21_ObjectiveCBridgeable", "sqrt"]
+- !private ["Ps21_ObjectiveCBridgeable", "x"]
+- !private ["Ps21_ObjectiveCBridgeable", "y"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps11_Strideable", "RawValue"]
+- !private ["Ps11_Strideable", "Stride"]
+- !private ["VSC30_SwiftNSOperatingSystemVersion", "deinit"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- !private "Ps19BinaryFloatingPoint"
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- "V12CoreGraphics7CGFloat"
+- "VSC7CGPoint"
+- !private "Ps7CVarArg"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Sd"
+- !private "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps13FloatingPoint"
+- !private "Ps8Hashable"
+- !private "VV10Foundation8IndexSet5Index"
+- !private "V10Foundation9IndexPath"
+- !private "Si"
+- !private "Vs5Int32"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Vs15LazyFilterIndex"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "Sq"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+- !private "VSC30_SwiftNSOperatingSystemVersion"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton-umbrella.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/Pods.build/Debug-iphonesimulator/LiquidFloatingActionButton.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "f02390aeb3701ccc0ec84e52213062bf"

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GHubTests</key>
+	<dict>
+		<key>BundleIdentifiersForCrashReportEmphasis</key>
+		<array>
+			<string>Bocci.GHubTests</string>
+			<string>Boccia.GHub</string>
+		</array>
+		<key>CommandLineArguments</key>
+		<array/>
+		<key>DependentProductPaths</key>
+		<array>
+			<string>__TESTROOT__/Debug-iphoneos/GHub.app/PlugIns/GHubTests.xctest</string>
+			<string>__TESTROOT__/Debug-iphoneos/GHub.app</string>
+		</array>
+		<key>EnvironmentVariables</key>
+		<dict>
+			<key>OS_ACTIVITY_DT_MODE</key>
+			<string>YES</string>
+		</dict>
+		<key>IsAppHostedTestBundle</key>
+		<true/>
+		<key>ProductModuleName</key>
+		<string>GHubTests</string>
+		<key>TestBundlePath</key>
+		<string>__TESTHOST__/PlugIns/GHubTests.xctest</string>
+		<key>TestHostBundleIdentifier</key>
+		<string>Boccia.GHub</string>
+		<key>TestHostPath</key>
+		<string>__TESTROOT__/Debug-iphoneos/GHub.app</string>
+		<key>TestingEnvironmentVariables</key>
+		<dict>
+			<key>DTX_CONNECTION_SERVICES_PATH</key>
+			<string>/Developer/Library/PrivateFrameworks/DTXConnectionServices.framework</string>
+			<key>DYLD_FRAMEWORK_PATH</key>
+			<string>__TESTROOT__/Debug-iphoneos:__PLATFORMS__/iPhoneOS.platform/Developer/Library/Frameworks</string>
+			<key>DYLD_INSERT_LIBRARIES</key>
+			<string>__PLATFORMS__/iPhoneOS.platform/Developer/Library/PrivateFrameworks/IDEBundleInjection.framework/IDEBundleInjection</string>
+			<key>DYLD_LIBRARY_PATH</key>
+			<string>__TESTROOT__/Debug-iphoneos:__PLATFORMS__/iPhoneOS.platform/Developer/Library/Frameworks</string>
+			<key>XCInjectBundleInto</key>
+			<string>__TESTHOST__/GHub</string>
+			<key>XCODE_DBG_XPC_EXCLUSIONS</key>
+			<string>com.apple.dt.xctestSymbolicator</string>
+		</dict>
+		<key>ToolchainsSettingValue</key>
+		<array>
+			<string>com.apple.dt.toolchain.XcodeDefault</string>
+		</array>
+	</dict>
+</dict>
+</plist>

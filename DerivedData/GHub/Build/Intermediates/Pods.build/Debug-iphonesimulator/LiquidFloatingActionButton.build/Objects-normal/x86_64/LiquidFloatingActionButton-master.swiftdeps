@@ -1,0 +1,12 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "3bff4c3a343f364fbee89f94aa723448"
+build_time: [552805834, 152060000]
+inputs:
+  "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/LiquidFloatingActionButton/Pod/Classes/ArrayEx.swift": [552805744, 0]
+  "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/LiquidFloatingActionButton/Pod/Classes/CGPointEx.swift": [552805744, 0]
+  "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/LiquidFloatingActionButton/Pod/Classes/CGRectEx.swift": [552805680, 0]
+  "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/LiquidFloatingActionButton/Pod/Classes/LiquidFloatingActionButton.swift": !dirty [552805744, 0]
+  "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/LiquidFloatingActionButton/Pod/Classes/LiquidUtil.swift": [552805744, 0]
+  "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/LiquidFloatingActionButton/Pod/Classes/LiquittableCircle.swift": !dirty [552805744, 0]
+  "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/LiquidFloatingActionButton/Pod/Classes/SimpleCircleLiquidEngine.swift": !dirty [552805744, 0]
+  "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/LiquidFloatingActionButton/Pod/Classes/UIColorEx.swift": !dirty [552805744, 0]

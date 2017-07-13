@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/SwiftMigration/GHub/Products/Debug-iphonesimulator/LiquidFloatingActionButton/LiquidFloatingActionButton.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/SwiftMigration/GHub/Intermediates/Pods.build/Debug-iphonesimulator/LiquidFloatingActionButton.build/unextended-module.modulemap',
+    }]
+  }]
+}
