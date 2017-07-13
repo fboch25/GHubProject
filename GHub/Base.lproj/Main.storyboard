@@ -87,6 +87,9 @@
                                 <state key="normal" title="Log Out"/>
                                 <connections>
                                     <action selector="handleLogout:" destination="HTi-cK-mrl" eventType="touchUpInside" id="K2f-92-hQF"/>
+                                    <segue destination="ZgF-T7-c4a" kind="popoverPresentation" identifier="logOut" popoverAnchorView="dco-3E-pa8" id="EWI-29-FJE">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
@@ -122,7 +125,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="HTi-cK-mrl" kind="showDetail" identifier="chatRoom" action="showViewController:sender:" id="lcI-Qp-Rh3"/>
+                        <segue destination="HTi-cK-mrl" kind="show" identifier="chatRoom" action="showDetailViewController:sender:" id="lcI-Qp-Rh3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Uw-Sp-uUN" userLabel="First Responder" sceneMemberID="firstResponder"/>

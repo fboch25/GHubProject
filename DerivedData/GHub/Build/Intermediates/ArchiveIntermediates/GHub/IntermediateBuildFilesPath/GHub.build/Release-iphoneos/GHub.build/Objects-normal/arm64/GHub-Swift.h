@@ -153,6 +153,7 @@ SWIFT_CLASS("_TtC4GHub8ChatCell")
 @class FIRDatabaseReference;
 @class FIRStorage;
 @class UIRefreshControl;
+@class UIColor;
 @class UICollectionView;
 @class UICollectionViewLayout;
 @class NSBundle;
@@ -162,12 +163,15 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 @property (nonatomic, strong) UIImagePickerController * _Null_unspecified picker;
 @property (nonatomic, strong) FIRDatabaseReference * _Nullable ref;
 @property (nonatomic, strong) FIRStorage * _Nonnull storage;
+@property (nonatomic, readonly, copy) NSString * _Nonnull uid;
 @property (nonatomic, readonly, strong) UIRefreshControl * _Nonnull refresher;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, UIColor *> * _Nonnull attributesForRefresherTitle;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified photoCollectionView;
 @property (nonatomic, strong) ChatCell * _Nullable chatCellView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)refreshPhotoCollectionView;
+- (void)photoCollectionViewDataLoad;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -180,8 +184,7 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 - (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
 - (void)showCellTitleAlert;
 - (IBAction)didSelectCreateButton;
-- (void)checkIfUserLoggedIn;
-- (void)handleLogout;
+- (IBAction)handleLogout:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -195,6 +198,7 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 SWIFT_CLASS("_TtC4GHub19LoginViewController")
 @interface LoginViewController : UIViewController
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)signupErrorAlert:(NSString * _Nonnull)title message:(NSString * _Nonnull)message;
 - (void)loginErrorAlert:(NSString * _Nonnull)title message:(NSString * _Nonnull)message;
 @property (nonatomic, readonly, strong) UIView * _Nonnull inputsContainerView;
@@ -220,6 +224,12 @@ SWIFT_CLASS("_TtC4GHub19LoginViewController")
 - (void)setupLoginRegisterButton;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface LoginViewController (SWIFT_EXTENSION(GHub))
+- (void)hideKeyboardWhenTappedAround;
+- (void)dismissKeyboard;
 @end
 
 

@@ -20,6 +20,7 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     // Firebase
     var ref: DatabaseReference?
     var storage = Storage.storage()
+    let uid = Auth.auth().currentUser!.uid
     // Refresh
     let refresher = UIRefreshControl()
     let attributesForRefresherTitle = [NSForegroundColorAttributeName: UIColor.blue]
@@ -104,9 +105,8 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
                 if let value = (child as? DataSnapshot)?.value as? [String : Any] {
                     if let imagePath = value["image"] as? String, let title = value["title"] as? String {
                         let aObject = Object(image: nil, imagePath: imagePath, title: title)
-                        self.objects.append(aObject)
+                        self.objects.insert(aObject, at: 0)
                     }
-                    
                 }
             })
             self.photoCollectionView.reloadData()
@@ -118,11 +118,11 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
             if let theImage = theObject.image {
                 if let imageData = UIImageJPEGRepresentation(theImage, 1.0) {
                     let storageRef = storage.reference()
-                    let imageRef = storageRef.child("images")
+                    let imageRef = storageRef.child("images").child(uid)
                     let storagePath = "\(arc4random()).jpg"
                     imageRef.child(storagePath).putData(imageData, metadata: nil, completion: { (metadata, error) in
                         if let imagePath = metadata?.downloadURL()?.absoluteString {
-                            self.ref?.child("posts").childByAutoId().setValue(["image" : imagePath, "title" : theObject.title])
+                            self.ref?.child("posts").childByAutoId().setValue(["author": Auth.auth().currentUser!.displayName!,"users" : self.uid,"image" : imagePath, "title" : theObject.title])
                         }
                     })
                 }
@@ -232,8 +232,7 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
                 print("Logged out, no user now, key removed")
                 UserDefaults.standard.removeObject(forKey: "loggedIn")
                 UserDefaults.standard.synchronize()
-                let loginController = LoginViewController()
-                present(loginController, animated: true, completion: nil)
+                self.performSegue(withIdentifier: "logOut", sender: self)
             }
         } catch let logoutError {
             print(logoutError.localizedDescription)

@@ -8,66 +8,66 @@ provides-member:
 - ["C4GHub19LoginViewController", "hideKeyboardWhenTappedAround"]
 - ["C4GHub19LoginViewController", "dismissKeyboard"]
 provides-dynamic-lookup:
-- "emailSeparatorView"
-- "inputsContainerViewHeightAnchor"
-- "passwordTextField"
-- "setupInputsContainerView"
-- "nameTextFieldHeightAnchor"
-- "loginErrorAlert"
-- "signupErrorAlert"
-- "handleLoginRegister"
-- "handleLoginRegisterChange"
-- "dismissKeyboard"
-- "setupLoginRegisterButton"
-- "loginRegisterSegmentedControl"
 - "inputsContainerView"
-- "passwordTextFieldHeightAnchor"
-- "setupProfileImageView"
-- "setupLoginRegisterSegmentedControl"
-- "viewDidAppear"
-- "handleLogin"
-- "profileImageView"
-- "nameSeparatorView"
-- "emailTextField"
-- "hideKeyboardWhenTappedAround"
-- "emailTextFieldHeightAnchor"
-- "viewDidLoad"
+- "handleLoginRegisterChange"
+- "setupInputsContainerView"
+- "passwordTextField"
 - "loginRegisterButton"
-- "handleRegister"
+- "viewDidAppear"
 - "nameTextField"
+- "viewDidLoad"
+- "handleLoginRegister"
+- "profileImageView"
+- "signupErrorAlert"
+- "emailSeparatorView"
+- "emailTextFieldHeightAnchor"
+- "setupLoginRegisterButton"
+- "hideKeyboardWhenTappedAround"
+- "dismissKeyboard"
+- "nameSeparatorView"
+- "passwordTextFieldHeightAnchor"
+- "inputsContainerViewHeightAnchor"
+- "loginRegisterSegmentedControl"
+- "setupLoginRegisterSegmentedControl"
+- "emailTextField"
+- "handleRegister"
+- "nameTextFieldHeightAnchor"
+- "setupProfileImageView"
+- "handleLogin"
+- "loginErrorAlert"
 depends-top-level:
-- !private "UIAlertController"
-- !private "/"
-- !private "print"
-- !private "UIAlertAction"
+- !private "UITapGestureRecognizer"
+- "UIImageView"
+- "Array"
+- !private "User"
 - "TernaryPrecedence"
-- !private "UIFont"
+- !private "!="
+- "UIImage"
+- "UIColor"
 - "AssignmentPrecedence"
+- "UIViewController"
+- !private "UIAlertAction"
+- !private "print"
+- !private "=="
+- "String"
+- "StringLiteralType"
+- !private "/"
+- "UITextField"
+- "NSLayoutConstraint"
+- !private "UIControlState"
+- "UIView"
+- !private "UIAlertController"
+- !private "Auth"
+- !private "Database"
+- !private "UserDefaults"
 - "UISegmentedControl"
 - "LoginViewController"
-- !private "=="
-- !private "!="
-- "Bool"
-- "Array"
-- "UITextField"
-- !private "User"
-- "Dictionary"
-- "UIImageView"
 - "UIButton"
-- "NSLayoutConstraint"
-- "StringLiteralType"
-- !private "Auth"
-- !private "UserDefaults"
-- "UIImage"
-- !private "UIAlertControllerStyle"
-- "UIColor"
-- !private "UIControlState"
-- !private "UITapGestureRecognizer"
-- "String"
-- !private "Database"
-- "UIViewController"
-- "UIView"
+- !private "UIFont"
 - "BooleanLiteralType"
+- !private "UIAlertControllerStyle"
+- "Dictionary"
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "Auth"]
 - !private ["Ps9AnyObject", "Database"]
@@ -99,14 +99,17 @@ depends-member:
 - !private ["Ps9AnyObject", "centerXAnchor"]
 - !private ["Ps9AnyObject", "centerYAnchor"]
 - !private ["Ps9AnyObject", "child"]
+- !private ["Ps9AnyObject", "commitChanges"]
 - !private ["Ps9AnyObject", "constant"]
 - !private ["Ps9AnyObject", "constraint"]
 - ["Ps9AnyObject", "contentMode"]
 - ["Ps9AnyObject", "cornerRadius"]
+- !private ["Ps9AnyObject", "createProfileChangeRequest"]
 - !private ["Ps9AnyObject", "createUser"]
 - !private ["Ps9AnyObject", "currentUser"]
 - !private ["Ps9AnyObject", "database"]
 - ["Ps9AnyObject", "dismissKeyboard"]
+- !private ["Ps9AnyObject", "displayName"]
 - ["Ps9AnyObject", "emailSeparatorView"]
 - ["Ps9AnyObject", "emailTextField"]
 - ["Ps9AnyObject", "emailTextFieldHeightAnchor"]
@@ -247,14 +250,17 @@ depends-member:
 - !private ["Ps7CVarArg", "centerXAnchor"]
 - !private ["Ps7CVarArg", "centerYAnchor"]
 - !private ["Ps7CVarArg", "child"]
+- !private ["Ps7CVarArg", "commitChanges"]
 - !private ["Ps7CVarArg", "constant"]
 - !private ["Ps7CVarArg", "constraint"]
 - ["Ps7CVarArg", "contentMode"]
 - ["Ps7CVarArg", "cornerRadius"]
+- !private ["Ps7CVarArg", "createProfileChangeRequest"]
 - !private ["Ps7CVarArg", "createUser"]
 - !private ["Ps7CVarArg", "currentUser"]
 - !private ["Ps7CVarArg", "database"]
 - ["Ps7CVarArg", "dismissKeyboard"]
+- !private ["Ps7CVarArg", "displayName"]
 - ["Ps7CVarArg", "emailSeparatorView"]
 - ["Ps7CVarArg", "emailTextField"]
 - ["Ps7CVarArg", "emailTextFieldHeightAnchor"]
@@ -355,14 +361,17 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "centerXAnchor"]
 - !private ["Ps28CustomDebugStringConvertible", "centerYAnchor"]
 - !private ["Ps28CustomDebugStringConvertible", "child"]
+- !private ["Ps28CustomDebugStringConvertible", "commitChanges"]
 - !private ["Ps28CustomDebugStringConvertible", "constant"]
 - !private ["Ps28CustomDebugStringConvertible", "constraint"]
 - ["Ps28CustomDebugStringConvertible", "contentMode"]
 - ["Ps28CustomDebugStringConvertible", "cornerRadius"]
+- !private ["Ps28CustomDebugStringConvertible", "createProfileChangeRequest"]
 - !private ["Ps28CustomDebugStringConvertible", "createUser"]
 - !private ["Ps28CustomDebugStringConvertible", "currentUser"]
 - !private ["Ps28CustomDebugStringConvertible", "database"]
 - ["Ps28CustomDebugStringConvertible", "dismissKeyboard"]
+- !private ["Ps28CustomDebugStringConvertible", "displayName"]
 - ["Ps28CustomDebugStringConvertible", "emailSeparatorView"]
 - ["Ps28CustomDebugStringConvertible", "emailTextField"]
 - ["Ps28CustomDebugStringConvertible", "emailTextFieldHeightAnchor"]
@@ -467,14 +476,17 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "centerXAnchor"]
 - !private ["Ps23CustomStringConvertible", "centerYAnchor"]
 - !private ["Ps23CustomStringConvertible", "child"]
+- !private ["Ps23CustomStringConvertible", "commitChanges"]
 - !private ["Ps23CustomStringConvertible", "constant"]
 - !private ["Ps23CustomStringConvertible", "constraint"]
 - ["Ps23CustomStringConvertible", "contentMode"]
 - ["Ps23CustomStringConvertible", "cornerRadius"]
+- !private ["Ps23CustomStringConvertible", "createProfileChangeRequest"]
 - !private ["Ps23CustomStringConvertible", "createUser"]
 - !private ["Ps23CustomStringConvertible", "currentUser"]
 - !private ["Ps23CustomStringConvertible", "database"]
 - ["Ps23CustomStringConvertible", "dismissKeyboard"]
+- !private ["Ps23CustomStringConvertible", "displayName"]
 - ["Ps23CustomStringConvertible", "emailSeparatorView"]
 - ["Ps23CustomStringConvertible", "emailTextField"]
 - ["Ps23CustomStringConvertible", "emailTextFieldHeightAnchor"]
@@ -583,15 +595,18 @@ depends-member:
 - !private ["Ps9Equatable", "centerXAnchor"]
 - !private ["Ps9Equatable", "centerYAnchor"]
 - !private ["Ps9Equatable", "child"]
+- !private ["Ps9Equatable", "commitChanges"]
 - !private ["Ps9Equatable", "constant"]
 - !private ["Ps9Equatable", "constraint"]
 - ["Ps9Equatable", "contentMode"]
 - ["Ps9Equatable", "cornerRadius"]
+- !private ["Ps9Equatable", "createProfileChangeRequest"]
 - !private ["Ps9Equatable", "createUser"]
 - !private ["Ps9Equatable", "currentUser"]
 - !private ["Ps9Equatable", "database"]
 - !private ["Ps9Equatable", "default"]
 - ["Ps9Equatable", "dismissKeyboard"]
+- !private ["Ps9Equatable", "displayName"]
 - ["Ps9Equatable", "emailSeparatorView"]
 - ["Ps9Equatable", "emailTextField"]
 - ["Ps9Equatable", "emailTextFieldHeightAnchor"]
@@ -705,15 +720,18 @@ depends-member:
 - !private ["Ps8Hashable", "centerXAnchor"]
 - !private ["Ps8Hashable", "centerYAnchor"]
 - !private ["Ps8Hashable", "child"]
+- !private ["Ps8Hashable", "commitChanges"]
 - !private ["Ps8Hashable", "constant"]
 - !private ["Ps8Hashable", "constraint"]
 - ["Ps8Hashable", "contentMode"]
 - ["Ps8Hashable", "cornerRadius"]
+- !private ["Ps8Hashable", "createProfileChangeRequest"]
 - !private ["Ps8Hashable", "createUser"]
 - !private ["Ps8Hashable", "currentUser"]
 - !private ["Ps8Hashable", "database"]
 - !private ["Ps8Hashable", "default"]
 - ["Ps8Hashable", "dismissKeyboard"]
+- !private ["Ps8Hashable", "displayName"]
 - ["Ps8Hashable", "emailSeparatorView"]
 - ["Ps8Hashable", "emailTextField"]
 - ["Ps8Hashable", "emailTextFieldHeightAnchor"]
@@ -1036,14 +1054,17 @@ depends-member:
 - !private ["CSo8NSObject", "centerXAnchor"]
 - !private ["CSo8NSObject", "centerYAnchor"]
 - !private ["CSo8NSObject", "child"]
+- !private ["CSo8NSObject", "commitChanges"]
 - !private ["CSo8NSObject", "constant"]
 - !private ["CSo8NSObject", "constraint"]
 - ["CSo8NSObject", "contentMode"]
 - ["CSo8NSObject", "cornerRadius"]
+- !private ["CSo8NSObject", "createProfileChangeRequest"]
 - !private ["CSo8NSObject", "createUser"]
 - !private ["CSo8NSObject", "currentUser"]
 - !private ["CSo8NSObject", "database"]
 - ["CSo8NSObject", "dismissKeyboard"]
+- !private ["CSo8NSObject", "displayName"]
 - ["CSo8NSObject", "emailSeparatorView"]
 - ["CSo8NSObject", "emailTextField"]
 - ["CSo8NSObject", "emailTextFieldHeightAnchor"]
@@ -1136,14 +1157,17 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "centerXAnchor"]
 - !private ["PSo16NSObjectProtocol", "centerYAnchor"]
 - !private ["PSo16NSObjectProtocol", "child"]
+- !private ["PSo16NSObjectProtocol", "commitChanges"]
 - !private ["PSo16NSObjectProtocol", "constant"]
 - !private ["PSo16NSObjectProtocol", "constraint"]
 - ["PSo16NSObjectProtocol", "contentMode"]
 - ["PSo16NSObjectProtocol", "cornerRadius"]
+- !private ["PSo16NSObjectProtocol", "createProfileChangeRequest"]
 - !private ["PSo16NSObjectProtocol", "createUser"]
 - !private ["PSo16NSObjectProtocol", "currentUser"]
 - !private ["PSo16NSObjectProtocol", "database"]
 - ["PSo16NSObjectProtocol", "dismissKeyboard"]
+- !private ["PSo16NSObjectProtocol", "displayName"]
 - ["PSo16NSObjectProtocol", "emailSeparatorView"]
 - ["PSo16NSObjectProtocol", "emailTextField"]
 - ["PSo16NSObjectProtocol", "emailTextFieldHeightAnchor"]
@@ -2106,6 +2130,7 @@ depends-member:
 - ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["CSo4User", "createProfileChangeRequest"]
 - !private ["CSo4User", "deinit"]
 - !private ["CSo4User", "uid"]
 - ["CSo12UserDefaults", "deinit"]
@@ -2113,7 +2138,11 @@ depends-member:
 - !private ["CSo12UserDefaults", "set"]
 - !private ["CSo12UserDefaults", "standard"]
 - !private ["CSo12UserDefaults", "synchronize"]
+- !private ["PSo8UserInfo", "createProfileChangeRequest"]
 - !private ["PSo8UserInfo", "uid"]
+- !private ["CSo24UserProfileChangeRequest", "commitChanges"]
+- !private ["CSo24UserProfileChangeRequest", "deinit"]
+- !private ["CSo24UserProfileChangeRequest", "displayName"]
 - !private ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addGestureRecognizer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
@@ -2186,15 +2215,18 @@ depends-member:
 - !private ["Ps9_Hashable", "centerXAnchor"]
 - !private ["Ps9_Hashable", "centerYAnchor"]
 - !private ["Ps9_Hashable", "child"]
+- !private ["Ps9_Hashable", "commitChanges"]
 - !private ["Ps9_Hashable", "constant"]
 - !private ["Ps9_Hashable", "constraint"]
 - ["Ps9_Hashable", "contentMode"]
 - ["Ps9_Hashable", "cornerRadius"]
+- !private ["Ps9_Hashable", "createProfileChangeRequest"]
 - !private ["Ps9_Hashable", "createUser"]
 - !private ["Ps9_Hashable", "currentUser"]
 - !private ["Ps9_Hashable", "database"]
 - !private ["Ps9_Hashable", "default"]
 - ["Ps9_Hashable", "dismissKeyboard"]
+- !private ["Ps9_Hashable", "displayName"]
 - ["Ps9_Hashable", "emailSeparatorView"]
 - ["Ps9_Hashable", "emailTextField"]
 - ["Ps9_Hashable", "emailTextFieldHeightAnchor"]
@@ -2374,6 +2406,7 @@ depends-nominal:
 - !private "CSo4User"
 - "CSo12UserDefaults"
 - !private "PSo8UserInfo"
+- !private "CSo24UserProfileChangeRequest"
 - !private "Ps14_ArrayProtocol"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps24_DestructorSafeContainer"

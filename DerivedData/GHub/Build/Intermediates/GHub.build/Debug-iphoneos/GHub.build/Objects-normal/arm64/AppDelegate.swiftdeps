@@ -7,22 +7,22 @@ provides-member:
 - ["C4GHub11AppDelegate", ""]
 provides-dynamic-lookup:
 - "applicationDidBecomeActive"
-- "applicationWillTerminate"
 - "applicationWillResignActive"
 - "window"
 - "applicationDidEnterBackground"
-- "application"
+- "applicationWillTerminate"
 - "applicationWillEnterForeground"
+- "application"
 depends-top-level:
 - "UIWindow"
 - "UIApplicationDelegate"
-- !private "BooleanLiteralType"
-- "UIResponder"
 - "UIApplication"
 - "UIApplicationLaunchOptionsKey"
-- "Bool"
+- "UIResponder"
 - "AppDelegate"
+- !private "BooleanLiteralType"
 - !private "FirebaseApp"
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "FirebaseApp"]
 - ["Ps9AnyObject", "application"]

@@ -163,6 +163,7 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 @property (nonatomic, strong) UIImagePickerController * _Null_unspecified picker;
 @property (nonatomic, strong) FIRDatabaseReference * _Nullable ref;
 @property (nonatomic, strong) FIRStorage * _Nonnull storage;
+@property (nonatomic, readonly, copy) NSString * _Nonnull uid;
 @property (nonatomic, readonly, strong) UIRefreshControl * _Nonnull refresher;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, UIColor *> * _Nonnull attributesForRefresherTitle;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified photoCollectionView;

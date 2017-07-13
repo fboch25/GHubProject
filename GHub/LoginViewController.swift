@@ -92,6 +92,10 @@ class LoginViewController: UIViewController {
             }
             // successfully logged in our user and keep user logged in until they logout
             if user != nil {
+                let changeRequest = Auth.auth().currentUser!.createProfileChangeRequest()
+                changeRequest.displayName = self.nameTextField.text!
+                changeRequest.commitChanges()
+                
                 UserDefaults.standard.set(Auth.auth().currentUser!.uid, forKey: "loggedIn")
                 UserDefaults.standard.synchronize()
                 self.performSegue(withIdentifier: "chatRoom", sender: self)
@@ -128,6 +132,11 @@ class LoginViewController: UIViewController {
                     return
                 }
                 if user != nil {
+                    
+                    let changeRequest = Auth.auth().currentUser!.createProfileChangeRequest()
+                    changeRequest.displayName = self.emailTextField.text!
+                    changeRequest.commitChanges(completion: nil)
+                    
                     UserDefaults.standard.set(Auth.auth().currentUser!.uid, forKey: "loggedIn")
                     UserDefaults.standard.synchronize()
                     self.performSegue(withIdentifier: "chatRoom", sender: self)
