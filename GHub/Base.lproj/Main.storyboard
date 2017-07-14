@@ -10,6 +10,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Ftf-my-en0">
+            <objects>
+                <navigationController id="OdW-v3-mC2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleAspectFit" misplaced="YES" translucent="NO" id="6o8-UV-mkB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HTi-cK-mrl" kind="relationship" relationship="rootViewController" id="TAS-DF-zPd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOf-98-Gao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2394" y="-621"/>
+        </scene>
         <!--ChatRoom-->
         <scene sceneID="wNM-zU-zYz">
             <objects>
@@ -19,12 +39,12 @@
                         <viewControllerLayoutGuide type="bottom" id="e1w-RO-hd2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Pnw-9r-sGo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Do2-8Q-f56">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="90" maxX="0.0" maxY="0.0"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N1B-Ac-3x3">
@@ -50,39 +70,53 @@
                                                         <constraint firstAttribute="height" constant="20" id="DzU-1w-fDK"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="1" blue="0.1723624315" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" red="0.0" green="1" blue="0.1723624315" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjE-3g-32o">
+                                                    <rect key="frame" x="8" y="173" width="304" height="21"/>
+                                                    <color key="tintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="RXp-mK-CVB" firstAttribute="trailing" secondItem="deH-WR-nhy" secondAttribute="trailing" constant="8" id="5O7-sg-sWX"/>
                                             <constraint firstItem="deH-WR-nhy" firstAttribute="leading" secondItem="rdT-cv-yYT" secondAttribute="leading" constant="8" id="7FE-3n-1Ta"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="RjE-3g-32o" secondAttribute="bottom" constant="-4" id="8U0-W4-Zk2"/>
                                             <constraint firstItem="deH-WR-nhy" firstAttribute="top" secondItem="rdT-cv-yYT" secondAttribute="top" id="8Y0-gO-ZiT"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="RXp-mK-CVB" secondAttribute="bottom" constant="17" id="Egn-ce-2Rp"/>
+                                            <constraint firstItem="RjE-3g-32o" firstAttribute="leading" secondItem="deH-WR-nhy" secondAttribute="leading" id="H4B-ZM-lHw"/>
                                             <constraint firstItem="RXp-mK-CVB" firstAttribute="leading" secondItem="deH-WR-nhy" secondAttribute="leading" constant="-8" id="RX5-Eq-o65"/>
+                                            <constraint firstItem="RjE-3g-32o" firstAttribute="top" secondItem="RXp-mK-CVB" secondAttribute="bottom" id="Yng-nc-xsz"/>
                                             <constraint firstItem="RXp-mK-CVB" firstAttribute="top" secondItem="deH-WR-nhy" secondAttribute="bottom" constant="10" id="lhG-JG-zKk"/>
                                             <constraint firstAttribute="trailing" secondItem="deH-WR-nhy" secondAttribute="trailing" constant="8" id="nsS-Az-VNF"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="RjE-3g-32o" secondAttribute="trailing" constant="55" id="rIR-QB-4XY"/>
                                         </constraints>
                                         <size key="customSize" width="375" height="198"/>
                                         <connections>
                                             <outlet property="chatImage" destination="deH-WR-nhy" id="8l7-5v-Yfz"/>
                                             <outlet property="chatLabel" destination="RXp-mK-CVB" id="SKb-Y8-Kn8"/>
+                                            <outlet property="nameForCreatedCell" destination="RjE-3g-32o" id="IzU-cU-6XQ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87B-yk-Oim">
-                                <rect key="frame" x="284" y="589" width="54" height="34"/>
-                                <state key="normal" title="Create">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="didSelectCreateButton" destination="HTi-cK-mrl" eventType="touchUpInside" id="Fhh-sU-2Xa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dco-3E-pa8">
-                                <rect key="frame" x="20" y="589" width="63" height="30"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Do2-8Q-f56" firstAttribute="bottom" secondItem="e1w-RO-hd2" secondAttribute="top" id="BHV-a7-aB9"/>
+                            <constraint firstItem="Do2-8Q-f56" firstAttribute="leading" secondItem="Pnw-9r-sGo" secondAttribute="leading" id="KBd-oU-V7T"/>
+                            <constraint firstItem="Do2-8Q-f56" firstAttribute="top" secondItem="Pnw-9r-sGo" secondAttribute="top" id="NVq-ia-Len"/>
+                            <constraint firstAttribute="trailing" secondItem="Do2-8Q-f56" secondAttribute="trailing" id="TZ0-tz-aLf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="GHub" id="zVW-77-WL9">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="uv4-tR-XUr">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dco-3E-pa8">
+                                <rect key="frame" x="16" y="7" width="63" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log Out"/>
                                 <connections>
@@ -92,24 +126,28 @@
                                     </segue>
                                 </connections>
                             </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Do2-8Q-f56" firstAttribute="bottom" secondItem="e1w-RO-hd2" secondAttribute="top" id="BHV-a7-aB9"/>
-                            <constraint firstItem="87B-yk-Oim" firstAttribute="top" secondItem="6zo-yG-Zaj" secondAttribute="bottom" constant="569" id="Fsm-np-41x"/>
-                            <constraint firstItem="Do2-8Q-f56" firstAttribute="leading" secondItem="Pnw-9r-sGo" secondAttribute="leading" id="KBd-oU-V7T"/>
-                            <constraint firstItem="Do2-8Q-f56" firstAttribute="top" secondItem="Pnw-9r-sGo" secondAttribute="top" constant="20" id="NVq-ia-Len"/>
-                            <constraint firstAttribute="trailing" secondItem="Do2-8Q-f56" secondAttribute="trailing" id="TZ0-tz-aLf"/>
-                            <constraint firstItem="87B-yk-Oim" firstAttribute="trailing" secondItem="Pnw-9r-sGo" secondAttribute="trailingMargin" constant="-21" id="ZYw-5D-SMV"/>
-                        </constraints>
-                    </view>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Z2A-sK-GK3">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="87B-yk-Oim">
+                                <rect key="frame" x="305" y="5" width="54" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectCreateButton" destination="HTi-cK-mrl" eventType="touchUpInside" id="Fhh-sU-2Xa"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="photoCollectionView" destination="Do2-8Q-f56" id="cya-sa-3mm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQB-hf-B72" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1511.2" y="-621.13943028485767"/>
+            <point key="canvasLocation" x="-1490.4000000000001" y="-621.13943028485767"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="WB5-r2-zGO">
@@ -125,12 +163,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="HTi-cK-mrl" kind="show" identifier="chatRoom" action="showDetailViewController:sender:" id="lcI-Qp-Rh3"/>
+                        <segue destination="OdW-v3-mC2" kind="show" identifier="chatRoom" id="dfi-UV-Ujo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Uw-Sp-uUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-550" y="-621"/>
+            <point key="canvasLocation" x="-450" y="-621"/>
         </scene>
     </scenes>
 </document>

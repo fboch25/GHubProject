@@ -13,5 +13,5 @@ class ChatCell: UICollectionViewCell {
     
     @IBOutlet weak var chatImage: UIImageView!
     @IBOutlet weak var chatLabel: UILabel!
-    
+    @IBOutlet weak var nameForCreatedCell: UILabel!
 }

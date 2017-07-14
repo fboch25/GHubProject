@@ -1,8 +1,8 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "2fabcae1530269b0c04ba0908ca93bb4"
-build_time: [553276804, 54593000]
+build_time: [553327022, 828325000]
 inputs:
   "/Users/Mrbochiballs1/Develop/Software/GHub/GHub/LoginViewController.swift": [553272445, 0]
-  "/Users/Mrbochiballs1/Develop/Software/GHub/GHub/ChatRoom.swift": [553276803, 0]
-  "/Users/Mrbochiballs1/Develop/Software/GHub/GHub/AppDelegate.swift": [553209933, 0]
-  "/Users/Mrbochiballs1/Develop/Software/GHub/GHub/ChatCell.swift": [553063654, 0]
+  "/Users/Mrbochiballs1/Develop/Software/GHub/GHub/ChatRoom.swift": [553327022, 0]
+  "/Users/Mrbochiballs1/Develop/Software/GHub/GHub/AppDelegate.swift": [553319495, 0]
+  "/Users/Mrbochiballs1/Develop/Software/GHub/GHub/ChatCell.swift": [553281284, 0]

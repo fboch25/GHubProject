@@ -10,78 +10,82 @@ provides-member:
 - ["CSo7UIColor", ""]
 - ["CSo7UIColor", "init"]
 provides-dynamic-lookup:
-- "picker"
-- "fetchData"
-- "handleLogout"
-- "viewDidLoad"
-- "attributesForRefresherTitle"
-- "accessPhotoControls"
-- "imagePickerController"
-- "showCellTitleAlert"
-- "uid"
-- "refresher"
-- "photoCollectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "storage"
-- "photoCollectionViewDataLoad"
 - "imagePickerControllerDidCancel"
-- "openCamera"
-- "saveToFirebase"
 - "didSelectCreateButton"
 - "didReceiveMemoryWarning"
+- "saveToFirebase"
+- "uid"
+- "nameForCreatedCell"
+- "photoCollectionView"
+- "handleLogout"
 - "ref"
-- "refreshPhotoCollectionView"
+- "photoCollectionViewDataLoad"
+- "viewDidAppear"
 - "openPhotoLibrary"
+- "storage"
 - "chatCellView"
+- "accessPhotoControls"
+- "attributesForRefresherTitle"
+- "imagePickerController"
+- "refreshPhotoCollectionView"
+- "showCellTitleAlert"
+- "refresher"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "fetchData"
+- "viewDidLoad"
+- "picker"
+- "openCamera"
 depends-top-level:
-- "CGSize"
-- "UIColor"
-- !private "??"
-- "UICollectionViewDelegate"
-- "CGFloat"
-- !private "UIAlertControllerStyle"
-- "UICollectionView"
-- !private "UIAlertAction"
-- !private "/"
-- "UIViewController"
-- !private "Database"
-- "Auth"
-- !private "UIImageJPEGRepresentation"
-- !private "print"
-- "AssignmentPrecedence"
-- "UINavigationControllerDelegate"
-- "CastingPrecedence"
-- !private "=="
-- !private "DataSnapshot"
-- "UIImagePickerControllerDelegate"
-- "UICollectionViewDataSource"
+- "UIRefreshControl"
+- !private "UIAlertActionStyle"
+- "String"
+- "Dictionary"
 - !private "AnyObject"
+- "Int"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "=="
+- !private "UserDefaults"
+- "UICollectionView"
+- "UICollectionViewDataSource"
+- !private "StringLiteralType"
 - "Storage"
 - "UICollectionViewDelegateFlowLayout"
-- "ChatRoom"
-- "IndexPath"
-- !private "StringLiteralType"
-- "DatabaseReference"
-- "String"
+- "UINavigationControllerDelegate"
+- "UILabel"
+- "UIImagePickerControllerDelegate"
+- !private "Database"
+- "Auth"
+- "UIImagePickerController"
+- !private "print"
+- !private "DataSnapshot"
 - "UICollectionViewCell"
-- !private "UIAlertActionStyle"
-- "Dictionary"
-- "UICollectionViewLayout"
-- !private "UIAlertController"
+- !private "UIImageJPEGRepresentation"
+- "UICollectionViewDelegate"
+- !private "BooleanLiteralType"
+- "UIColor"
+- !private "UIAlertControllerStyle"
+- "ChatRoom"
+- "CGFloat"
 - !private "arc4random"
 - "UIImage"
-- "Int"
-- !private "URL"
+- !private "UIAlertController"
 - !private "UIImagePickerControllerOriginalImage"
-- "UIRefreshControl"
+- !private "URL"
 - "ChatCell"
-- !private "UserDefaults"
-- "UIImagePickerController"
-- !private "NSAttributedString"
-- !private "BooleanLiteralType"
+- "DatabaseReference"
 - "NSForegroundColorAttributeName"
+- "IndexPath"
+- !private "/"
+- !private "UIAlertAction"
+- !private "NSAttributedString"
+- "CGSize"
+- "Bool"
+- "UIViewController"
+- "UICollectionViewLayout"
+- !private "??"
 depends-member:
 - ["Ps9AnyObject", "Auth"]
 - !private ["Ps9AnyObject", "CGSize"]
@@ -114,7 +118,6 @@ depends-member:
 - !private ["Ps9AnyObject", "attributedTitle"]
 - ["Ps9AnyObject", "attributesForRefresherTitle"]
 - ["Ps9AnyObject", "auth"]
-- ["Ps9AnyObject", "blue"]
 - !private ["Ps9AnyObject", "borderColor"]
 - !private ["Ps9AnyObject", "borderWidth"]
 - !private ["Ps9AnyObject", "bounds"]
@@ -129,6 +132,7 @@ depends-member:
 - ["Ps9AnyObject", "collectionView"]
 - !private ["Ps9AnyObject", "cornerRadius"]
 - ["Ps9AnyObject", "currentUser"]
+- !private ["Ps9AnyObject", "darkGray"]
 - !private ["Ps9AnyObject", "dataSource"]
 - !private ["Ps9AnyObject", "database"]
 - !private ["Ps9AnyObject", "delegate"]
@@ -150,6 +154,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "masksToBounds"]
+- ["Ps9AnyObject", "nameForCreatedCell"]
 - ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9AnyObject", "navigationControllerSupportedInterfaceOrientations"]
@@ -192,6 +197,7 @@ depends-member:
 - !private ["Ps9AnyObject", "sd_setImage"]
 - !private ["Ps9AnyObject", "setValue"]
 - ["Ps9AnyObject", "showCellTitleAlert"]
+- !private ["Ps9AnyObject", "showsVerticalScrollIndicator"]
 - !private ["Ps9AnyObject", "signOut"]
 - !private ["Ps9AnyObject", "sourceType"]
 - !private ["Ps9AnyObject", "standard"]
@@ -203,6 +209,7 @@ depends-member:
 - !private ["Ps9AnyObject", "title"]
 - ["Ps9AnyObject", "uid"]
 - !private ["Ps9AnyObject", "value"]
+- ["Ps9AnyObject", "viewDidAppear"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZooming"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
@@ -282,6 +289,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "placeholder"]
 - !private ["PSo15CALayerDelegate", "reloadData"]
 - !private ["PSo15CALayerDelegate", "sd_setImage"]
+- !private ["PSo15CALayerDelegate", "showsVerticalScrollIndicator"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "tintColor"]
 - !private ["PSo13CAMediaTiming", "borderColor"]
@@ -334,7 +342,6 @@ depends-member:
 - !private ["Ps7CVarArg", "attributedTitle"]
 - ["Ps7CVarArg", "attributesForRefresherTitle"]
 - ["Ps7CVarArg", "auth"]
-- ["Ps7CVarArg", "blue"]
 - !private ["Ps7CVarArg", "borderColor"]
 - !private ["Ps7CVarArg", "borderWidth"]
 - !private ["Ps7CVarArg", "bounds"]
@@ -350,6 +357,7 @@ depends-member:
 - !private ["Ps7CVarArg", "cornerRadius"]
 - !private ["Ps7CVarArg", "count"]
 - ["Ps7CVarArg", "currentUser"]
+- !private ["Ps7CVarArg", "darkGray"]
 - !private ["Ps7CVarArg", "dataSource"]
 - !private ["Ps7CVarArg", "database"]
 - !private ["Ps7CVarArg", "delegate"]
@@ -373,6 +381,7 @@ depends-member:
 - !private ["Ps7CVarArg", "insert"]
 - !private ["Ps7CVarArg", "layer"]
 - !private ["Ps7CVarArg", "masksToBounds"]
+- ["Ps7CVarArg", "nameForCreatedCell"]
 - ["Ps7CVarArg", "navigationController"]
 - ["Ps7CVarArg", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps7CVarArg", "navigationControllerSupportedInterfaceOrientations"]
@@ -416,6 +425,7 @@ depends-member:
 - !private ["Ps7CVarArg", "sd_setImage"]
 - !private ["Ps7CVarArg", "setValue"]
 - ["Ps7CVarArg", "showCellTitleAlert"]
+- !private ["Ps7CVarArg", "showsVerticalScrollIndicator"]
 - !private ["Ps7CVarArg", "signOut"]
 - !private ["Ps7CVarArg", "sourceType"]
 - !private ["Ps7CVarArg", "standard"]
@@ -428,6 +438,7 @@ depends-member:
 - !private ["Ps7CVarArg", "title"]
 - ["Ps7CVarArg", "uid"]
 - !private ["Ps7CVarArg", "value"]
+- ["Ps7CVarArg", "viewDidAppear"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", "viewForZooming"]
 - ["Ps7CVarArg", "viewForZoomingInScrollView"]
@@ -439,6 +450,7 @@ depends-member:
 - !private ["C4GHub8ChatCell", "layer"]
 - !private ["C4GHub8ChatRoom", "AnyObject"]
 - ["C4GHub8ChatRoom", "Auth"]
+- ["C4GHub8ChatRoom", "Bool"]
 - ["C4GHub8ChatRoom", "CGSize"]
 - ["C4GHub8ChatRoom", "ChatCell"]
 - !private ["C4GHub8ChatRoom", "DataSnapshot"]
@@ -463,6 +475,7 @@ depends-member:
 - !private ["C4GHub8ChatRoom", "UIImageJPEGRepresentation"]
 - ["C4GHub8ChatRoom", "UIImagePickerController"]
 - !private ["C4GHub8ChatRoom", "UIImagePickerControllerOriginalImage"]
+- ["C4GHub8ChatRoom", "UILabel"]
 - ["C4GHub8ChatRoom", "UIRefreshControl"]
 - !private ["C4GHub8ChatRoom", "URL"]
 - !private ["C4GHub8ChatRoom", "UserDefaults"]
@@ -483,6 +496,7 @@ depends-member:
 - ["C4GHub8ChatRoom", "indexPathForPreferredFocusedView"]
 - ["C4GHub8ChatRoom", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["C4GHub8ChatRoom", "init"]
+- ["C4GHub8ChatRoom", "nameForCreatedCell"]
 - ["C4GHub8ChatRoom", "navigationController"]
 - ["C4GHub8ChatRoom", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["C4GHub8ChatRoom", "navigationControllerSupportedInterfaceOrientations"]
@@ -519,6 +533,7 @@ depends-member:
 - ["C4GHub8ChatRoom", "showCellTitleAlert"]
 - ["C4GHub8ChatRoom", "storage"]
 - ["C4GHub8ChatRoom", "uid"]
+- ["C4GHub8ChatRoom", "viewDidAppear"]
 - ["C4GHub8ChatRoom", "viewDidLoad"]
 - ["C4GHub8ChatRoom", "viewForZooming"]
 - ["C4GHub8ChatRoom", "viewForZoomingInScrollView"]
@@ -580,7 +595,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "attributedTitle"]
 - ["Ps28CustomDebugStringConvertible", "attributesForRefresherTitle"]
 - ["Ps28CustomDebugStringConvertible", "auth"]
-- ["Ps28CustomDebugStringConvertible", "blue"]
 - !private ["Ps28CustomDebugStringConvertible", "borderColor"]
 - !private ["Ps28CustomDebugStringConvertible", "borderWidth"]
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
@@ -596,6 +610,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - ["Ps28CustomDebugStringConvertible", "currentUser"]
+- !private ["Ps28CustomDebugStringConvertible", "darkGray"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "database"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
@@ -621,6 +636,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "insert"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "masksToBounds"]
+- ["Ps28CustomDebugStringConvertible", "nameForCreatedCell"]
 - ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps28CustomDebugStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
@@ -665,6 +681,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "sd_setImage"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
 - ["Ps28CustomDebugStringConvertible", "showCellTitleAlert"]
+- !private ["Ps28CustomDebugStringConvertible", "showsVerticalScrollIndicator"]
 - !private ["Ps28CustomDebugStringConvertible", "signOut"]
 - ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "sourceType"]
@@ -678,6 +695,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - ["Ps28CustomDebugStringConvertible", "uid"]
 - !private ["Ps28CustomDebugStringConvertible", "value"]
+- ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZooming"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
@@ -756,7 +774,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "attributedTitle"]
 - ["Ps23CustomStringConvertible", "attributesForRefresherTitle"]
 - ["Ps23CustomStringConvertible", "auth"]
-- ["Ps23CustomStringConvertible", "blue"]
 - !private ["Ps23CustomStringConvertible", "borderColor"]
 - !private ["Ps23CustomStringConvertible", "borderWidth"]
 - !private ["Ps23CustomStringConvertible", "bounds"]
@@ -772,6 +789,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - ["Ps23CustomStringConvertible", "currentUser"]
+- !private ["Ps23CustomStringConvertible", "darkGray"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
 - !private ["Ps23CustomStringConvertible", "database"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
@@ -795,6 +813,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "insert"]
 - !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "masksToBounds"]
+- ["Ps23CustomStringConvertible", "nameForCreatedCell"]
 - ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps23CustomStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
@@ -839,6 +858,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "sd_setImage"]
 - !private ["Ps23CustomStringConvertible", "setValue"]
 - ["Ps23CustomStringConvertible", "showCellTitleAlert"]
+- !private ["Ps23CustomStringConvertible", "showsVerticalScrollIndicator"]
 - !private ["Ps23CustomStringConvertible", "signOut"]
 - !private ["Ps23CustomStringConvertible", "sourceType"]
 - !private ["Ps23CustomStringConvertible", "standard"]
@@ -851,6 +871,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "title"]
 - ["Ps23CustomStringConvertible", "uid"]
 - !private ["Ps23CustomStringConvertible", "value"]
+- ["Ps23CustomStringConvertible", "viewDidAppear"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZooming"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
@@ -927,7 +948,6 @@ depends-member:
 - !private ["Ps9Equatable", "attributedTitle"]
 - ["Ps9Equatable", "attributesForRefresherTitle"]
 - ["Ps9Equatable", "auth"]
-- ["Ps9Equatable", "blue"]
 - !private ["Ps9Equatable", "borderColor"]
 - !private ["Ps9Equatable", "borderWidth"]
 - !private ["Ps9Equatable", "bounds"]
@@ -944,6 +964,7 @@ depends-member:
 - ["Ps9Equatable", "collectionView"]
 - !private ["Ps9Equatable", "cornerRadius"]
 - ["Ps9Equatable", "currentUser"]
+- !private ["Ps9Equatable", "darkGray"]
 - !private ["Ps9Equatable", "dataSource"]
 - !private ["Ps9Equatable", "database"]
 - !private ["Ps9Equatable", "default"]
@@ -967,6 +988,7 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "masksToBounds"]
+- ["Ps9Equatable", "nameForCreatedCell"]
 - ["Ps9Equatable", "navigationController"]
 - ["Ps9Equatable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9Equatable", "navigationControllerSupportedInterfaceOrientations"]
@@ -1011,6 +1033,7 @@ depends-member:
 - !private ["Ps9Equatable", "sd_setImage"]
 - !private ["Ps9Equatable", "setValue"]
 - ["Ps9Equatable", "showCellTitleAlert"]
+- !private ["Ps9Equatable", "showsVerticalScrollIndicator"]
 - !private ["Ps9Equatable", "signOut"]
 - !private ["Ps9Equatable", "sourceType"]
 - !private ["Ps9Equatable", "standard"]
@@ -1023,6 +1046,7 @@ depends-member:
 - ["Ps9Equatable", "uid"]
 - !private ["Ps9Equatable", "value"]
 - !private ["Ps9Equatable", "valueChanged"]
+- ["Ps9Equatable", "viewDidAppear"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZooming"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
@@ -1096,7 +1120,6 @@ depends-member:
 - !private ["Ps8Hashable", "attributedTitle"]
 - ["Ps8Hashable", "attributesForRefresherTitle"]
 - ["Ps8Hashable", "auth"]
-- ["Ps8Hashable", "blue"]
 - !private ["Ps8Hashable", "borderColor"]
 - !private ["Ps8Hashable", "borderWidth"]
 - !private ["Ps8Hashable", "bounds"]
@@ -1113,6 +1136,7 @@ depends-member:
 - ["Ps8Hashable", "collectionView"]
 - !private ["Ps8Hashable", "cornerRadius"]
 - ["Ps8Hashable", "currentUser"]
+- !private ["Ps8Hashable", "darkGray"]
 - !private ["Ps8Hashable", "dataSource"]
 - !private ["Ps8Hashable", "database"]
 - !private ["Ps8Hashable", "default"]
@@ -1135,6 +1159,7 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "masksToBounds"]
+- ["Ps8Hashable", "nameForCreatedCell"]
 - ["Ps8Hashable", "navigationController"]
 - ["Ps8Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps8Hashable", "navigationControllerSupportedInterfaceOrientations"]
@@ -1179,6 +1204,7 @@ depends-member:
 - !private ["Ps8Hashable", "sd_setImage"]
 - !private ["Ps8Hashable", "setValue"]
 - ["Ps8Hashable", "showCellTitleAlert"]
+- !private ["Ps8Hashable", "showsVerticalScrollIndicator"]
 - !private ["Ps8Hashable", "signOut"]
 - !private ["Ps8Hashable", "sourceType"]
 - !private ["Ps8Hashable", "standard"]
@@ -1190,6 +1216,7 @@ depends-member:
 - !private ["Ps8Hashable", "title"]
 - ["Ps8Hashable", "uid"]
 - !private ["Ps8Hashable", "value"]
+- ["Ps8Hashable", "viewDidAppear"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZooming"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
@@ -1304,7 +1331,6 @@ depends-member:
 - !private ["PSo8NSCoding", "arc4random"]
 - !private ["PSo8NSCoding", "attributedTitle"]
 - ["PSo8NSCoding", "attributesForRefresherTitle"]
-- ["PSo8NSCoding", "blue"]
 - !private ["PSo8NSCoding", "borderColor"]
 - !private ["PSo8NSCoding", "borderWidth"]
 - !private ["PSo8NSCoding", "bounds"]
@@ -1315,6 +1341,7 @@ depends-member:
 - ["PSo8NSCoding", "checkIfUserLoggedIn"]
 - ["PSo8NSCoding", "collectionView"]
 - !private ["PSo8NSCoding", "cornerRadius"]
+- !private ["PSo8NSCoding", "darkGray"]
 - !private ["PSo8NSCoding", "dataSource"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
@@ -1332,6 +1359,7 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "masksToBounds"]
+- ["PSo8NSCoding", "nameForCreatedCell"]
 - ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo8NSCoding", "navigationControllerSupportedInterfaceOrientations"]
@@ -1369,6 +1397,7 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - !private ["PSo8NSCoding", "sd_setImage"]
 - ["PSo8NSCoding", "showCellTitleAlert"]
+- !private ["PSo8NSCoding", "showsVerticalScrollIndicator"]
 - !private ["PSo8NSCoding", "sourceType"]
 - ["PSo8NSCoding", "storage"]
 - !private ["PSo8NSCoding", "text"]
@@ -1376,14 +1405,15 @@ depends-member:
 - !private ["PSo8NSCoding", "tintColor"]
 - !private ["PSo8NSCoding", "title"]
 - ["PSo8NSCoding", "uid"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZooming"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", ""]
-- ["PSo9NSCopying", "blue"]
 - !private ["PSo9NSCopying", "cgColor"]
+- !private ["PSo9NSCopying", "darkGray"]
 - !private ["PSo9NSCopying", "downloadURL"]
-- !private ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "init"]
 - !private ["CSo12NSEnumerator", "Iterator"]
 - !private ["CSo12NSEnumerator", "deinit"]
 - !private ["CSo12NSEnumerator", "forEach"]
@@ -1425,6 +1455,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "nameForCreatedCell"]
 - ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerSupportedInterfaceOrientations"]
@@ -1463,6 +1494,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "storage"]
 - !private ["PSo26NSExtensionRequestHandling", "textFields"]
 - ["PSo26NSExtensionRequestHandling", "uid"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZooming"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
@@ -1473,6 +1505,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Auth"]
+- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGSize"]
 - ["CSo8NSObject", "ChatCell"]
@@ -1499,6 +1532,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIImageJPEGRepresentation"]
 - ["CSo8NSObject", "UIImagePickerController"]
 - !private ["CSo8NSObject", "UIImagePickerControllerOriginalImage"]
+- ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIRefreshControl"]
 - !private ["CSo8NSObject", "URL"]
 - !private ["CSo8NSObject", "UserDefaults"]
@@ -1513,7 +1547,6 @@ depends-member:
 - !private ["CSo8NSObject", "attributedTitle"]
 - ["CSo8NSObject", "attributesForRefresherTitle"]
 - ["CSo8NSObject", "auth"]
-- ["CSo8NSObject", "blue"]
 - !private ["CSo8NSObject", "borderColor"]
 - !private ["CSo8NSObject", "borderWidth"]
 - !private ["CSo8NSObject", "bounds"]
@@ -1528,6 +1561,7 @@ depends-member:
 - ["CSo8NSObject", "collectionView"]
 - !private ["CSo8NSObject", "cornerRadius"]
 - ["CSo8NSObject", "currentUser"]
+- !private ["CSo8NSObject", "darkGray"]
 - !private ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "database"]
 - !private ["CSo8NSObject", "delegate"]
@@ -1549,6 +1583,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "masksToBounds"]
+- ["CSo8NSObject", "nameForCreatedCell"]
 - ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo8NSObject", "navigationControllerSupportedInterfaceOrientations"]
@@ -1591,6 +1626,7 @@ depends-member:
 - !private ["CSo8NSObject", "sd_setImage"]
 - !private ["CSo8NSObject", "setValue"]
 - ["CSo8NSObject", "showCellTitleAlert"]
+- !private ["CSo8NSObject", "showsVerticalScrollIndicator"]
 - !private ["CSo8NSObject", "signOut"]
 - !private ["CSo8NSObject", "sourceType"]
 - !private ["CSo8NSObject", "standard"]
@@ -1602,6 +1638,7 @@ depends-member:
 - !private ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "uid"]
 - !private ["CSo8NSObject", "value"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZooming"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
@@ -1635,7 +1672,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "attributedTitle"]
 - ["PSo16NSObjectProtocol", "attributesForRefresherTitle"]
 - ["PSo16NSObjectProtocol", "auth"]
-- ["PSo16NSObjectProtocol", "blue"]
 - !private ["PSo16NSObjectProtocol", "borderColor"]
 - !private ["PSo16NSObjectProtocol", "borderWidth"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
@@ -1650,6 +1686,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "collectionView"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - ["PSo16NSObjectProtocol", "currentUser"]
+- !private ["PSo16NSObjectProtocol", "darkGray"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "database"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
@@ -1671,6 +1708,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "masksToBounds"]
+- ["PSo16NSObjectProtocol", "nameForCreatedCell"]
 - ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16NSObjectProtocol", "navigationControllerSupportedInterfaceOrientations"]
@@ -1713,6 +1751,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "sd_setImage"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
 - ["PSo16NSObjectProtocol", "showCellTitleAlert"]
+- !private ["PSo16NSObjectProtocol", "showsVerticalScrollIndicator"]
 - !private ["PSo16NSObjectProtocol", "signOut"]
 - !private ["PSo16NSObjectProtocol", "sourceType"]
 - !private ["PSo16NSObjectProtocol", "standard"]
@@ -1724,13 +1763,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "title"]
 - ["PSo16NSObjectProtocol", "uid"]
 - !private ["PSo16NSObjectProtocol", "value"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZooming"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", ""]
-- ["PSo14NSSecureCoding", "blue"]
 - !private ["PSo14NSSecureCoding", "cgColor"]
-- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "darkGray"]
+- ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
 - ["VC4GHub8ChatRoom6Object", "String"]
 - ["VC4GHub8ChatRoom6Object", "UIImage"]
@@ -1870,6 +1910,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "placeholder"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "sd_setImage"]
+- !private ["PSo29UIAccessibilityIdentification", "showsVerticalScrollIndicator"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "tintColor"]
 - ["CSo13UIAlertAction", "deinit"]
@@ -1902,6 +1943,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "placeholder"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "sd_setImage"]
+- !private ["PSo12UIAppearance", "showsVerticalScrollIndicator"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "tintColor"]
 - ["PSo21UIAppearanceContainer", "Auth"]
@@ -1954,6 +1996,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "nameForCreatedCell"]
 - ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo21UIAppearanceContainer", "navigationControllerSupportedInterfaceOrientations"]
@@ -1991,12 +2034,14 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - !private ["PSo21UIAppearanceContainer", "sd_setImage"]
 - ["PSo21UIAppearanceContainer", "showCellTitleAlert"]
+- !private ["PSo21UIAppearanceContainer", "showsVerticalScrollIndicator"]
 - !private ["PSo21UIAppearanceContainer", "sourceType"]
 - ["PSo21UIAppearanceContainer", "storage"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textFields"]
 - !private ["PSo21UIAppearanceContainer", "tintColor"]
 - ["PSo21UIAppearanceContainer", "uid"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
@@ -2012,6 +2057,7 @@ depends-member:
 - !private ["CSo16UICollectionView", "delegate"]
 - !private ["CSo16UICollectionView", "dequeueReusableCell"]
 - !private ["CSo16UICollectionView", "reloadData"]
+- !private ["CSo16UICollectionView", "showsVerticalScrollIndicator"]
 - !private ["CSo20UICollectionViewCell", "chatImage"]
 - !private ["CSo20UICollectionViewCell", "chatLabel"]
 - ["CSo20UICollectionViewCell", "deinit"]
@@ -2224,8 +2270,8 @@ depends-member:
 - ["PSo34UICollectionViewDelegateFlowLayout", "viewForZoomingInScrollView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", ""]
 - ["CSo7UIColor", "CGFloat"]
-- ["CSo7UIColor", "blue"]
 - !private ["CSo7UIColor", "cgColor"]
+- !private ["CSo7UIColor", "darkGray"]
 - ["CSo7UIColor", "deinit"]
 - ["CSo7UIColor", "init"]
 - ["PSo18UIContentContainer", "Auth"]
@@ -2266,6 +2312,7 @@ depends-member:
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "nameForCreatedCell"]
 - ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIContentContainer", "navigationControllerSupportedInterfaceOrientations"]
@@ -2304,6 +2351,7 @@ depends-member:
 - ["PSo18UIContentContainer", "storage"]
 - !private ["PSo18UIContentContainer", "textFields"]
 - ["PSo18UIContentContainer", "uid"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZooming"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
@@ -2336,6 +2384,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "placeholder"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "sd_setImage"]
+- !private ["PSo17UICoordinateSpace", "showsVerticalScrollIndicator"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "tintColor"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
@@ -2355,6 +2404,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "placeholder"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "sd_setImage"]
+- !private ["PSo13UIDynamicItem", "showsVerticalScrollIndicator"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "tintColor"]
 - ["PSo18UIFocusEnvironment", "Auth"]
@@ -2407,6 +2457,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
+- ["PSo18UIFocusEnvironment", "nameForCreatedCell"]
 - ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIFocusEnvironment", "navigationControllerSupportedInterfaceOrientations"]
@@ -2444,12 +2495,14 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - !private ["PSo18UIFocusEnvironment", "sd_setImage"]
 - ["PSo18UIFocusEnvironment", "showCellTitleAlert"]
+- !private ["PSo18UIFocusEnvironment", "showsVerticalScrollIndicator"]
 - !private ["PSo18UIFocusEnvironment", "sourceType"]
 - ["PSo18UIFocusEnvironment", "storage"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textFields"]
 - !private ["PSo18UIFocusEnvironment", "tintColor"]
 - ["PSo18UIFocusEnvironment", "uid"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZooming"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
@@ -2471,6 +2524,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "placeholder"]
 - !private ["PSo11UIFocusItem", "reloadData"]
 - !private ["PSo11UIFocusItem", "sd_setImage"]
+- !private ["PSo11UIFocusItem", "showsVerticalScrollIndicator"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "tintColor"]
 - ["CSo7UIImage", "deinit"]
@@ -2641,6 +2695,7 @@ depends-member:
 - !private ["CSo16UIRefreshControl", "tintColor"]
 - !private ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Auth"]
+- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGSize"]
 - ["CSo11UIResponder", "ChatCell"]
 - !private ["CSo11UIResponder", "DataSnapshot"]
@@ -2665,6 +2720,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIImageJPEGRepresentation"]
 - ["CSo11UIResponder", "UIImagePickerController"]
 - !private ["CSo11UIResponder", "UIImagePickerControllerOriginalImage"]
+- ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIRefreshControl"]
 - !private ["CSo11UIResponder", "URL"]
 - !private ["CSo11UIResponder", "UserDefaults"]
@@ -2700,6 +2756,7 @@ depends-member:
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "nameForCreatedCell"]
 - ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo11UIResponder", "navigationControllerSupportedInterfaceOrientations"]
@@ -2737,12 +2794,14 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - !private ["CSo11UIResponder", "sd_setImage"]
 - ["CSo11UIResponder", "showCellTitleAlert"]
+- !private ["CSo11UIResponder", "showsVerticalScrollIndicator"]
 - !private ["CSo11UIResponder", "sourceType"]
 - ["CSo11UIResponder", "storage"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textFields"]
 - !private ["CSo11UIResponder", "tintColor"]
 - ["CSo11UIResponder", "uid"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZooming"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
@@ -2796,6 +2855,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
+- ["PSo30UIResponderStandardEditActions", "nameForCreatedCell"]
 - ["PSo30UIResponderStandardEditActions", "navigationController"]
 - ["PSo30UIResponderStandardEditActions", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo30UIResponderStandardEditActions", "navigationControllerSupportedInterfaceOrientations"]
@@ -2833,12 +2893,14 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "scrollViewWillEndDragging"]
 - !private ["PSo30UIResponderStandardEditActions", "sd_setImage"]
 - ["PSo30UIResponderStandardEditActions", "showCellTitleAlert"]
+- !private ["PSo30UIResponderStandardEditActions", "showsVerticalScrollIndicator"]
 - !private ["PSo30UIResponderStandardEditActions", "sourceType"]
 - ["PSo30UIResponderStandardEditActions", "storage"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "textFields"]
 - !private ["PSo30UIResponderStandardEditActions", "tintColor"]
 - ["PSo30UIResponderStandardEditActions", "uid"]
+- ["PSo30UIResponderStandardEditActions", "viewDidAppear"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewForZooming"]
 - ["PSo30UIResponderStandardEditActions", "viewForZoomingInScrollView"]
@@ -2850,6 +2912,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "delegate"]
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
 - !private ["CSo12UIScrollView", "reloadData"]
+- !private ["CSo12UIScrollView", "showsVerticalScrollIndicator"]
 - ["PSo20UIScrollViewDelegate", "Auth"]
 - !private ["PSo20UIScrollViewDelegate", "CGSize"]
 - !private ["PSo20UIScrollViewDelegate", "Database"]
@@ -2957,6 +3020,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "nameForCreatedCell"]
 - ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16UIStateRestoring", "navigationControllerSupportedInterfaceOrientations"]
@@ -2995,6 +3059,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "storage"]
 - !private ["PSo16UIStateRestoring", "textFields"]
 - ["PSo16UIStateRestoring", "uid"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZooming"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
@@ -3056,6 +3121,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "nameForCreatedCell"]
 - ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UITraitEnvironment", "navigationControllerSupportedInterfaceOrientations"]
@@ -3093,12 +3159,14 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - !private ["PSo18UITraitEnvironment", "sd_setImage"]
 - ["PSo18UITraitEnvironment", "showCellTitleAlert"]
+- !private ["PSo18UITraitEnvironment", "showsVerticalScrollIndicator"]
 - !private ["PSo18UITraitEnvironment", "sourceType"]
 - ["PSo18UITraitEnvironment", "storage"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textFields"]
 - !private ["PSo18UITraitEnvironment", "tintColor"]
 - ["PSo18UITraitEnvironment", "uid"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZooming"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
@@ -3120,10 +3188,12 @@ depends-member:
 - !private ["CSo6UIView", "placeholder"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "sd_setImage"]
+- !private ["CSo6UIView", "showsVerticalScrollIndicator"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "tintColor"]
 - !private ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Auth"]
+- ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CGSize"]
 - ["CSo16UIViewController", "ChatCell"]
 - !private ["CSo16UIViewController", "DataSnapshot"]
@@ -3148,6 +3218,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIImageJPEGRepresentation"]
 - ["CSo16UIViewController", "UIImagePickerController"]
 - !private ["CSo16UIViewController", "UIImagePickerControllerOriginalImage"]
+- ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UIRefreshControl"]
 - !private ["CSo16UIViewController", "URL"]
 - !private ["CSo16UIViewController", "UserDefaults"]
@@ -3172,6 +3243,7 @@ depends-member:
 - ["CSo16UIViewController", "indexPathForPreferredFocusedView"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "nameForCreatedCell"]
 - ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo16UIViewController", "navigationControllerSupportedInterfaceOrientations"]
@@ -3210,6 +3282,7 @@ depends-member:
 - ["CSo16UIViewController", "storage"]
 - !private ["CSo16UIViewController", "textFields"]
 - ["CSo16UIViewController", "uid"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZooming"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
@@ -3260,6 +3333,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "placeholder"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "sd_setImage"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "showsVerticalScrollIndicator"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tintColor"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
@@ -3281,9 +3355,9 @@ depends-member:
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- ["Ps26_ExpressibleByColorLiteral", "blue"]
 - !private ["Ps26_ExpressibleByColorLiteral", "cgColor"]
-- !private ["Ps26_ExpressibleByColorLiteral", "init"]
+- !private ["Ps26_ExpressibleByColorLiteral", "darkGray"]
+- ["Ps26_ExpressibleByColorLiteral", "init"]
 - !private ["Ps34_ExpressibleByFileReferenceLiteral", "absoluteString"]
 - !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
@@ -3324,7 +3398,6 @@ depends-member:
 - !private ["Ps9_Hashable", "attributedTitle"]
 - ["Ps9_Hashable", "attributesForRefresherTitle"]
 - ["Ps9_Hashable", "auth"]
-- ["Ps9_Hashable", "blue"]
 - !private ["Ps9_Hashable", "borderColor"]
 - !private ["Ps9_Hashable", "borderWidth"]
 - !private ["Ps9_Hashable", "bounds"]
@@ -3341,6 +3414,7 @@ depends-member:
 - ["Ps9_Hashable", "collectionView"]
 - !private ["Ps9_Hashable", "cornerRadius"]
 - ["Ps9_Hashable", "currentUser"]
+- !private ["Ps9_Hashable", "darkGray"]
 - !private ["Ps9_Hashable", "dataSource"]
 - !private ["Ps9_Hashable", "database"]
 - !private ["Ps9_Hashable", "default"]
@@ -3363,6 +3437,7 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "layer"]
 - !private ["Ps9_Hashable", "masksToBounds"]
+- ["Ps9_Hashable", "nameForCreatedCell"]
 - ["Ps9_Hashable", "navigationController"]
 - ["Ps9_Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9_Hashable", "navigationControllerSupportedInterfaceOrientations"]
@@ -3407,6 +3482,7 @@ depends-member:
 - !private ["Ps9_Hashable", "sd_setImage"]
 - !private ["Ps9_Hashable", "setValue"]
 - ["Ps9_Hashable", "showCellTitleAlert"]
+- !private ["Ps9_Hashable", "showsVerticalScrollIndicator"]
 - !private ["Ps9_Hashable", "signOut"]
 - !private ["Ps9_Hashable", "sourceType"]
 - !private ["Ps9_Hashable", "standard"]
@@ -3418,6 +3494,7 @@ depends-member:
 - !private ["Ps9_Hashable", "title"]
 - ["Ps9_Hashable", "uid"]
 - !private ["Ps9_Hashable", "value"]
+- ["Ps9_Hashable", "viewDidAppear"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "viewForZooming"]
 - ["Ps9_Hashable", "viewForZoomingInScrollView"]
@@ -3844,4 +3921,4 @@ depends-external:
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
-interface-hash: "dfc48cfa98d3614c22732d99cfafce47"
+interface-hash: "b1231c8ed4e4349c6982642ca5facd23"

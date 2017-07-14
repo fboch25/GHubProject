@@ -23,9 +23,10 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     let uid = Auth.auth().currentUser!.uid
     // Refresh
     let refresher = UIRefreshControl()
-    let attributesForRefresherTitle = [NSForegroundColorAttributeName: UIColor.blue]
+    let attributesForRefresherTitle = [NSForegroundColorAttributeName: UIColor(r: 14, g: 122, b: 250)]
     // CollectionView
-    @IBOutlet weak var photoCollectionView: UICollectionView!
+    @IBOutlet weak var photoCollectionView: UICollectionView!   
+    @IBOutlet weak var nameForCreatedCell: UILabel!
     // Instance of a class
     var chatCellView: ChatCell?
     
@@ -49,6 +50,10 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
        checkIfUserLoggedIn()
         // CollectionView Data Loading
         photoCollectionViewDataLoad()
+        //photoCollectionView.backgroundView = indicator
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -57,7 +62,8 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     // Refresh
     func refreshPhotoCollectionView() {
         self.photoCollectionView.alwaysBounceVertical = true
-        self.refresher.tintColor = UIColor.blue
+        self.photoCollectionView.showsVerticalScrollIndicator = false 
+        self.refresher.tintColor = UIColor(r: 14, g: 122, b: 254)
         self.refresher.attributedTitle = NSAttributedString(string: "Refreshing...", attributes: attributesForRefresherTitle)
         self.refresher.addTarget(self, action: #selector(fetchData), for: .valueChanged)
         self.photoCollectionView.addSubview(refresher)
@@ -83,9 +89,9 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
             }
         }
         cell.layer.borderWidth = 0.5
-        cell.layer.borderColor = UIColor.blue.cgColor
+        cell.layer.borderColor = UIColor.darkGray.cgColor
         cell.layer.masksToBounds = true
-        cell.layer.cornerRadius = 6
+        cell.layer.cornerRadius = 8
         
         return cell
     }
@@ -222,7 +228,7 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
             }, withCancel: nil )
         }
     } 
-    // User logged out
+    // MARK: Log Out
     @IBAction func handleLogout(_ sender: Any) {
         do {
             try Auth.auth().signOut()
