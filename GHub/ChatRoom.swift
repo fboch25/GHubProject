@@ -23,7 +23,7 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     let uid = Auth.auth().currentUser!.uid
     // Refresh
     let refresher = UIRefreshControl()
-    let attributesForRefresherTitle = [NSForegroundColorAttributeName: UIColor(r: 14, g: 122, b: 250)]
+    let attributesForRefresherTitle = [NSForegroundColorAttributeName: UIColor(r: 14, g: 122, b: 254)]
     // CollectionView
     @IBOutlet weak var photoCollectionView: UICollectionView!
     @IBOutlet weak var nameForCreatedCell: UILabel!

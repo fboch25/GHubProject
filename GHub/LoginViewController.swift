@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
         // Hides keyboard by tapping anywhere on the screen
         hideKeyboardWhenTappedAround()
         // Setup view
-        view.backgroundColor = UIColor.black
+        view.backgroundColor = UIColor(red:0.79, green:0.78, blue:0.78, alpha:1.0)
         view.addSubview(inputsContainerView)
         view.addSubview(loginRegisterButton)
         view.addSubview(profileImageView)
@@ -62,7 +62,7 @@ class LoginViewController: UIViewController {
     }()
     lazy var loginRegisterButton: UIButton = {
         let button = UIButton(type: .system)
-        button.backgroundColor = UIColor(r: 14, g: 122, b: 250)
+        button.backgroundColor = UIColor(r: 14, g: 122, b: 254)
         button.setTitle("Register", for: UIControlState())
         button.setTitleColor(UIColor.black, for: UIControlState())
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -185,7 +185,7 @@ class LoginViewController: UIViewController {
     lazy var loginRegisterSegmentedControl: UISegmentedControl = {
         let sc = UISegmentedControl(items: ["Login", "Register"])
         sc.translatesAutoresizingMaskIntoConstraints = false
-        sc.tintColor = UIColor.white
+        sc.tintColor =  UIColor(r: 14, g: 122, b: 254)
         sc.selectedSegmentIndex = 1
         sc.addTarget(self, action: #selector(handleLoginRegisterChange), for: .valueChanged)
         return sc
