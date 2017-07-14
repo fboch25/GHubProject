@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0EACA9F4F7406455414355DA /* Pods_GHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A8A77D8B7B80E304E5EDD3 /* Pods_GHubTests.framework */; };
 		7C5FBC43CD29C6F0A138B23D /* Pods_GHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9971A7108A5C6AA747823E63 /* Pods_GHub.framework */; };
+		FC1278331F1949CE007BBF69 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1278321F1949CE007BBF69 /* DetailsViewController.swift */; };
 		FCE2FA051F10988600A7FCA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE2FA041F10988600A7FCA4 /* AppDelegate.swift */; };
 		FCE2FA0A1F10988600A7FCA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE2FA081F10988600A7FCA4 /* Main.storyboard */; };
 		FCE2FA0C1F10988600A7FCA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE2FA0B1F10988600A7FCA4 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		AA72C84752829DFD13497781 /* Pods-GHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-GHub/Pods-GHub.release.xcconfig"; sourceTree = "<group>"; };
 		AE7318A289E0124F4B165285 /* Pods-GHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHubTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GHubTests/Pods-GHubTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0A8A77D8B7B80E304E5EDD3 /* Pods_GHubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GHubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1278321F1949CE007BBF69 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		FCE2FA011F10988600A7FCA4 /* GHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE2FA041F10988600A7FCA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCE2FA091F10988600A7FCA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			children = (
 				FCE2FA261F1099D800A7FCA4 /* ChatRoom.swift */,
 				FCE2FA281F109AFF00A7FCA4 /* ChatCell.swift */,
+				FC1278321F1949CE007BBF69 /* DetailsViewController.swift */,
 			);
 			name = ChatRoomView;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				FCE2FA271F1099D800A7FCA4 /* ChatRoom.swift in Sources */,
 				FCE2FA051F10988600A7FCA4 /* AppDelegate.swift in Sources */,
 				FCE2FA291F109AFF00A7FCA4 /* ChatCell.swift in Sources */,
+				FC1278331F1949CE007BBF69 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

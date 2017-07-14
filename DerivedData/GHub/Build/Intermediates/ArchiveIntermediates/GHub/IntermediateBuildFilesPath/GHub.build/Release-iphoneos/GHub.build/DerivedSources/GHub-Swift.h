@@ -145,6 +145,7 @@ SWIFT_CLASS("_TtC4GHub8ChatCell")
 @interface ChatCell : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified chatImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified chatLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameForCreatedCell;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -167,8 +168,10 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 @property (nonatomic, readonly, strong) UIRefreshControl * _Nonnull refresher;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, UIColor *> * _Nonnull attributesForRefresherTitle;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified photoCollectionView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameForCreatedCell;
 @property (nonatomic, strong) ChatCell * _Nullable chatCellView;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (void)refreshPhotoCollectionView;
 - (void)photoCollectionViewDataLoad;
@@ -185,6 +188,13 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 - (void)showCellTitleAlert;
 - (IBAction)didSelectCreateButton;
 - (IBAction)handleLogout:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4GHub21DetailsViewController")
+@interface DetailsViewController : ChatRoom
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

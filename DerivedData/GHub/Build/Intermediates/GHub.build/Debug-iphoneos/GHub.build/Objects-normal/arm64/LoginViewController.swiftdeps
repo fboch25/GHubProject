@@ -8,66 +8,66 @@ provides-member:
 - ["C4GHub19LoginViewController", "hideKeyboardWhenTappedAround"]
 - ["C4GHub19LoginViewController", "dismissKeyboard"]
 provides-dynamic-lookup:
-- "passwordTextFieldHeightAnchor"
-- "handleRegister"
-- "handleLoginRegisterChange"
-- "nameTextFieldHeightAnchor"
-- "emailTextField"
-- "emailTextFieldHeightAnchor"
-- "setupProfileImageView"
-- "setupLoginRegisterButton"
-- "viewDidLoad"
-- "setupLoginRegisterSegmentedControl"
-- "dismissKeyboard"
-- "hideKeyboardWhenTappedAround"
-- "signupErrorAlert"
-- "inputsContainerView"
-- "handleLogin"
-- "passwordTextField"
-- "profileImageView"
-- "emailSeparatorView"
-- "loginRegisterSegmentedControl"
-- "inputsContainerViewHeightAnchor"
-- "nameTextField"
-- "handleLoginRegister"
-- "viewDidAppear"
-- "nameSeparatorView"
 - "loginRegisterButton"
+- "passwordTextField"
+- "emailSeparatorView"
+- "handleLoginRegisterChange"
+- "setupLoginRegisterButton"
+- "nameTextField"
+- "inputsContainerViewHeightAnchor"
+- "profileImageView"
+- "setupProfileImageView"
+- "signupErrorAlert"
+- "nameTextFieldHeightAnchor"
+- "setupLoginRegisterSegmentedControl"
+- "passwordTextFieldHeightAnchor"
+- "hideKeyboardWhenTappedAround"
+- "handleRegister"
+- "nameSeparatorView"
+- "dismissKeyboard"
+- "loginRegisterSegmentedControl"
+- "handleLoginRegister"
+- "emailTextFieldHeightAnchor"
+- "handleLogin"
+- "inputsContainerView"
 - "loginErrorAlert"
+- "viewDidLoad"
 - "setupInputsContainerView"
+- "viewDidAppear"
+- "emailTextField"
 depends-top-level:
 - "StringLiteralType"
-- !private "UIFont"
-- "Dictionary"
-- !private "!="
-- !private "UIControlState"
-- !private "Database"
-- !private "Auth"
-- "UIView"
-- "UIColor"
-- !private "UIAlertController"
-- !private "/"
-- "UISegmentedControl"
-- "UIViewController"
-- "BooleanLiteralType"
-- !private "print"
-- !private "UIAlertAction"
-- !private "UIAlertControllerStyle"
 - "NSLayoutConstraint"
-- "String"
-- !private "User"
-- "TernaryPrecedence"
-- "UIImage"
-- !private "UserDefaults"
-- "LoginViewController"
-- "AssignmentPrecedence"
-- "UIButton"
-- "UITextField"
-- "Array"
-- "Bool"
 - "UIImageView"
+- !private "UIAlertAction"
+- !private "!="
+- !private "User"
+- "UIButton"
+- !private "UIAlertController"
+- "UITextField"
+- "UIImage"
+- !private "print"
+- !private "UIFont"
+- "UIView"
 - !private "UITapGestureRecognizer"
+- "BooleanLiteralType"
+- "Dictionary"
+- "LoginViewController"
+- "String"
+- !private "Database"
+- "TernaryPrecedence"
+- !private "Auth"
+- "UIViewController"
+- "UISegmentedControl"
+- !private "UIControlState"
+- "AssignmentPrecedence"
+- "Bool"
 - !private "=="
+- !private "UserDefaults"
+- !private "/"
+- "UIColor"
+- "Array"
+- !private "UIAlertControllerStyle"
 depends-member:
 - !private ["Ps9AnyObject", "Auth"]
 - !private ["Ps9AnyObject", "Database"]
@@ -92,7 +92,6 @@ depends-member:
 - !private ["Ps9AnyObject", "addTarget"]
 - !private ["Ps9AnyObject", "auth"]
 - ["Ps9AnyObject", "backgroundColor"]
-- !private ["Ps9AnyObject", "black"]
 - !private ["Ps9AnyObject", "boldSystemFont"]
 - !private ["Ps9AnyObject", "bottomAnchor"]
 - !private ["Ps9AnyObject", "centerXAnchor"]
@@ -242,7 +241,6 @@ depends-member:
 - !private ["Ps7CVarArg", "addTarget"]
 - !private ["Ps7CVarArg", "auth"]
 - ["Ps7CVarArg", "backgroundColor"]
-- !private ["Ps7CVarArg", "black"]
 - !private ["Ps7CVarArg", "boldSystemFont"]
 - !private ["Ps7CVarArg", "bottomAnchor"]
 - !private ["Ps7CVarArg", "centerXAnchor"]
@@ -352,7 +350,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "addTarget"]
 - !private ["Ps28CustomDebugStringConvertible", "auth"]
 - ["Ps28CustomDebugStringConvertible", "backgroundColor"]
-- !private ["Ps28CustomDebugStringConvertible", "black"]
 - !private ["Ps28CustomDebugStringConvertible", "boldSystemFont"]
 - !private ["Ps28CustomDebugStringConvertible", "bottomAnchor"]
 - !private ["Ps28CustomDebugStringConvertible", "centerXAnchor"]
@@ -466,7 +463,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addTarget"]
 - !private ["Ps23CustomStringConvertible", "auth"]
 - ["Ps23CustomStringConvertible", "backgroundColor"]
-- !private ["Ps23CustomStringConvertible", "black"]
 - !private ["Ps23CustomStringConvertible", "boldSystemFont"]
 - !private ["Ps23CustomStringConvertible", "bottomAnchor"]
 - !private ["Ps23CustomStringConvertible", "centerXAnchor"]
@@ -584,7 +580,6 @@ depends-member:
 - !private ["Ps9Equatable", "alert"]
 - !private ["Ps9Equatable", "auth"]
 - ["Ps9Equatable", "backgroundColor"]
-- !private ["Ps9Equatable", "black"]
 - !private ["Ps9Equatable", "boldSystemFont"]
 - !private ["Ps9Equatable", "bottomAnchor"]
 - !private ["Ps9Equatable", "centerXAnchor"]
@@ -708,7 +703,6 @@ depends-member:
 - !private ["Ps8Hashable", "alert"]
 - !private ["Ps8Hashable", "auth"]
 - ["Ps8Hashable", "backgroundColor"]
-- !private ["Ps8Hashable", "black"]
 - !private ["Ps8Hashable", "boldSystemFont"]
 - !private ["Ps8Hashable", "bottomAnchor"]
 - !private ["Ps8Hashable", "centerXAnchor"]
@@ -883,7 +877,6 @@ depends-member:
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
 - ["PSo8NSCoding", "backgroundColor"]
-- !private ["PSo8NSCoding", "black"]
 - !private ["PSo8NSCoding", "bottomAnchor"]
 - !private ["PSo8NSCoding", "centerXAnchor"]
 - !private ["PSo8NSCoding", "centerYAnchor"]
@@ -944,7 +937,6 @@ depends-member:
 - ["PSo8NSCoding", "white"]
 - !private ["PSo8NSCoding", "widthAnchor"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "black"]
 - !private ["PSo9NSCopying", "boldSystemFont"]
 - ["PSo9NSCopying", "init"]
 - ["PSo9NSCopying", "white"]
@@ -1039,7 +1031,6 @@ depends-member:
 - !private ["CSo8NSObject", "addTarget"]
 - !private ["CSo8NSObject", "auth"]
 - ["CSo8NSObject", "backgroundColor"]
-- !private ["CSo8NSObject", "black"]
 - !private ["CSo8NSObject", "boldSystemFont"]
 - !private ["CSo8NSObject", "bottomAnchor"]
 - !private ["CSo8NSObject", "centerXAnchor"]
@@ -1141,7 +1132,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "auth"]
 - ["PSo16NSObjectProtocol", "backgroundColor"]
-- !private ["PSo16NSObjectProtocol", "black"]
 - !private ["PSo16NSObjectProtocol", "boldSystemFont"]
 - !private ["PSo16NSObjectProtocol", "bottomAnchor"]
 - !private ["PSo16NSObjectProtocol", "centerXAnchor"]
@@ -1221,7 +1211,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "white"]
 - !private ["PSo16NSObjectProtocol", "widthAnchor"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "black"]
 - ["PSo14NSSecureCoding", "init"]
 - ["PSo14NSSecureCoding", "white"]
 - ["CSo8NSString", "init"]
@@ -1413,7 +1402,6 @@ depends-member:
 - !private ["CSo8UIButton", "widthAnchor"]
 - !private ["OSC12UIButtonType", "deinit"]
 - !private ["OSC12UIButtonType", "system"]
-- !private ["CSo7UIColor", "black"]
 - ["CSo7UIColor", "deinit"]
 - ["CSo7UIColor", "init"]
 - ["CSo7UIColor", "white"]
@@ -2165,7 +2153,6 @@ depends-member:
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- !private ["Ps26_ExpressibleByColorLiteral", "black"]
 - ["Ps26_ExpressibleByColorLiteral", "init"]
 - ["Ps26_ExpressibleByColorLiteral", "white"]
 - ["Ps26_ExpressibleByImageLiteral", "init"]
@@ -2195,7 +2182,6 @@ depends-member:
 - !private ["Ps9_Hashable", "alert"]
 - !private ["Ps9_Hashable", "auth"]
 - ["Ps9_Hashable", "backgroundColor"]
-- !private ["Ps9_Hashable", "black"]
 - !private ["Ps9_Hashable", "boldSystemFont"]
 - !private ["Ps9_Hashable", "bottomAnchor"]
 - !private ["Ps9_Hashable", "centerXAnchor"]
@@ -2612,4 +2598,4 @@ depends-external:
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
-interface-hash: "732fcd9e1fb3a5a3dd5e8361a83f01fe"
+interface-hash: "a923488e40aede9c885dc18a9cb76e80"

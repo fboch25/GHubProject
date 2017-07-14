@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -70,36 +70,24 @@
                                                         <constraint firstAttribute="height" constant="20" id="DzU-1w-fDK"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="highlightedColor" red="0.0" green="1" blue="0.1723624315" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjE-3g-32o">
-                                                    <rect key="frame" x="8" y="173" width="304" height="21"/>
-                                                    <color key="tintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="RXp-mK-CVB" firstAttribute="trailing" secondItem="deH-WR-nhy" secondAttribute="trailing" constant="8" id="5O7-sg-sWX"/>
                                             <constraint firstItem="deH-WR-nhy" firstAttribute="leading" secondItem="rdT-cv-yYT" secondAttribute="leading" constant="8" id="7FE-3n-1Ta"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="RjE-3g-32o" secondAttribute="bottom" constant="-4" id="8U0-W4-Zk2"/>
                                             <constraint firstItem="deH-WR-nhy" firstAttribute="top" secondItem="rdT-cv-yYT" secondAttribute="top" id="8Y0-gO-ZiT"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="RXp-mK-CVB" secondAttribute="bottom" constant="17" id="Egn-ce-2Rp"/>
-                                            <constraint firstItem="RjE-3g-32o" firstAttribute="leading" secondItem="deH-WR-nhy" secondAttribute="leading" id="H4B-ZM-lHw"/>
                                             <constraint firstItem="RXp-mK-CVB" firstAttribute="leading" secondItem="deH-WR-nhy" secondAttribute="leading" constant="-8" id="RX5-Eq-o65"/>
-                                            <constraint firstItem="RjE-3g-32o" firstAttribute="top" secondItem="RXp-mK-CVB" secondAttribute="bottom" id="Yng-nc-xsz"/>
                                             <constraint firstItem="RXp-mK-CVB" firstAttribute="top" secondItem="deH-WR-nhy" secondAttribute="bottom" constant="10" id="lhG-JG-zKk"/>
                                             <constraint firstAttribute="trailing" secondItem="deH-WR-nhy" secondAttribute="trailing" constant="8" id="nsS-Az-VNF"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="RjE-3g-32o" secondAttribute="trailing" constant="55" id="rIR-QB-4XY"/>
                                         </constraints>
                                         <size key="customSize" width="375" height="198"/>
                                         <connections>
                                             <outlet property="chatImage" destination="deH-WR-nhy" id="8l7-5v-Yfz"/>
                                             <outlet property="chatLabel" destination="RXp-mK-CVB" id="SKb-Y8-Kn8"/>
-                                            <outlet property="nameForCreatedCell" destination="RjE-3g-32o" id="IzU-cU-6XQ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -118,7 +106,9 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dco-3E-pa8">
                                 <rect key="frame" x="16" y="7" width="63" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log Out"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="handleLogout:" destination="HTi-cK-mrl" eventType="touchUpInside" id="K2f-92-hQF"/>
                                     <segue destination="ZgF-T7-c4a" kind="popoverPresentation" identifier="logOut" popoverAnchorView="dco-3E-pa8" id="EWI-29-FJE">
@@ -126,6 +116,7 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Z2A-sK-GK3">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="87B-yk-Oim">
@@ -133,12 +124,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="+">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="didSelectCreateButton" destination="HTi-cK-mrl" eventType="touchUpInside" id="Fhh-sU-2Xa"/>
                                 </connections>
                             </button>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -148,6 +140,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQB-hf-B72" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1490.4000000000001" y="-621.13943028485767"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="URj-E9-Zwh">
+            <objects>
+                <viewController id="0se-Jf-eqo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hbo-4d-f8q"/>
+                        <viewControllerLayoutGuide type="bottom" id="vlt-Qh-4pJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fSs-oG-Qbj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSM-Tn-QQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1968" y="47"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="WB5-r2-zGO">

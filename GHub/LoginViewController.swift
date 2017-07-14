@@ -62,9 +62,9 @@ class LoginViewController: UIViewController {
     }()
     lazy var loginRegisterButton: UIButton = {
         let button = UIButton(type: .system)
-        button.backgroundColor = UIColor(r: 14, g: 122, b: 254)
+        button.backgroundColor = UIColor(r: 0, g: 51, b: 102)
         button.setTitle("Register", for: UIControlState())
-        button.setTitleColor(UIColor.black, for: UIControlState())
+        button.setTitleColor(UIColor.white, for: UIControlState())
         button.translatesAutoresizingMaskIntoConstraints = false
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         button.addTarget(self, action: #selector(handleLoginRegister), for: .touchUpInside)
@@ -185,7 +185,7 @@ class LoginViewController: UIViewController {
     lazy var loginRegisterSegmentedControl: UISegmentedControl = {
         let sc = UISegmentedControl(items: ["Login", "Register"])
         sc.translatesAutoresizingMaskIntoConstraints = false
-        sc.tintColor =  UIColor(r: 14, g: 122, b: 254)
+        sc.tintColor =  UIColor(r: 0, g: 51, b: 102)
         sc.selectedSegmentIndex = 1
         sc.addTarget(self, action: #selector(handleLoginRegisterChange), for: .valueChanged)
         return sc

@@ -10,82 +10,82 @@ provides-member:
 - ["CSo7UIColor", ""]
 - ["CSo7UIColor", "init"]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "refresher"
-- "ref"
+- "attributesForRefresherTitle"
+- "picker"
+- "openPhotoLibrary"
+- "chatCellView"
 - "viewDidAppear"
 - "refreshPhotoCollectionView"
-- "openPhotoLibrary"
-- "picker"
-- "accessPhotoControls"
-- "openCamera"
-- "fetchData"
-- "attributesForRefresherTitle"
-- "chatCellView"
 - "imagePickerController"
 - "showCellTitleAlert"
+- "ref"
 - "collectionView"
 - "collectionView"
 - "collectionView"
 - "photoCollectionView"
-- "saveToFirebase"
+- "handleLogout"
+- "openCamera"
 - "didSelectCreateButton"
 - "nameForCreatedCell"
-- "uid"
-- "imagePickerControllerDidCancel"
-- "handleLogout"
-- "viewDidLoad"
 - "photoCollectionViewDataLoad"
+- "imagePickerControllerDidCancel"
+- "didReceiveMemoryWarning"
+- "fetchData"
+- "viewDidLoad"
+- "uid"
 - "storage"
+- "refresher"
+- "saveToFirebase"
+- "accessPhotoControls"
 depends-top-level:
-- "UINavigationControllerDelegate"
-- !private "StringLiteralType"
-- !private "UserDefaults"
-- "UIImagePickerControllerDelegate"
-- !private "UIImageJPEGRepresentation"
-- "UICollectionViewDataSource"
-- "CGSize"
-- "UICollectionViewDelegateFlowLayout"
-- "Storage"
-- !private "UIAlertController"
 - !private "??"
 - "UICollectionViewDelegate"
-- "Int"
-- "ChatRoom"
-- !private "NSAttributedString"
-- !private "print"
+- !private "UIImageJPEGRepresentation"
+- "CGSize"
+- !private "StringLiteralType"
+- !private "UserDefaults"
 - !private "BooleanLiteralType"
-- !private "/"
-- !private "UIAlertActionStyle"
-- "UIRefreshControl"
-- "IndexPath"
-- "Auth"
-- !private "UIImagePickerControllerOriginalImage"
+- "UIImage"
 - "UIImagePickerController"
-- "UIViewController"
-- !private "Database"
-- "Bool"
-- !private "=="
-- "AssignmentPrecedence"
+- !private "UIAlertController"
+- "String"
+- !private "UIAlertActionStyle"
+- "UIColor"
+- !private "print"
+- "Dictionary"
+- "DatabaseReference"
+- "UICollectionViewCell"
+- !private "DataSnapshot"
+- !private "/"
+- "UIImagePickerControllerDelegate"
+- "UILabel"
+- !private "arc4random"
+- "UINavigationControllerDelegate"
+- !private "NSAttributedString"
+- "UICollectionViewDelegateFlowLayout"
+- "UICollectionView"
 - "CastingPrecedence"
-- !private "UIAlertControllerStyle"
+- "Int"
+- "UICollectionViewDataSource"
+- "AssignmentPrecedence"
+- !private "=="
+- "ChatCell"
+- "Storage"
+- "Bool"
+- "ChatRoom"
 - !private "UIAlertAction"
 - !private "AnyObject"
-- "UIImage"
-- "UICollectionViewLayout"
-- "ChatCell"
-- "Dictionary"
-- !private "URL"
 - "NSForegroundColorAttributeName"
 - "CGFloat"
-- "UICollectionViewCell"
-- "DatabaseReference"
-- "String"
-- !private "DataSnapshot"
-- "UICollectionView"
-- "UIColor"
-- !private "arc4random"
-- "UILabel"
+- "UIViewController"
+- !private "UIAlertControllerStyle"
+- !private "UIImagePickerControllerOriginalImage"
+- "IndexPath"
+- "UIRefreshControl"
+- "Auth"
+- "UICollectionViewLayout"
+- !private "URL"
+- !private "Database"
 depends-member:
 - ["Ps9AnyObject", "Auth"]
 - !private ["Ps9AnyObject", "CGSize"]
@@ -158,7 +158,6 @@ depends-member:
 - ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9AnyObject", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["Ps9AnyObject", "navigationItem"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
 - ["Ps9AnyObject", "object"]
@@ -206,7 +205,6 @@ depends-member:
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "textFields"]
 - !private ["Ps9AnyObject", "tintColor"]
-- !private ["Ps9AnyObject", "title"]
 - ["Ps9AnyObject", "uid"]
 - !private ["Ps9AnyObject", "value"]
 - ["Ps9AnyObject", "viewDidAppear"]
@@ -385,7 +383,6 @@ depends-member:
 - ["Ps7CVarArg", "navigationController"]
 - ["Ps7CVarArg", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps7CVarArg", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["Ps7CVarArg", "navigationItem"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInCollectionView"]
 - ["Ps7CVarArg", "object"]
@@ -435,7 +432,6 @@ depends-member:
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "textFields"]
 - !private ["Ps7CVarArg", "tintColor"]
-- !private ["Ps7CVarArg", "title"]
 - ["Ps7CVarArg", "uid"]
 - !private ["Ps7CVarArg", "value"]
 - ["Ps7CVarArg", "viewDidAppear"]
@@ -500,7 +496,6 @@ depends-member:
 - ["C4GHub8ChatRoom", "navigationController"]
 - ["C4GHub8ChatRoom", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["C4GHub8ChatRoom", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["C4GHub8ChatRoom", "navigationItem"]
 - ["C4GHub8ChatRoom", "numberOfSections"]
 - ["C4GHub8ChatRoom", "numberOfSectionsInCollectionView"]
 - ["C4GHub8ChatRoom", "object"]
@@ -640,7 +635,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps28CustomDebugStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["Ps28CustomDebugStringConvertible", "navigationItem"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
 - ["Ps28CustomDebugStringConvertible", "object"]
@@ -692,7 +686,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "textFields"]
 - !private ["Ps28CustomDebugStringConvertible", "tintColor"]
-- !private ["Ps28CustomDebugStringConvertible", "title"]
 - ["Ps28CustomDebugStringConvertible", "uid"]
 - !private ["Ps28CustomDebugStringConvertible", "value"]
 - ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
@@ -817,7 +810,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps23CustomStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["Ps23CustomStringConvertible", "navigationItem"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
 - ["Ps23CustomStringConvertible", "object"]
@@ -868,7 +860,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "textFields"]
 - !private ["Ps23CustomStringConvertible", "tintColor"]
-- !private ["Ps23CustomStringConvertible", "title"]
 - ["Ps23CustomStringConvertible", "uid"]
 - !private ["Ps23CustomStringConvertible", "value"]
 - ["Ps23CustomStringConvertible", "viewDidAppear"]
@@ -992,7 +983,6 @@ depends-member:
 - ["Ps9Equatable", "navigationController"]
 - ["Ps9Equatable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9Equatable", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["Ps9Equatable", "navigationItem"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInCollectionView"]
 - ["Ps9Equatable", "object"]
@@ -1042,7 +1032,6 @@ depends-member:
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "textFields"]
 - !private ["Ps9Equatable", "tintColor"]
-- !private ["Ps9Equatable", "title"]
 - ["Ps9Equatable", "uid"]
 - !private ["Ps9Equatable", "value"]
 - !private ["Ps9Equatable", "valueChanged"]
@@ -1163,7 +1152,6 @@ depends-member:
 - ["Ps8Hashable", "navigationController"]
 - ["Ps8Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps8Hashable", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["Ps8Hashable", "navigationItem"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInCollectionView"]
 - ["Ps8Hashable", "object"]
@@ -1213,7 +1201,6 @@ depends-member:
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "textFields"]
 - !private ["Ps8Hashable", "tintColor"]
-- !private ["Ps8Hashable", "title"]
 - ["Ps8Hashable", "uid"]
 - !private ["Ps8Hashable", "value"]
 - ["Ps8Hashable", "viewDidAppear"]
@@ -1363,7 +1350,6 @@ depends-member:
 - ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo8NSCoding", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo8NSCoding", "navigationItem"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
 - ["PSo8NSCoding", "object"]
@@ -1403,7 +1389,6 @@ depends-member:
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textFields"]
 - !private ["PSo8NSCoding", "tintColor"]
-- !private ["PSo8NSCoding", "title"]
 - ["PSo8NSCoding", "uid"]
 - ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
@@ -1459,7 +1444,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInCollectionView"]
 - ["PSo26NSExtensionRequestHandling", "object"]
@@ -1587,7 +1571,6 @@ depends-member:
 - ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo8NSObject", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["CSo8NSObject", "navigationItem"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
 - ["CSo8NSObject", "object"]
@@ -1635,7 +1618,6 @@ depends-member:
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textFields"]
 - !private ["CSo8NSObject", "tintColor"]
-- !private ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "uid"]
 - !private ["CSo8NSObject", "value"]
 - ["CSo8NSObject", "viewDidAppear"]
@@ -1712,7 +1694,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16NSObjectProtocol", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo16NSObjectProtocol", "navigationItem"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
 - ["PSo16NSObjectProtocol", "object"]
@@ -1760,7 +1741,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textFields"]
 - !private ["PSo16NSObjectProtocol", "tintColor"]
-- !private ["PSo16NSObjectProtocol", "title"]
 - ["PSo16NSObjectProtocol", "uid"]
 - !private ["PSo16NSObjectProtocol", "value"]
 - ["PSo16NSObjectProtocol", "viewDidAppear"]
@@ -2000,7 +1980,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo21UIAppearanceContainer", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo21UIAppearanceContainer", "navigationItem"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInCollectionView"]
 - ["PSo21UIAppearanceContainer", "object"]
@@ -2095,7 +2074,6 @@ depends-member:
 - ["PSo26UICollectionViewDataSource", "navigationController"]
 - ["PSo26UICollectionViewDataSource", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo26UICollectionViewDataSource", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo26UICollectionViewDataSource", "navigationItem"]
 - ["PSo26UICollectionViewDataSource", "numberOfSections"]
 - ["PSo26UICollectionViewDataSource", "numberOfSectionsInCollectionView"]
 - !private ["PSo26UICollectionViewDataSource", "object"]
@@ -2164,7 +2142,6 @@ depends-member:
 - ["PSo24UICollectionViewDelegate", "navigationController"]
 - ["PSo24UICollectionViewDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo24UICollectionViewDelegate", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo24UICollectionViewDelegate", "navigationItem"]
 - ["PSo24UICollectionViewDelegate", "numberOfSections"]
 - ["PSo24UICollectionViewDelegate", "numberOfSectionsInCollectionView"]
 - !private ["PSo24UICollectionViewDelegate", "object"]
@@ -2233,7 +2210,6 @@ depends-member:
 - ["PSo34UICollectionViewDelegateFlowLayout", "navigationController"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo34UICollectionViewDelegateFlowLayout", "navigationItem"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "numberOfSections"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "numberOfSectionsInCollectionView"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "object"]
@@ -2316,7 +2292,6 @@ depends-member:
 - ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIContentContainer", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo18UIContentContainer", "navigationItem"]
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "numberOfSectionsInCollectionView"]
 - ["PSo18UIContentContainer", "object"]
@@ -2461,7 +2436,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIFocusEnvironment", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo18UIFocusEnvironment", "navigationItem"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInCollectionView"]
 - ["PSo18UIFocusEnvironment", "object"]
@@ -2567,7 +2541,6 @@ depends-member:
 - ["PSo31UIImagePickerControllerDelegate", "navigationController"]
 - ["PSo31UIImagePickerControllerDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo31UIImagePickerControllerDelegate", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo31UIImagePickerControllerDelegate", "navigationItem"]
 - ["PSo31UIImagePickerControllerDelegate", "numberOfSections"]
 - ["PSo31UIImagePickerControllerDelegate", "numberOfSectionsInCollectionView"]
 - !private ["PSo31UIImagePickerControllerDelegate", "object"]
@@ -2649,7 +2622,6 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "navigationController"]
 - ["PSo30UINavigationControllerDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo30UINavigationControllerDelegate", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo30UINavigationControllerDelegate", "navigationItem"]
 - ["PSo30UINavigationControllerDelegate", "numberOfSections"]
 - ["PSo30UINavigationControllerDelegate", "numberOfSectionsInCollectionView"]
 - !private ["PSo30UINavigationControllerDelegate", "object"]
@@ -2685,8 +2657,6 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "viewForZooming"]
 - ["PSo30UINavigationControllerDelegate", "viewForZoomingInScrollView"]
 - ["PSo30UINavigationControllerDelegate", ""]
-- !private ["CSo16UINavigationItem", "deinit"]
-- !private ["CSo16UINavigationItem", "title"]
 - !private ["CSo16UIRefreshControl", "addTarget"]
 - !private ["CSo16UIRefreshControl", "attributedTitle"]
 - ["CSo16UIRefreshControl", "deinit"]
@@ -2760,7 +2730,6 @@ depends-member:
 - ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo11UIResponder", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["CSo11UIResponder", "navigationItem"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInCollectionView"]
 - ["CSo11UIResponder", "object"]
@@ -2859,7 +2828,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "navigationController"]
 - ["PSo30UIResponderStandardEditActions", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo30UIResponderStandardEditActions", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo30UIResponderStandardEditActions", "navigationItem"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSectionsInCollectionView"]
 - ["PSo30UIResponderStandardEditActions", "object"]
@@ -2946,7 +2914,6 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "navigationController"]
 - ["PSo20UIScrollViewDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo20UIScrollViewDelegate", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo20UIScrollViewDelegate", "navigationItem"]
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInCollectionView"]
 - !private ["PSo20UIScrollViewDelegate", "object"]
@@ -3024,7 +2991,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16UIStateRestoring", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo16UIStateRestoring", "navigationItem"]
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInCollectionView"]
 - ["PSo16UIStateRestoring", "object"]
@@ -3125,7 +3091,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UITraitEnvironment", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["PSo18UITraitEnvironment", "navigationItem"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInCollectionView"]
 - ["PSo18UITraitEnvironment", "object"]
@@ -3247,7 +3212,6 @@ depends-member:
 - ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo16UIViewController", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["CSo16UIViewController", "navigationItem"]
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "numberOfSectionsInCollectionView"]
 - ["CSo16UIViewController", "object"]
@@ -3441,7 +3405,6 @@ depends-member:
 - ["Ps9_Hashable", "navigationController"]
 - ["Ps9_Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9_Hashable", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["Ps9_Hashable", "navigationItem"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInCollectionView"]
 - ["Ps9_Hashable", "object"]
@@ -3491,7 +3454,6 @@ depends-member:
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "textFields"]
 - !private ["Ps9_Hashable", "tintColor"]
-- !private ["Ps9_Hashable", "title"]
 - ["Ps9_Hashable", "uid"]
 - !private ["Ps9_Hashable", "value"]
 - ["Ps9_Hashable", "viewDidAppear"]
@@ -3673,7 +3635,6 @@ depends-nominal:
 - !private "CSo7UILabel"
 - !private "CSo22UINavigationController"
 - "PSo30UINavigationControllerDelegate"
-- !private "CSo16UINavigationItem"
 - "CSo16UIRefreshControl"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
@@ -3921,4 +3882,4 @@ depends-external:
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
-interface-hash: "f44407db930bfb4bd0d9e1188de5dcaa"
+interface-hash: "ce849de8fb745c7f3ffe76c096679423"

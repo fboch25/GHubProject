@@ -23,7 +23,7 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     let uid = Auth.auth().currentUser!.uid
     // Refresh
     let refresher = UIRefreshControl()
-    let attributesForRefresherTitle = [NSForegroundColorAttributeName: UIColor(r: 14, g: 122, b: 254)]
+    let attributesForRefresherTitle = [NSForegroundColorAttributeName: UIColor(r: 0, g: 51, b: 102)]
     // CollectionView
     @IBOutlet weak var photoCollectionView: UICollectionView!
     @IBOutlet weak var nameForCreatedCell: UILabel!
@@ -44,13 +44,13 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         // Firebase Data
         ref = Database.database().reference()
         fetchData()
+        self.photoCollectionView.reloadData()
         // Refresh Photo Collection View
         refreshPhotoCollectionView()
         // User Logged In
        checkIfUserLoggedIn()
         // CollectionView Data Loading
         photoCollectionViewDataLoad()
-        //photoCollectionView.backgroundView = indicator
     }
     override func viewDidAppear(_ animated: Bool) {
         
@@ -63,7 +63,7 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     func refreshPhotoCollectionView() {
         self.photoCollectionView.alwaysBounceVertical = true
         self.photoCollectionView.showsVerticalScrollIndicator = false 
-        self.refresher.tintColor = UIColor(r: 14, g: 122, b: 254)
+        self.refresher.tintColor = UIColor(r: 0, g: 51, b: 102)
         self.refresher.attributedTitle = NSAttributedString(string: "Refreshing...", attributes: attributesForRefresherTitle)
         self.refresher.addTarget(self, action: #selector(fetchData), for: .valueChanged)
         self.photoCollectionView.addSubview(refresher)
@@ -103,6 +103,12 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         let itemHeight = photoCollectionView.bounds.height / 2
         return CGSize(width: itemWidth, height: itemHeight)
     }
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        if let indexPath = photoCollectionView?.indexPathsForSelectedItems?.first, let destination = segue.destination as? DetailsViewController {
+            destination.object = objects[indexPath.item]
+        }
+    }*/
     // MARK: Firebase Database saving posts
     func fetchData() {
         ref?.child("posts").observeSingleEvent(of: .value, with: { (snapshot) in
@@ -112,11 +118,12 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
                     if let imagePath = value["image"] as? String, let title = value["title"] as? String {
                         let aObject = Object(image: nil, imagePath: imagePath, title: title)
                         self.objects.insert(aObject, at: 0)
+                        self.photoCollectionView.reloadData()
+                        self.refresher.endRefreshing()
                     }
                 }
             })
-            self.photoCollectionView.reloadData()
-            self.refresher.endRefreshing()
+            //
         })
     }
     func saveToFirebase() {
@@ -222,7 +229,8 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
             Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
                 
                 if let dictonary = snapshot.value as? [String: AnyObject] {
-                    self.navigationItem.title = (dictonary["name"] as? String)
+                   // self.navigationItem.title = (dictonary["name"] as? String)
+                    // **cell name needed stil**
                 }
                 
             }, withCancel: nil )

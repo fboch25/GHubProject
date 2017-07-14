@@ -6,14 +6,14 @@ provides-nominal:
 provides-member:
 - ["C4GHub8ChatCell", ""]
 provides-dynamic-lookup:
-- "nameForCreatedCell"
 - "chatLabel"
 - "chatImage"
+- "nameForCreatedCell"
 depends-top-level:
 - "UIImageView"
-- "UILabel"
-- "ChatCell"
 - "UICollectionViewCell"
+- "ChatCell"
+- "UILabel"
 depends-member:
 - ["Ps9AnyObject", "chatImage"]
 - ["Ps9AnyObject", "chatLabel"]

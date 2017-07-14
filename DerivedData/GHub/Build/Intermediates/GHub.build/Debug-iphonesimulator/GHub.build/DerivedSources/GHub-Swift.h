@@ -157,6 +157,7 @@ SWIFT_CLASS("_TtC4GHub8ChatCell")
 @class UIColor;
 @class UICollectionView;
 @class UICollectionViewLayout;
+@class UIStoryboardSegue;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC4GHub8ChatRoom")
@@ -178,6 +179,7 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (void)fetchData;
 - (void)saveToFirebase;
 - (void)openCamera;
@@ -188,6 +190,13 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 - (void)showCellTitleAlert;
 - (IBAction)didSelectCreateButton;
 - (IBAction)handleLogout:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4GHub21DetailsViewController")
+@interface DetailsViewController : ChatRoom
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
