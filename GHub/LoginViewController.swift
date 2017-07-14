@@ -62,7 +62,7 @@ class LoginViewController: UIViewController {
     }()
     lazy var loginRegisterButton: UIButton = {
         let button = UIButton(type: .system)
-        button.backgroundColor = UIColor.blue//(r: 80, g: 101, b: 161)
+        button.backgroundColor = UIColor(r: 14, g: 122, b: 250)
         button.setTitle("Register", for: UIControlState())
         button.setTitleColor(UIColor.black, for: UIControlState())
         button.translatesAutoresizingMaskIntoConstraints = false

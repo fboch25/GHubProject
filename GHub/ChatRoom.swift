@@ -25,7 +25,7 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     let refresher = UIRefreshControl()
     let attributesForRefresherTitle = [NSForegroundColorAttributeName: UIColor(r: 14, g: 122, b: 250)]
     // CollectionView
-    @IBOutlet weak var photoCollectionView: UICollectionView!   
+    @IBOutlet weak var photoCollectionView: UICollectionView!
     @IBOutlet weak var nameForCreatedCell: UILabel!
     // Instance of a class
     var chatCellView: ChatCell?

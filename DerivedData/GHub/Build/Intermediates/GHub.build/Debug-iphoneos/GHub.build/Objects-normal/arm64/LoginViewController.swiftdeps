@@ -8,66 +8,66 @@ provides-member:
 - ["C4GHub19LoginViewController", "hideKeyboardWhenTappedAround"]
 - ["C4GHub19LoginViewController", "dismissKeyboard"]
 provides-dynamic-lookup:
-- "emailTextField"
-- "loginRegisterSegmentedControl"
-- "handleRegister"
-- "profileImageView"
-- "setupLoginRegisterSegmentedControl"
+- "emailSeparatorView"
+- "nameTextField"
+- "loginRegisterButton"
 - "signupErrorAlert"
+- "passwordTextField"
+- "setupLoginRegisterSegmentedControl"
+- "loginErrorAlert"
+- "setupLoginRegisterButton"
+- "viewDidLoad"
+- "profileImageView"
+- "handleLoginRegisterChange"
+- "setupProfileImageView"
 - "hideKeyboardWhenTappedAround"
 - "dismissKeyboard"
-- "handleLogin"
-- "nameTextField"
-- "viewDidLoad"
-- "loginRegisterButton"
-- "setupLoginRegisterButton"
-- "setupProfileImageView"
 - "viewDidAppear"
-- "handleLoginRegisterChange"
-- "passwordTextFieldHeightAnchor"
-- "emailSeparatorView"
-- "passwordTextField"
-- "loginErrorAlert"
+- "handleLogin"
 - "setupInputsContainerView"
-- "nameSeparatorView"
-- "nameTextFieldHeightAnchor"
-- "inputsContainerViewHeightAnchor"
-- "inputsContainerView"
-- "handleLoginRegister"
+- "handleRegister"
 - "emailTextFieldHeightAnchor"
+- "passwordTextFieldHeightAnchor"
+- "emailTextField"
+- "nameTextFieldHeightAnchor"
+- "nameSeparatorView"
+- "handleLoginRegister"
+- "loginRegisterSegmentedControl"
+- "inputsContainerView"
+- "inputsContainerViewHeightAnchor"
 depends-top-level:
+- "UIImageView"
+- !private "User"
+- !private "=="
+- !private "UIFont"
+- !private "UIControlState"
+- "UIButton"
+- !private "UIAlertAction"
 - "StringLiteralType"
 - "Dictionary"
-- !private "Auth"
-- !private "UITapGestureRecognizer"
 - "UITextField"
-- !private "UIAlertAction"
 - !private "print"
-- "UIButton"
-- "UIColor"
-- "Array"
-- !private "/"
-- "Bool"
-- !private "Database"
-- !private "UIControlState"
-- !private "!="
-- "UIView"
-- "BooleanLiteralType"
-- "UIViewController"
 - "UISegmentedControl"
+- "BooleanLiteralType"
+- "UIColor"
+- "Bool"
+- "UIView"
+- !private "!="
+- "UIViewController"
+- !private "UITapGestureRecognizer"
 - !private "UserDefaults"
-- !private "UIAlertControllerStyle"
-- !private "UIFont"
+- !private "Database"
 - "TernaryPrecedence"
-- !private "User"
-- "LoginViewController"
-- "AssignmentPrecedence"
-- !private "=="
-- "UIImageView"
+- !private "/"
+- !private "UIAlertControllerStyle"
+- "Array"
 - "UIImage"
-- !private "UIAlertController"
+- "LoginViewController"
 - "NSLayoutConstraint"
+- !private "Auth"
+- !private "UIAlertController"
 - "String"
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Auth"]
 - !private ["Ps9AnyObject", "Database"]
@@ -93,7 +93,6 @@ depends-member:
 - !private ["Ps9AnyObject", "auth"]
 - ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "black"]
-- !private ["Ps9AnyObject", "blue"]
 - !private ["Ps9AnyObject", "boldSystemFont"]
 - !private ["Ps9AnyObject", "bottomAnchor"]
 - !private ["Ps9AnyObject", "centerXAnchor"]
@@ -244,7 +243,6 @@ depends-member:
 - !private ["Ps7CVarArg", "auth"]
 - ["Ps7CVarArg", "backgroundColor"]
 - !private ["Ps7CVarArg", "black"]
-- !private ["Ps7CVarArg", "blue"]
 - !private ["Ps7CVarArg", "boldSystemFont"]
 - !private ["Ps7CVarArg", "bottomAnchor"]
 - !private ["Ps7CVarArg", "centerXAnchor"]
@@ -355,7 +353,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "auth"]
 - ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "black"]
-- !private ["Ps28CustomDebugStringConvertible", "blue"]
 - !private ["Ps28CustomDebugStringConvertible", "boldSystemFont"]
 - !private ["Ps28CustomDebugStringConvertible", "bottomAnchor"]
 - !private ["Ps28CustomDebugStringConvertible", "centerXAnchor"]
@@ -470,7 +467,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "auth"]
 - ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "black"]
-- !private ["Ps23CustomStringConvertible", "blue"]
 - !private ["Ps23CustomStringConvertible", "boldSystemFont"]
 - !private ["Ps23CustomStringConvertible", "bottomAnchor"]
 - !private ["Ps23CustomStringConvertible", "centerXAnchor"]
@@ -589,7 +585,6 @@ depends-member:
 - !private ["Ps9Equatable", "auth"]
 - ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "black"]
-- !private ["Ps9Equatable", "blue"]
 - !private ["Ps9Equatable", "boldSystemFont"]
 - !private ["Ps9Equatable", "bottomAnchor"]
 - !private ["Ps9Equatable", "centerXAnchor"]
@@ -714,7 +709,6 @@ depends-member:
 - !private ["Ps8Hashable", "auth"]
 - ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "black"]
-- !private ["Ps8Hashable", "blue"]
 - !private ["Ps8Hashable", "boldSystemFont"]
 - !private ["Ps8Hashable", "bottomAnchor"]
 - !private ["Ps8Hashable", "centerXAnchor"]
@@ -890,7 +884,6 @@ depends-member:
 - !private ["PSo8NSCoding", "addTarget"]
 - ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "black"]
-- !private ["PSo8NSCoding", "blue"]
 - !private ["PSo8NSCoding", "bottomAnchor"]
 - !private ["PSo8NSCoding", "centerXAnchor"]
 - !private ["PSo8NSCoding", "centerYAnchor"]
@@ -952,7 +945,6 @@ depends-member:
 - !private ["PSo8NSCoding", "widthAnchor"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "black"]
-- !private ["PSo9NSCopying", "blue"]
 - !private ["PSo9NSCopying", "boldSystemFont"]
 - ["PSo9NSCopying", "init"]
 - ["PSo9NSCopying", "white"]
@@ -1048,7 +1040,6 @@ depends-member:
 - !private ["CSo8NSObject", "auth"]
 - ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "black"]
-- !private ["CSo8NSObject", "blue"]
 - !private ["CSo8NSObject", "boldSystemFont"]
 - !private ["CSo8NSObject", "bottomAnchor"]
 - !private ["CSo8NSObject", "centerXAnchor"]
@@ -1151,7 +1142,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "auth"]
 - ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "black"]
-- !private ["PSo16NSObjectProtocol", "blue"]
 - !private ["PSo16NSObjectProtocol", "boldSystemFont"]
 - !private ["PSo16NSObjectProtocol", "bottomAnchor"]
 - !private ["PSo16NSObjectProtocol", "centerXAnchor"]
@@ -1232,7 +1222,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "widthAnchor"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "black"]
-- !private ["PSo14NSSecureCoding", "blue"]
 - ["PSo14NSSecureCoding", "init"]
 - ["PSo14NSSecureCoding", "white"]
 - ["CSo8NSString", "init"]
@@ -1425,7 +1414,6 @@ depends-member:
 - !private ["OSC12UIButtonType", "deinit"]
 - !private ["OSC12UIButtonType", "system"]
 - !private ["CSo7UIColor", "black"]
-- !private ["CSo7UIColor", "blue"]
 - ["CSo7UIColor", "deinit"]
 - ["CSo7UIColor", "init"]
 - ["CSo7UIColor", "white"]
@@ -2178,7 +2166,6 @@ depends-member:
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps26_ExpressibleByColorLiteral", "black"]
-- !private ["Ps26_ExpressibleByColorLiteral", "blue"]
 - ["Ps26_ExpressibleByColorLiteral", "init"]
 - ["Ps26_ExpressibleByColorLiteral", "white"]
 - ["Ps26_ExpressibleByImageLiteral", "init"]
@@ -2209,7 +2196,6 @@ depends-member:
 - !private ["Ps9_Hashable", "auth"]
 - ["Ps9_Hashable", "backgroundColor"]
 - !private ["Ps9_Hashable", "black"]
-- !private ["Ps9_Hashable", "blue"]
 - !private ["Ps9_Hashable", "boldSystemFont"]
 - !private ["Ps9_Hashable", "bottomAnchor"]
 - !private ["Ps9_Hashable", "centerXAnchor"]
@@ -2626,4 +2612,4 @@ depends-external:
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
-interface-hash: "e85bb0a72dfb3f58f6ed42cd0454780d"
+interface-hash: "23f51e41b6899021c17434967b89024d"
