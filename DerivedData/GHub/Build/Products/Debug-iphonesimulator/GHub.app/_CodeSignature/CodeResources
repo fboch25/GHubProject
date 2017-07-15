@@ -48,7 +48,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Pza5Goda/c6Kr8LYi2+C/SRBf5I=
+			pbeNG4i3lEiKfljENV50t/v+zHY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -66,7 +66,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xWsA5FYx7ZcGHBKKcOtzVYFzFJY=
+			PXYAI1MNHVfRCnbTjgHADKTIr7A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/0se-Jf-eqo-view-fSs-oG-Qbj.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			C2z6dzYxsBTfw+iPiPU21ou/EYc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/DetailsVC.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AQWNDcXcp48UrZd7VdwfRlDByxA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -75,7 +93,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+UMk5crEaZGVuFlLm8M6yrrtnHA=
+			S2x67SARRsq8uur6PmgSOa6e7YY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -84,7 +102,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AMTRYIIZ/xlK7fJ8/m/0q4LpGp4=
+			CiuFB1UC2h9p20Eds/rl5TiiTtI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -93,7 +111,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ir+zb3reCkD9VaGjf7f50BjOOnU=
+			TCng3CVEmY1RJz7RS5L7F2FytqI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -102,16 +120,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xruVDJVBqAW7QTg4r7DDZjoCEO4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-aXd-Fn-Sjj.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sbt0Cq/VgUM2VBvGEayGiXRAua0=
+			lM0WDAEzjBkyIIrp+o4pgkITYs0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -120,16 +129,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VeCYHE8i3JvzYcr1ZvZJ7j9vbcg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/aXd-Fn-Sjj-view-wyl-FE-yOG.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uc+ayxZWPMlf35W3+cIvhaOIjBU=
+			1r/533FOB7X5gdVAX3uMEQLF4dk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -138,18 +138,18 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DY6/fTJF0XWZcHkIuugAml/riIw=
+			Hw7I4h7J61pOtt6hgWo8gQ6/2iw=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Frameworks/GTMOAuth2.framework/GTMOAuth2</key>
 		<data>
-		ZN0tPMlNzGUHpWjVP4BPu8rav3U=
+		C1O6dFksdHNMoLGVyRTWwDrZ4M4=
 		</data>
 		<key>Frameworks/GTMOAuth2.framework/GTMOAuth2ViewTouch.nib</key>
 		<data>
-		VNYBWTK+OHTp9lhuPQoCajYjkpU=
+		yrOBHhubVZpHJWbKCWjBxf7K918=
 		</data>
 		<key>Frameworks/GTMOAuth2.framework/Info.plist</key>
 		<data>
@@ -157,11 +157,11 @@
 		</data>
 		<key>Frameworks/GTMOAuth2.framework/_CodeSignature/CodeResources</key>
 		<data>
-		pzriGQxRPqiMhXSEWF05M9t+kq4=
+		9sSQKddOuSiZwOjs+TWzAgC77Ak=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<data>
-		QOH5zA2GSUYJMIpYtLI6fhynXbQ=
+		y7kKogbW6spXOEqqWuiDftrqqEI=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
 		<data>
@@ -173,7 +173,7 @@
 		</data>
 		<key>Frameworks/GoogleAPIClientForREST.framework/GoogleAPIClientForREST</key>
 		<data>
-		XwAXlLe80PrcUbhNiOJ1JKEPwcI=
+		TBaHGCqMxjFX028ZX7kP5P+7H4c=
 		</data>
 		<key>Frameworks/GoogleAPIClientForREST.framework/Info.plist</key>
 		<data>
@@ -185,7 +185,7 @@
 		</data>
 		<key>Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac</key>
 		<data>
-		MyRxEgYfKVsAzhRQGg4gfigsrPo=
+		oqGBL3T2z1eTrRMlASvOWYZJOd8=
 		</data>
 		<key>Frameworks/GoogleToolboxForMac.framework/Info.plist</key>
 		<data>
@@ -201,7 +201,7 @@
 		</data>
 		<key>Frameworks/Protobuf.framework/Protobuf</key>
 		<data>
-		7txGzC7elUSIwhawP45Wr/8UYZc=
+		EzXweKZAtAQrP5llMp/Kx9PfIHM=
 		</data>
 		<key>Frameworks/Protobuf.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -213,7 +213,7 @@
 		</data>
 		<key>Frameworks/SDWebImage.framework/SDWebImage</key>
 		<data>
-		cNGyS+B1qt1MuahCHmLR5ZYZxUk=
+		+k3/jIZ+EvqFa1HF2B/sEc7Eoso=
 		</data>
 		<key>Frameworks/SDWebImage.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -2055,7 +2055,7 @@
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		G+fkfkdHsgWV24jHLyBaOgUWh+Q=
+		gvfaGsLN3MTQoAXiNJqkZi1Gu3c=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -2182,11 +2182,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Pza5Goda/c6Kr8LYi2+C/SRBf5I=
+			pbeNG4i3lEiKfljENV50t/v+zHY=
 			</data>
 			<key>hash2</key>
 			<data>
-			dbHMK2DTOfRq0DGq2t0ay12qRSu+V4QIWGhTbDw0/IA=
+			JCucgTEuxFUharbJ02RxrjPvY2VBf7PeokgdPpsv2sM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2208,11 +2208,37 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xWsA5FYx7ZcGHBKKcOtzVYFzFJY=
+			PXYAI1MNHVfRCnbTjgHADKTIr7A=
 			</data>
 			<key>hash2</key>
 			<data>
-			gTEJq1P9YrCd+fB8xZ2716hmrAd4JQVNv+yrEc2U+D0=
+			olvz4THuWlUL5EZhXkv3dDlYEaI8/ljm7Mj07GgPZls=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/0se-Jf-eqo-view-fSs-oG-Qbj.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			C2z6dzYxsBTfw+iPiPU21ou/EYc=
+			</data>
+			<key>hash2</key>
+			<data>
+			GolWKlO3ijyLU2i8Lm1V2QvjI8fITrpIgRhk2BB+Isk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/DetailsVC.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AQWNDcXcp48UrZd7VdwfRlDByxA=
+			</data>
+			<key>hash2</key>
+			<data>
+			NB2izycBJKLelpq5oINo93nZa2p+QOhX1Qze2rxsSxY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2221,11 +2247,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+UMk5crEaZGVuFlLm8M6yrrtnHA=
+			S2x67SARRsq8uur6PmgSOa6e7YY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Mwlz1YU0HhQoMJ8EN8e0NEx5OzkYtvlmTtoXRncWJt4=
+			hEUawzF4eHHaIUaOAGphnplCYZb58BRYi829ueGMxqc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2234,11 +2260,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AMTRYIIZ/xlK7fJ8/m/0q4LpGp4=
+			CiuFB1UC2h9p20Eds/rl5TiiTtI=
 			</data>
 			<key>hash2</key>
 			<data>
-			/RLBEb+NZobur0NUukFGlytuoR+L6yy2Zl4BKtHGl90=
+			f4ZAoO149C7EctgEMmYtmUMNcwB9YA2qj6/XaYAco6w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2247,11 +2273,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ir+zb3reCkD9VaGjf7f50BjOOnU=
+			TCng3CVEmY1RJz7RS5L7F2FytqI=
 			</data>
 			<key>hash2</key>
 			<data>
-			kmeJBuPM+uAkATfXxlcX99Ay0SdgkTkCOld5rcr/i+M=
+			LetbFnSfg7O+GSXgcTdUHHeHdg8D/cMw9CfO2dmlaaQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2260,24 +2286,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xruVDJVBqAW7QTg4r7DDZjoCEO4=
+			lM0WDAEzjBkyIIrp+o4pgkITYs0=
 			</data>
 			<key>hash2</key>
 			<data>
-			sZwdoi343Fn3pcdBL7Jz76h2J3dC6f9dgDtDXZzQZho=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-aXd-Fn-Sjj.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sbt0Cq/VgUM2VBvGEayGiXRAua0=
-			</data>
-			<key>hash2</key>
-			<data>
-			CnCgaXzkGPosv8uhNbMKR5DTPqzsi6X2BEwAqZkbrvc=
+			9qJocRVE7wj/3lH9r7QIsgF0n2d8AL6lKWh+fajCtuY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2286,24 +2299,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VeCYHE8i3JvzYcr1ZvZJ7j9vbcg=
+			1r/533FOB7X5gdVAX3uMEQLF4dk=
 			</data>
 			<key>hash2</key>
 			<data>
-			6ILclKaEsan/9NbmuuRiiIgPqcRPwbt/GmmQNGmB4ZU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/aXd-Fn-Sjj-view-wyl-FE-yOG.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uc+ayxZWPMlf35W3+cIvhaOIjBU=
-			</data>
-			<key>hash2</key>
-			<data>
-			WHzgdPO1RrME/wOtlK8vXVk8gx1kJoVi62xfZfL9wYs=
+			QillMgeBSFv5WTlyCREK5Mg/7UKSFCPyXHs1dQleca8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2312,11 +2312,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DY6/fTJF0XWZcHkIuugAml/riIw=
+			Hw7I4h7J61pOtt6hgWo8gQ6/2iw=
 			</data>
 			<key>hash2</key>
 			<data>
-			7Au22PYQGyRZSLRIaWsrETWF3bD0/01b+dWU8lPt7Xs=
+			ihORPrx88+MpV4j2cYN7zreHJaNuG2bYdlWsFSWyWpk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2325,22 +2325,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZN0tPMlNzGUHpWjVP4BPu8rav3U=
+			C1O6dFksdHNMoLGVyRTWwDrZ4M4=
 			</data>
 			<key>hash2</key>
 			<data>
-			cwduIulJEn7jjtxo8OHx2f5HE8b8weHInvS7Hj81BXo=
+			JUnqHgZQ7HmLGBUZ/xqwpsDnLzLo8N14+7xyiCm2TXE=
 			</data>
 		</dict>
 		<key>Frameworks/GTMOAuth2.framework/GTMOAuth2ViewTouch.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VNYBWTK+OHTp9lhuPQoCajYjkpU=
+			yrOBHhubVZpHJWbKCWjBxf7K918=
 			</data>
 			<key>hash2</key>
 			<data>
-			C+CqGifYeGIInzUDmDkAGmDQEG5sjO2rfgnQ5D7Gev4=
+			48BulIs0jZ9Ph7IhJs5AbYBYgOGriVc2jfm01NLOz2I=
 			</data>
 		</dict>
 		<key>Frameworks/GTMOAuth2.framework/Info.plist</key>
@@ -2358,22 +2358,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pzriGQxRPqiMhXSEWF05M9t+kq4=
+			9sSQKddOuSiZwOjs+TWzAgC77Ak=
 			</data>
 			<key>hash2</key>
 			<data>
-			CBM3i42GwqC30bTpjbir70Fr/MaJnmsCIjXFMgENtWI=
+			0TQKOvkexS+P7dJRP/X2c97fqaUarwt61Me9XHMWspM=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QOH5zA2GSUYJMIpYtLI6fhynXbQ=
+			y7kKogbW6spXOEqqWuiDftrqqEI=
 			</data>
 			<key>hash2</key>
 			<data>
-			2Hn3Vn086XEz8ifaKU6R8xxrrmfPM8J1tujxkYq+0Ps=
+			63yk5tyCpOdbq1IyWEj6QZkTm5mPGjJgt4UJ1rGJrf4=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
@@ -2402,11 +2402,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XwAXlLe80PrcUbhNiOJ1JKEPwcI=
+			TBaHGCqMxjFX028ZX7kP5P+7H4c=
 			</data>
 			<key>hash2</key>
 			<data>
-			l42sJ9T01Xu4vcj5oxVvU/XVg5iIoUAwyKLdzaEqxp0=
+			GTB/FItDINA6Ek1GsCX2EeMVTy28KetYyCi1GqkT1I8=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleAPIClientForREST.framework/Info.plist</key>
@@ -2435,11 +2435,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MyRxEgYfKVsAzhRQGg4gfigsrPo=
+			oqGBL3T2z1eTrRMlASvOWYZJOd8=
 			</data>
 			<key>hash2</key>
 			<data>
-			wa4EyAnRC34iwjaruDIRsnSPxjGOOchv/4Cl+KQ1omU=
+			/S4Se1LM+6QI6zyxX/ke7rcFj9G3RXrbUxk/tQkIIQw=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleToolboxForMac.framework/Info.plist</key>
@@ -2479,11 +2479,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7txGzC7elUSIwhawP45Wr/8UYZc=
+			EzXweKZAtAQrP5llMp/Kx9PfIHM=
 			</data>
 			<key>hash2</key>
 			<data>
-			B1ZjzucmzD5sZBR1LDW++2brCNrmQ3CAetiDcbHPmWI=
+			uYN0/nXSDAWAbk6lad63hCmBwwi+3Ra+R36bmf6DxGU=
 			</data>
 		</dict>
 		<key>Frameworks/Protobuf.framework/_CodeSignature/CodeResources</key>
@@ -2512,11 +2512,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cNGyS+B1qt1MuahCHmLR5ZYZxUk=
+			+k3/jIZ+EvqFa1HF2B/sEc7Eoso=
 			</data>
 			<key>hash2</key>
 			<data>
-			OadajUzNS7n/Thahy6ZOIsAkMo3PYtE0q6GMqXlLXUM=
+			PVbpYlXJK+VV061hscYaw3/VCeolFe+t6O8YmqOOS4M=
 			</data>
 		</dict>
 		<key>Frameworks/SDWebImage.framework/_CodeSignature/CodeResources</key>

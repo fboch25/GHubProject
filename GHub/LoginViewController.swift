@@ -134,7 +134,7 @@ class LoginViewController: UIViewController {
                 if user != nil {
                     
                     let changeRequest = Auth.auth().currentUser!.createProfileChangeRequest()
-                    changeRequest.displayName = self.emailTextField.text!
+                    changeRequest.displayName = self.nameTextField.text!
                     changeRequest.commitChanges(completion: nil)
                     
                     UserDefaults.standard.set(Auth.auth().currentUser!.uid, forKey: "loggedIn")

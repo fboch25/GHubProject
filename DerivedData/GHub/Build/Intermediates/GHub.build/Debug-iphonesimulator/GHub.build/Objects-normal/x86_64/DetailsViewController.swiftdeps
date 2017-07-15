@@ -6,94 +6,245 @@ provides-nominal:
 provides-member:
 - ["C4GHub21DetailsViewController", ""]
 provides-dynamic-lookup:
+- "topImageView"
+- "viewDidLoad"
 depends-top-level:
-- "ChatRoom"
 - "DetailsViewController"
+- "Object"
+- "UIViewController"
+- !private "URL"
+- "UIImageView"
+- "AssignmentPrecedence"
 depends-member:
+- !private ["Ps9AnyObject", "URL"]
+- !private ["Ps9AnyObject", "image"]
 - !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "object"]
+- !private ["Ps9AnyObject", "sd_setImage"]
+- ["Ps9AnyObject", "topImageView"]
+- ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "image"]
+- !private ["PSo15CALayerDelegate", "sd_setImage"]
+- !private ["Ps7CVarArg", "URL"]
+- !private ["Ps7CVarArg", "image"]
 - !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "object"]
+- !private ["Ps7CVarArg", "sd_setImage"]
+- ["Ps7CVarArg", "topImageView"]
+- ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
-- ["C4GHub8ChatRoom", "deinit"]
-- ["C4GHub8ChatRoom", "init"]
-- ["C4GHub8ChatRoom", ""]
+- !private ["Ps28CustomDebugStringConvertible", "URL"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "object"]
+- !private ["Ps28CustomDebugStringConvertible", "sd_setImage"]
+- ["Ps28CustomDebugStringConvertible", "topImageView"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps23CustomStringConvertible", "URL"]
+- !private ["Ps23CustomStringConvertible", "image"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "object"]
+- !private ["Ps23CustomStringConvertible", "sd_setImage"]
+- ["Ps23CustomStringConvertible", "topImageView"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
+- ["C4GHub21DetailsViewController", "Object"]
+- ["C4GHub21DetailsViewController", "UIImageView"]
+- !private ["C4GHub21DetailsViewController", "URL"]
 - ["C4GHub21DetailsViewController", "deinit"]
 - ["C4GHub21DetailsViewController", "init"]
+- ["C4GHub21DetailsViewController", "object"]
+- ["C4GHub21DetailsViewController", "topImageView"]
+- ["C4GHub21DetailsViewController", "viewDidLoad"]
+- !private ["Ps9Equatable", "URL"]
+- !private ["Ps9Equatable", "image"]
 - !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "object"]
+- !private ["Ps9Equatable", "sd_setImage"]
+- ["Ps9Equatable", "topImageView"]
+- ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "URL"]
+- !private ["Ps8Hashable", "image"]
 - !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "object"]
+- !private ["Ps8Hashable", "sd_setImage"]
+- ["Ps8Hashable", "topImageView"]
+- ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
 - ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "URL"]
+- !private ["PSo8NSCoding", "image"]
 - !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "object"]
+- !private ["PSo8NSCoding", "sd_setImage"]
+- ["PSo8NSCoding", "topImageView"]
+- ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "URL"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "object"]
+- ["PSo26NSExtensionRequestHandling", "topImageView"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Object"]
+- ["CSo8NSObject", "UIImageView"]
+- !private ["CSo8NSObject", "URL"]
+- !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "object"]
+- !private ["CSo8NSObject", "sd_setImage"]
+- ["CSo8NSObject", "topImageView"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "URL"]
+- !private ["PSo16NSObjectProtocol", "image"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "object"]
+- !private ["PSo16NSObjectProtocol", "sd_setImage"]
+- ["PSo16NSObjectProtocol", "topImageView"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["V4GHub6Object", "image"]
+- !private ["V4GHub6Object", "imagePath"]
 - ["Sq", "deinit"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- ["SS", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- !private ["PSo29UIAccessibilityIdentification", "sd_setImage"]
+- !private ["PSo12UIAppearance", "image"]
+- !private ["PSo12UIAppearance", "sd_setImage"]
+- !private ["PSo21UIAppearanceContainer", "URL"]
+- !private ["PSo21UIAppearanceContainer", "image"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "object"]
+- !private ["PSo21UIAppearanceContainer", "sd_setImage"]
+- ["PSo21UIAppearanceContainer", "topImageView"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["PSo26UICollectionViewDataSource", "init"]
-- ["PSo26UICollectionViewDataSource", ""]
-- !private ["PSo24UICollectionViewDelegate", "init"]
-- ["PSo24UICollectionViewDelegate", ""]
-- !private ["PSo34UICollectionViewDelegateFlowLayout", "init"]
-- ["PSo34UICollectionViewDelegateFlowLayout", ""]
+- !private ["PSo18UIContentContainer", "URL"]
 - !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "object"]
+- ["PSo18UIContentContainer", "topImageView"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "image"]
+- !private ["PSo17UICoordinateSpace", "sd_setImage"]
+- !private ["PSo13UIDynamicItem", "image"]
+- !private ["PSo13UIDynamicItem", "sd_setImage"]
+- !private ["PSo18UIFocusEnvironment", "URL"]
+- !private ["PSo18UIFocusEnvironment", "image"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "object"]
+- !private ["PSo18UIFocusEnvironment", "sd_setImage"]
+- ["PSo18UIFocusEnvironment", "topImageView"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
-- !private ["PSo31UIImagePickerControllerDelegate", "init"]
-- ["PSo31UIImagePickerControllerDelegate", ""]
-- !private ["PSo30UINavigationControllerDelegate", "init"]
-- ["PSo30UINavigationControllerDelegate", ""]
+- !private ["PSo11UIFocusItem", "image"]
+- !private ["PSo11UIFocusItem", "sd_setImage"]
+- ["CSo7UIImage", "deinit"]
+- !private ["CSo11UIImageView", "image"]
+- !private ["CSo11UIImageView", "sd_setImage"]
+- ["CSo11UIResponder", "Object"]
+- ["CSo11UIResponder", "UIImageView"]
+- !private ["CSo11UIResponder", "URL"]
+- !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "object"]
+- !private ["CSo11UIResponder", "sd_setImage"]
+- ["CSo11UIResponder", "topImageView"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "URL"]
+- !private ["PSo30UIResponderStandardEditActions", "image"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "object"]
+- !private ["PSo30UIResponderStandardEditActions", "sd_setImage"]
+- ["PSo30UIResponderStandardEditActions", "topImageView"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
-- !private ["PSo20UIScrollViewDelegate", "init"]
-- ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "URL"]
 - !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "object"]
+- ["PSo16UIStateRestoring", "topImageView"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "URL"]
+- !private ["PSo18UITraitEnvironment", "image"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "object"]
+- !private ["PSo18UITraitEnvironment", "sd_setImage"]
+- ["PSo18UITraitEnvironment", "topImageView"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "image"]
+- !private ["CSo6UIView", "sd_setImage"]
+- ["CSo16UIViewController", "Object"]
+- ["CSo16UIViewController", "UIImageView"]
+- !private ["CSo16UIViewController", "URL"]
+- ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "object"]
+- ["CSo16UIViewController", "topImageView"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- ["V10Foundation3URL", "deinit"]
+- !private ["V10Foundation3URL", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "sd_setImage"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
+- !private ["Ps9_Hashable", "URL"]
+- !private ["Ps9_Hashable", "image"]
 - !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "object"]
+- !private ["Ps9_Hashable", "sd_setImage"]
+- ["Ps9_Hashable", "topImageView"]
+- ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "PSo15CALayerDelegate"
 - "Ps7CVarArg"
-- "C4GHub8ChatRoom"
 - "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
 - "Ps23CustomStringConvertible"
 - "C4GHub21DetailsViewController"
 - "Ps9Equatable"
 - "Ps8Hashable"
+- "SQ"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "V4GHub6Object"
 - "Sq"
+- !private "P10Foundation20ReferenceConvertible"
+- "SS"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- "PSo26UICollectionViewDataSource"
-- "PSo24UICollectionViewDelegate"
-- "PSo34UICollectionViewDelegateFlowLayout"
 - "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
-- "PSo31UIImagePickerControllerDelegate"
-- "PSo30UINavigationControllerDelegate"
+- !private "PSo11UIFocusItem"
+- "CSo7UIImage"
+- !private "CSo11UIImageView"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
-- "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
 - "CSo16UIViewController"
+- "V10Foundation3URL"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps34_ExpressibleByFileReferenceLiteral"
 - "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -299,4 +450,4 @@ depends-external:
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
-interface-hash: "d95531cd3a1ef9649434f7b54bac85f4"
+interface-hash: "af31441b2780ff92b72c2a1448f85810"

@@ -7,13 +7,13 @@ provides-member:
 - ["C4GHub8ChatCell", ""]
 provides-dynamic-lookup:
 - "chatLabel"
-- "chatImage"
 - "nameForCreatedCell"
+- "chatImage"
 depends-top-level:
-- "UIImageView"
-- "UICollectionViewCell"
-- "ChatCell"
 - "UILabel"
+- "ChatCell"
+- "UICollectionViewCell"
+- "UIImageView"
 depends-member:
 - ["Ps9AnyObject", "chatImage"]
 - ["Ps9AnyObject", "chatLabel"]

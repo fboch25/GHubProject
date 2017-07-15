@@ -11,6 +11,16 @@ import UIKit
 import Firebase
 import SDWebImage
 
+// Struct of Objects
+struct Object {
+    var image: UIImage?
+    var imagePath: String?
+    var title: String!
+    var ratio: Double
+    var name: String?
+}
+
+
 class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     
     // Properties
@@ -30,12 +40,6 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     // Instance of a class
     var chatCellView: ChatCell?
     
-    // Struct of Objects
-    struct Object {
-        var image: UIImage?
-        var imagePath: String?
-        var title: String!
-    }
     
     // MARK: ViewDidLoad
     override func viewDidLoad() {
@@ -44,7 +48,6 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         // Firebase Data
         ref = Database.database().reference()
         fetchData()
-        self.photoCollectionView.reloadData()
         // Refresh Photo Collection View
         refreshPhotoCollectionView()
         // User Logged In
@@ -80,8 +83,8 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ChatCell
         let object = objects[indexPath.row]
-        
         cell.chatLabel.text = object.title ?? ""
+        cell.nameForCreatedCell.text = object.name
         cell.chatImage.image = object.image
         if let chatImagePath = object.imagePath {
             if let imageURL = URL(string: chatImagePath) {
@@ -99,16 +102,32 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         return objects.count
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let object = objects[indexPath.row]
         let itemWidth = photoCollectionView.bounds.width
-        let itemHeight = photoCollectionView.bounds.height / 2
+        let itemHeight = (itemWidth - 16) * CGFloat(object.ratio) + 30
         return CGSize(width: itemWidth, height: itemHeight)
     }
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       
-        if let indexPath = photoCollectionView?.indexPathsForSelectedItems?.first, let destination = segue.destination as? DetailsViewController {
-            destination.object = objects[indexPath.item]
+    
+    
+    // MARK - Collection View Delegate
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedObject = objects[indexPath.row]
+        if let detailsVC = storyboard?.instantiateViewController(withIdentifier: "DetailsVC")  as? DetailsViewController {
+            detailsVC.object = selectedObject
+            self.navigationController?.pushViewController(detailsVC, animated: true)
         }
-    }*/
+    }
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+       /* if let navigationController = segue.destination as? UINavigationController, let indexPath = photoCollectionView?.indexPathsForSelectedItems?.first, let destination = navigationController.destination as? DetailsViewController {
+           
+            destination.object = objects[indexPath.item]
+        }*/
+    }
     // MARK: Firebase Database saving posts
     func fetchData() {
         ref?.child("posts").observeSingleEvent(of: .value, with: { (snapshot) in
@@ -116,7 +135,12 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
             snapshot.children.forEach({ (child) in
                 if let value = (child as? DataSnapshot)?.value as? [String : Any] {
                     if let imagePath = value["image"] as? String, let title = value["title"] as? String {
-                        let aObject = Object(image: nil, imagePath: imagePath, title: title)
+                        var ratio: Double = 1
+                        if let height = value["height"] as? Double, let width = value["width"] as? Double {
+                            ratio = height  / width
+                        }
+                        let name = value["author"] as? String
+                        let aObject = Object(image: nil, imagePath: imagePath, title: title, ratio: ratio, name: name)
                         self.objects.insert(aObject, at: 0)
                         self.photoCollectionView.reloadData()
                         self.refresher.endRefreshing()
@@ -181,8 +205,10 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     self.present(alert, animated: true, completion: nil)
 }
 func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    
         switch info[UIImagePickerControllerOriginalImage] as? UIImage {
         case let .some(image):
+            object = Object(image: image, imagePath: nil, title: "", ratio: 1, name: Auth.auth().currentUser!.displayName!)
             object?.image = image
         default:
             break
@@ -206,7 +232,7 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
         })
         alert.addAction(UIAlertAction(title: "Save", style: .default) { _ in
             self.object?.title = (alert.textFields?.first.flatMap { $0.text })!
-            self.object.flatMap { self.objects.append($0) }
+            self.object.flatMap { self.objects.insert($0, at: 0) }
             self.photoCollectionView?.reloadData()
             self.saveToFirebase()
         })
@@ -217,7 +243,7 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
     @IBAction func didSelectCreateButton() {
         // Access alert for camera / photo
         accessPhotoControls()
-        object = Object()
+        //object = Object()
     }
     private func checkIfUserLoggedIn() {
         if Auth.auth().currentUser?.uid == nil {
