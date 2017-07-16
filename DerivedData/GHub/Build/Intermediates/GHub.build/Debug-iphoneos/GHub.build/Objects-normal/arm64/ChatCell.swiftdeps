@@ -10,9 +10,9 @@ provides-dynamic-lookup:
 - "nameForCreatedCell"
 - "chatLabel"
 depends-top-level:
-- "UICollectionViewCell"
-- "ChatCell"
 - "UIImageView"
+- "ChatCell"
+- "UICollectionViewCell"
 - "UILabel"
 depends-member:
 - ["Ps9AnyObject", "chatImage"]

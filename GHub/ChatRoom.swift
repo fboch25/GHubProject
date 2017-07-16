@@ -19,8 +19,6 @@ struct Object {
     var ratio: Double
     var name: String?
 }
-
-
 class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     
     // Properties
@@ -39,7 +37,6 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     @IBOutlet weak var nameForCreatedCell: UILabel!
     // Instance of a class
     var chatCellView: ChatCell?
-    
     
     // MARK: ViewDidLoad
     override func viewDidLoad() {
@@ -117,16 +114,6 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
             detailsVC.object = selectedObject
             self.navigationController?.pushViewController(detailsVC, animated: true)
         }
-    }
-    
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       
-       /* if let navigationController = segue.destination as? UINavigationController, let indexPath = photoCollectionView?.indexPathsForSelectedItems?.first, let destination = navigationController.destination as? DetailsViewController {
-           
-            destination.object = objects[indexPath.item]
-        }*/
     }
     // MARK: Firebase Database saving posts
     func fetchData() {
@@ -243,7 +230,6 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
     @IBAction func didSelectCreateButton() {
         // Access alert for camera / photo
         accessPhotoControls()
-        //object = Object()
     }
     private func checkIfUserLoggedIn() {
         if Auth.auth().currentUser?.uid == nil {
@@ -254,10 +240,10 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
             let uid =  Auth.auth().currentUser?.uid
             Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
                 
-                if let dictonary = snapshot.value as? [String: AnyObject] {
+                /*if let dictonary = snapshot.value as? [String: AnyObject] {
                    // self.navigationItem.title = (dictonary["name"] as? String)
                     // **cell name needed stil**
-                }
+                }*/
                 
             }, withCancel: nil )
         }

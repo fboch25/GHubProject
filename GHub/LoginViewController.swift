@@ -92,16 +92,12 @@ class LoginViewController: UIViewController {
             }
             // successfully logged in our user and keep user logged in until they logout
             if user != nil {
-                let changeRequest = Auth.auth().currentUser!.createProfileChangeRequest()
-                changeRequest.displayName = self.nameTextField.text!
-                changeRequest.commitChanges()
-                
+            
                 UserDefaults.standard.set(Auth.auth().currentUser!.uid, forKey: "loggedIn")
                 UserDefaults.standard.synchronize()
                 self.performSegue(withIdentifier: "chatRoom", sender: self)
             }
         })
-        
     }
     // MARK: Handle Registration
     func handleRegister() {
@@ -117,10 +113,14 @@ class LoginViewController: UIViewController {
                 self.loginErrorAlert("Error!", message: "Could not be Registered at this time, please try again later.")
                 return
             }
-            
+            //user?.displayName = name
             guard let uid = user?.uid else {
                 return
             }
+            
+            let changeRequest = Auth.auth().currentUser!.createProfileChangeRequest()
+            changeRequest.displayName = self.nameTextField.text!
+            changeRequest.commitChanges()
             // successfully authenticated user and keep logged in until they logout
             let ref = Database.database().reference(fromURL: "https://boccighub.firebaseio.com/")
             let usersReference = ref.child("users").child(uid)
@@ -132,10 +132,6 @@ class LoginViewController: UIViewController {
                     return
                 }
                 if user != nil {
-                    
-                    let changeRequest = Auth.auth().currentUser!.createProfileChangeRequest()
-                    changeRequest.displayName = self.nameTextField.text!
-                    changeRequest.commitChanges(completion: nil)
                     
                     UserDefaults.standard.set(Auth.auth().currentUser!.uid, forKey: "loggedIn")
                     UserDefaults.standard.synchronize()
@@ -205,7 +201,7 @@ class LoginViewController: UIViewController {
             nameTextField.placeholder = ""
         }
         else {
-            nameTextField.placeholder = "Name"
+            nameTextField.placeholder = "Username"
         }
         nameTextFieldHeightAnchor?.isActive = true
         

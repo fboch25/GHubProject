@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "60277bec5f49b0bfaca8bb48b6863a57"
-build_time: [553383299, 984081000]
+build_time: [553410119, 941252000]
 inputs:
   "/Users/Mrbochiballs1/Develop/Software/GHub/GHub/LoginViewController.swift": [9223372036854775807, 0]
   "/Users/Mrbochiballs1/Develop/Software/GHub/GHub/ChatRoom.swift": [9223372036854775807, 0]

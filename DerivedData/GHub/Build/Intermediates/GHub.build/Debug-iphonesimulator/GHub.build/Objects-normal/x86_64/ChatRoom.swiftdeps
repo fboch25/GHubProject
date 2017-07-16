@@ -11,91 +11,88 @@ provides-member:
 - ["CSo7UIColor", ""]
 - ["CSo7UIColor", "init"]
 provides-dynamic-lookup:
-- "prepare"
-- "accessPhotoControls"
-- "uid"
-- "photoCollectionView"
-- "viewDidLoad"
-- "photoCollectionViewDataLoad"
-- "picker"
-- "imagePickerController"
-- "attributesForRefresherTitle"
-- "showCellTitleAlert"
-- "handleLogout"
-- "chatCellView"
-- "ref"
-- "didSelectCreateButton"
-- "refresher"
-- "saveToFirebase"
+- "fetchData"
 - "openPhotoLibrary"
+- "viewDidAppear"
 - "refreshPhotoCollectionView"
 - "openCamera"
-- "viewDidAppear"
-- "fetchData"
-- "didReceiveMemoryWarning"
-- "imagePickerControllerDidCancel"
+- "showCellTitleAlert"
+- "refresher"
 - "nameForCreatedCell"
+- "attributesForRefresherTitle"
+- "photoCollectionView"
+- "saveToFirebase"
+- "accessPhotoControls"
+- "didReceiveMemoryWarning"
+- "picker"
+- "uid"
+- "ref"
+- "viewDidLoad"
+- "chatCellView"
+- "imagePickerControllerDidCancel"
 - "collectionView"
 - "collectionView"
 - "collectionView"
 - "collectionView"
+- "photoCollectionViewDataLoad"
+- "imagePickerController"
+- "didSelectCreateButton"
+- "handleLogout"
 - "storage"
 depends-top-level:
-- !private "StringLiteralType"
-- "UIViewController"
-- "String"
-- !private "URL"
-- "UICollectionViewDelegateFlowLayout"
-- !private "UserDefaults"
-- "UICollectionViewDelegate"
-- !private "BooleanLiteralType"
-- !private "AnyObject"
-- "IndexPath"
-- !private "*"
-- "UICollectionViewLayout"
-- !private "/"
-- "UIImage"
-- "UIRefreshControl"
-- !private "Database"
-- !private "UIImagePickerControllerOriginalImage"
-- "UIStoryboardSegue"
+- "Object"
+- "Bool"
 - !private "UIAlertActionStyle"
-- "UICollectionView"
+- !private "StringLiteralType"
+- !private "UIImageJPEGRepresentation"
+- !private "NSAttributedString"
+- "CGSize"
+- !private "Database"
+- !private "UIAlertAction"
+- !private "BooleanLiteralType"
+- !private "??"
+- "UIViewController"
+- "ChatCell"
+- !private "UIAlertControllerStyle"
+- "UICollectionViewLayout"
+- "Double"
+- "UIRefreshControl"
 - "CastingPrecedence"
 - "AssignmentPrecedence"
-- !private "NSAttributedString"
-- !private "-"
-- !private "DataSnapshot"
-- "Auth"
-- !private "+"
-- !private "UIAlertAction"
-- "Int"
 - !private "=="
-- "UIColor"
-- "CGSize"
-- "ChatCell"
-- "Double"
-- !private "UIAlertControllerStyle"
 - "NSForegroundColorAttributeName"
-- "UILabel"
-- "UIImagePickerController"
-- "UICollectionViewCell"
-- "Bool"
-- "Dictionary"
-- !private "??"
-- !private "arc4random"
-- "CGFloat"
+- !private "DataSnapshot"
+- !private "DetailsViewController"
+- "Auth"
+- "UICollectionView"
 - "Storage"
-- "Object"
+- !private "UIImagePickerControllerOriginalImage"
+- !private "URL"
 - "ChatRoom"
 - "UICollectionViewDataSource"
-- "UIImagePickerControllerDelegate"
 - "DatabaseReference"
-- !private "UIAlertController"
-- "UINavigationControllerDelegate"
+- "UIImagePickerControllerDelegate"
+- "Dictionary"
 - !private "print"
-- !private "DetailsViewController"
-- !private "UIImageJPEGRepresentation"
+- "UINavigationControllerDelegate"
+- "IndexPath"
+- !private "UIAlertController"
+- !private "*"
+- "String"
+- "CGFloat"
+- "UICollectionViewCell"
+- "UIColor"
+- "UICollectionViewDelegate"
+- "UIImagePickerController"
+- "UIImage"
+- "UICollectionViewDelegateFlowLayout"
+- !private "/"
+- !private "UserDefaults"
+- "Int"
+- !private "+"
+- "UILabel"
+- !private "arc4random"
+- !private "-"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "Auth"]
@@ -184,7 +181,6 @@ depends-member:
 - ["Ps9AnyObject", "photoCollectionViewDataLoad"]
 - ["Ps9AnyObject", "picker"]
 - !private ["Ps9AnyObject", "placeholder"]
-- ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "present"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "pushViewController"]
@@ -412,7 +408,6 @@ depends-member:
 - ["Ps7CVarArg", "photoCollectionViewDataLoad"]
 - ["Ps7CVarArg", "picker"]
 - !private ["Ps7CVarArg", "placeholder"]
-- ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "present"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "pushViewController"]
@@ -464,7 +459,6 @@ depends-member:
 - ["C4GHub8ChatCell", "deinit"]
 - !private ["C4GHub8ChatCell", "layer"]
 - !private ["C4GHub8ChatCell", "nameForCreatedCell"]
-- !private ["C4GHub8ChatRoom", "AnyObject"]
 - ["C4GHub8ChatRoom", "Auth"]
 - ["C4GHub8ChatRoom", "Bool"]
 - !private ["C4GHub8ChatRoom", "CGFloat"]
@@ -496,7 +490,6 @@ depends-member:
 - !private ["C4GHub8ChatRoom", "UIImagePickerControllerOriginalImage"]
 - ["C4GHub8ChatRoom", "UILabel"]
 - ["C4GHub8ChatRoom", "UIRefreshControl"]
-- ["C4GHub8ChatRoom", "UIStoryboardSegue"]
 - !private ["C4GHub8ChatRoom", "URL"]
 - !private ["C4GHub8ChatRoom", "UserDefaults"]
 - ["C4GHub8ChatRoom", "accessPhotoControls"]
@@ -531,7 +524,6 @@ depends-member:
 - ["C4GHub8ChatRoom", "photoCollectionView"]
 - ["C4GHub8ChatRoom", "photoCollectionViewDataLoad"]
 - ["C4GHub8ChatRoom", "picker"]
-- ["C4GHub8ChatRoom", "prepare"]
 - !private ["C4GHub8ChatRoom", "present"]
 - !private ["C4GHub8ChatRoom", "print"]
 - ["C4GHub8ChatRoom", "ref"]
@@ -673,7 +665,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "photoCollectionViewDataLoad"]
 - ["Ps28CustomDebugStringConvertible", "picker"]
 - !private ["Ps28CustomDebugStringConvertible", "placeholder"]
-- ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "present"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "pushViewController"]
@@ -849,7 +840,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "photoCollectionViewDataLoad"]
 - ["Ps23CustomStringConvertible", "picker"]
 - !private ["Ps23CustomStringConvertible", "placeholder"]
-- ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "present"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "pushViewController"]
@@ -1029,7 +1019,6 @@ depends-member:
 - !private ["Ps9Equatable", "photoLibrary"]
 - ["Ps9Equatable", "picker"]
 - !private ["Ps9Equatable", "placeholder"]
-- ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "present"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "pushViewController"]
@@ -1205,7 +1194,6 @@ depends-member:
 - !private ["Ps8Hashable", "photoLibrary"]
 - ["Ps8Hashable", "picker"]
 - !private ["Ps8Hashable", "placeholder"]
-- ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "present"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "pushViewController"]
@@ -1401,7 +1389,6 @@ depends-member:
 - ["PSo8NSCoding", "photoCollectionViewDataLoad"]
 - ["PSo8NSCoding", "picker"]
 - !private ["PSo8NSCoding", "placeholder"]
-- ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "present"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "pushViewController"]
@@ -1498,7 +1485,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "photoCollectionView"]
 - ["PSo26NSExtensionRequestHandling", "photoCollectionViewDataLoad"]
 - ["PSo26NSExtensionRequestHandling", "picker"]
-- ["PSo26NSExtensionRequestHandling", "prepare"]
 - !private ["PSo26NSExtensionRequestHandling", "present"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
@@ -1533,7 +1519,6 @@ depends-member:
 - !private ["PSo17NSFastEnumeration", "forEach"]
 - !private ["C10Foundation25NSFastEnumerationIterator", "Element"]
 - !private ["PSo16NSMutableCopying", "init"]
-- !private ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Auth"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
@@ -1566,7 +1551,6 @@ depends-member:
 - !private ["CSo8NSObject", "UIImagePickerControllerOriginalImage"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIRefreshControl"]
-- ["CSo8NSObject", "UIStoryboardSegue"]
 - !private ["CSo8NSObject", "URL"]
 - !private ["CSo8NSObject", "UserDefaults"]
 - ["CSo8NSObject", "accessPhotoControls"]
@@ -1634,7 +1618,6 @@ depends-member:
 - ["CSo8NSObject", "photoCollectionViewDataLoad"]
 - ["CSo8NSObject", "picker"]
 - !private ["CSo8NSObject", "placeholder"]
-- ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "present"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "pushViewController"]
@@ -1762,7 +1745,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "photoCollectionViewDataLoad"]
 - ["PSo16NSObjectProtocol", "picker"]
 - !private ["PSo16NSObjectProtocol", "placeholder"]
-- ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "present"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "pushViewController"]
@@ -2053,7 +2035,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "photoCollectionViewDataLoad"]
 - ["PSo21UIAppearanceContainer", "picker"]
 - !private ["PSo21UIAppearanceContainer", "placeholder"]
-- ["PSo21UIAppearanceContainer", "prepare"]
 - !private ["PSo21UIAppearanceContainer", "present"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "pushViewController"]
@@ -2376,7 +2357,6 @@ depends-member:
 - ["PSo18UIContentContainer", "photoCollectionView"]
 - ["PSo18UIContentContainer", "photoCollectionViewDataLoad"]
 - ["PSo18UIContentContainer", "picker"]
-- ["PSo18UIContentContainer", "prepare"]
 - !private ["PSo18UIContentContainer", "present"]
 - !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "pushViewController"]
@@ -2527,7 +2507,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "photoCollectionViewDataLoad"]
 - ["PSo18UIFocusEnvironment", "picker"]
 - !private ["PSo18UIFocusEnvironment", "placeholder"]
-- ["PSo18UIFocusEnvironment", "prepare"]
 - !private ["PSo18UIFocusEnvironment", "present"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "pushViewController"]
@@ -2752,7 +2731,6 @@ depends-member:
 - !private ["CSo16UIRefreshControl", "endRefreshing"]
 - ["CSo16UIRefreshControl", "init"]
 - !private ["CSo16UIRefreshControl", "tintColor"]
-- !private ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Auth"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGFloat"]
@@ -2784,7 +2762,6 @@ depends-member:
 - !private ["CSo11UIResponder", "UIImagePickerControllerOriginalImage"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIRefreshControl"]
-- ["CSo11UIResponder", "UIStoryboardSegue"]
 - !private ["CSo11UIResponder", "URL"]
 - !private ["CSo11UIResponder", "UserDefaults"]
 - ["CSo11UIResponder", "accessPhotoControls"]
@@ -2835,7 +2812,6 @@ depends-member:
 - ["CSo11UIResponder", "photoCollectionViewDataLoad"]
 - ["CSo11UIResponder", "picker"]
 - !private ["CSo11UIResponder", "placeholder"]
-- ["CSo11UIResponder", "prepare"]
 - !private ["CSo11UIResponder", "present"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "pushViewController"]
@@ -2937,7 +2913,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "photoCollectionViewDataLoad"]
 - ["PSo30UIResponderStandardEditActions", "picker"]
 - !private ["PSo30UIResponderStandardEditActions", "placeholder"]
-- ["PSo30UIResponderStandardEditActions", "prepare"]
 - !private ["PSo30UIResponderStandardEditActions", "present"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "pushViewController"]
@@ -3105,7 +3080,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "photoCollectionView"]
 - ["PSo16UIStateRestoring", "photoCollectionViewDataLoad"]
 - ["PSo16UIStateRestoring", "picker"]
-- ["PSo16UIStateRestoring", "prepare"]
 - !private ["PSo16UIStateRestoring", "present"]
 - !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "pushViewController"]
@@ -3138,9 +3112,12 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - ["CSo12UIStoryboard", "deinit"]
 - !private ["CSo12UIStoryboard", "instantiateViewController"]
+- !private ["PSo21UITableViewDataSource", "object"]
+- !private ["PSo19UITableViewDelegate", "object"]
 - !private ["CSo11UITextField", "deinit"]
 - !private ["CSo11UITextField", "placeholder"]
 - !private ["CSo11UITextField", "text"]
+- !private ["PSo19UITextFieldDelegate", "object"]
 - !private ["PSo11UITextInput", "placeholder"]
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "placeholder"]
@@ -3212,7 +3189,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "photoCollectionViewDataLoad"]
 - ["PSo18UITraitEnvironment", "picker"]
 - !private ["PSo18UITraitEnvironment", "placeholder"]
-- ["PSo18UITraitEnvironment", "prepare"]
 - !private ["PSo18UITraitEnvironment", "present"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "pushViewController"]
@@ -3269,7 +3245,6 @@ depends-member:
 - !private ["CSo6UIView", "showsVerticalScrollIndicator"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "tintColor"]
-- !private ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Auth"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "CGFloat"]
@@ -3301,7 +3276,6 @@ depends-member:
 - !private ["CSo16UIViewController", "UIImagePickerControllerOriginalImage"]
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UIRefreshControl"]
-- ["CSo16UIViewController", "UIStoryboardSegue"]
 - !private ["CSo16UIViewController", "URL"]
 - !private ["CSo16UIViewController", "UserDefaults"]
 - ["CSo16UIViewController", "accessPhotoControls"]
@@ -3340,7 +3314,6 @@ depends-member:
 - ["CSo16UIViewController", "photoCollectionView"]
 - ["CSo16UIViewController", "photoCollectionViewDataLoad"]
 - ["CSo16UIViewController", "picker"]
-- ["CSo16UIViewController", "prepare"]
 - !private ["CSo16UIViewController", "present"]
 - !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "pushViewController"]
@@ -3542,7 +3515,6 @@ depends-member:
 - !private ["Ps9_Hashable", "photoLibrary"]
 - ["Ps9_Hashable", "picker"]
 - !private ["Ps9_Hashable", "placeholder"]
-- ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "present"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "pushViewController"]
@@ -3772,7 +3744,10 @@ depends-nominal:
 - "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
 - "CSo12UIStoryboard"
+- !private "PSo21UITableViewDataSource"
+- !private "PSo19UITableViewDelegate"
 - !private "CSo11UITextField"
+- !private "PSo19UITextFieldDelegate"
 - !private "PSo11UITextInput"
 - !private "PSo17UITextInputTraits"
 - "PSo18UITraitEnvironment"
@@ -4015,4 +3990,4 @@ depends-external:
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
-interface-hash: "e1d36c4056d831064b1cdc1b64db793d"
+interface-hash: "ba3d4167c3d6a5c146eba0f3497d2c90"
