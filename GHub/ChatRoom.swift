@@ -11,7 +11,7 @@ import UIKit
 import Firebase
 import SDWebImage
 
-// Struct of Objects
+// MARK: Struct of Objects
 struct Object {
     var image: UIImage?
     var imagePath: String?
@@ -59,7 +59,7 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    // Refresh
+    // MARK: Refresh
     func refreshPhotoCollectionView() {
         self.photoCollectionView.alwaysBounceVertical = true
         self.photoCollectionView.showsVerticalScrollIndicator = false 
@@ -74,10 +74,8 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         photoCollectionView?.dataSource = self
         photoCollectionView?.reloadData()
     }
-    
     // MARK: Create collection View cell with title, image, and rounded border
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ChatCell
         let object = objects[indexPath.row]
         cell.chatLabel.text = object.title ?? ""
@@ -88,6 +86,7 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
             cell.chatImage.sd_setImage(with: imageURL)
             }
         }
+        // Cell Layout
         cell.layer.borderWidth = 0.5
         cell.layer.borderColor = UIColor.darkGray.cgColor
         cell.layer.masksToBounds = true
@@ -104,10 +103,7 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         let itemHeight = (itemWidth - 16) * CGFloat(object.ratio) + 30
         return CGSize(width: itemWidth, height: itemHeight)
     }
-    
-    
-    // MARK - Collection View Delegate
-    
+    // MARK: Collection View Delegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedObject = objects[indexPath.row]
         if let detailsVC = storyboard?.instantiateViewController(withIdentifier: "DetailsVC")  as? DetailsViewController {
@@ -129,14 +125,14 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
                         let name = value["author"] as? String
                         let aObject = Object(image: nil, imagePath: imagePath, title: title, ratio: ratio, name: name)
                         self.objects.insert(aObject, at: 0)
-                        self.photoCollectionView.reloadData()
-                        self.refresher.endRefreshing()
                     }
                 }
             })
-            //
+            self.photoCollectionView.reloadData()
+            self.refresher.endRefreshing()
         })
     }
+    // MARK: Save to Firebase
     func saveToFirebase() {
         if let theObject = object {
             if let theImage = theObject.image {
@@ -182,7 +178,7 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     {
         UIAlertAction in
     }
-    // Image control --> Add actions
+    // MARK: Image control --> Add actions
     picker = UIImagePickerController()
     picker?.allowsEditing = false
     picker?.delegate = self
@@ -226,7 +222,7 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
         
         present(alert, animated: true, completion: nil)
     }
-    // Create new Cell
+    // MARK: Create new Cell
     @IBAction func didSelectCreateButton() {
         // Access alert for camera / photo
         accessPhotoControls()

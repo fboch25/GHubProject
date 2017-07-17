@@ -20,31 +20,31 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var object: Object?
     var objects: [Object] = []
-    //var message: Message?
     var messages: [Message] = []
     
     @IBOutlet weak var topImageView: UIImageView!
     @IBOutlet weak var chatTableViewController: UITableView!
     @IBOutlet weak var commentTextField: UITextField!
+    @IBOutlet weak var commentView: UIView!
     // Instance of cell
     var tableChatCell: TableChatCell!
     var ref = DatabaseReference()
-    
+    // MARK: viewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        cleanUp()
         loadImageFromChatRoom()
         tableViewDataLoad()
-        cleanUp()
         loadData()
-        
     }
+    // clean up UI function
     func cleanUp(){
         hideKeyboardWhenTappedAround()
         self.chatTableViewController.rowHeight = UITableViewAutomaticDimension
         self.chatTableViewController.estimatedRowHeight = 100
+        self.navigationController?.navigationBar.tintColor = UIColor.white
     }
-    
+    // MARK: Load to Firebase
     func loadData() {
         ref.child("Comments").observeSingleEvent(of: .value, with: { (snapshot) in
             self.messages.removeAll()
@@ -56,16 +56,15 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
                     }
                 }
             })
-            self.chatTableViewController.reloadData()
+           self.chatTableViewController.reloadData()
         })
     }
-    
+    // MARK: Table View creation
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = chatTableViewController.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! TableChatCell
         let comment = messages[indexPath.row]
         cell.usernameForChat.text = comment.author
         cell.loadCommentToView.text = comment.comment
-        //cell.loadCommentToView.text = commentTextField.text
         return cell
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -75,7 +74,9 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
         chatTableViewController?.delegate = self
         chatTableViewController?.dataSource = self
         chatTableViewController?.reloadData()
+        self.commentTextField.delegate = self
     }
+    // MARK: Send to Firebase
     @IBAction func handleSend(_ sender: Any) {
         let ref = Database.database().reference().child("Comments")
         let childRef = ref.childByAutoId()
@@ -86,6 +87,13 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
             chatTableViewController.reloadData()
             childRef.updateChildValues(values)
         }
+        commentTextField.text = nil
+    }
+    // Dismiss Text Field
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        handleSend(Any.self)
+        self.view.endEditing(true)
+        return true
     }
     // Loads image from chatroom
     func loadImageFromChatRoom() {

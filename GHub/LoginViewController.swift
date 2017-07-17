@@ -15,8 +15,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Hides keyboard by tapping anywhere on the screen
-        hideKeyboardWhenTappedAround()
         // Setup view
         view.backgroundColor = UIColor(red:0.79, green:0.78, blue:0.78, alpha:1.0)
         view.addSubview(inputsContainerView)
@@ -27,6 +25,8 @@ class LoginViewController: UIViewController {
         setupLoginRegisterButton()
         setupProfileImageView()
         setupLoginRegisterSegmentedControl()
+        // Hides keyboard by tapping anywhere on the screen
+        hideKeyboardWhenTappedAround()
     }
 
     // Keep user logged In
@@ -92,7 +92,6 @@ class LoginViewController: UIViewController {
             }
             // successfully logged in our user and keep user logged in until they logout
             if user != nil {
-            
                 UserDefaults.standard.set(Auth.auth().currentUser!.uid, forKey: "loggedIn")
                 UserDefaults.standard.synchronize()
                 self.performSegue(withIdentifier: "chatRoom", sender: self)
@@ -107,13 +106,13 @@ class LoginViewController: UIViewController {
             return
         }
         Auth.auth().createUser(withEmail: email, password: password, completion: { (user: User?, error) in
-            
             if error != nil {
                 print(error!.localizedDescription)
                 self.loginErrorAlert("Error!", message: "Could not be Registered at this time, please try again later.")
                 return
             }
-            //user?.displayName = name
+            print("***************")
+            print(user?.displayName! as Any)
             guard let uid = user?.uid else {
                 return
             }

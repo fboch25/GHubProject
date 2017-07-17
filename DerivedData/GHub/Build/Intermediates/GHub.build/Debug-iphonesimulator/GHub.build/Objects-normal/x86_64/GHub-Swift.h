@@ -197,12 +197,14 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 @class UITableView;
 @class UITableViewCell;
 @class UITextField;
+@class UIView;
 
 SWIFT_CLASS("_TtC4GHub21DetailsViewController")
 @interface DetailsViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITextFieldDelegate, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified topImageView;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified chatTableViewController;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified commentTextField;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified commentView;
 @property (nonatomic, strong) TableChatCell * _Null_unspecified tableChatCell;
 @property (nonatomic, strong) FIRDatabaseReference * _Nonnull ref;
 - (void)viewDidLoad;
@@ -212,6 +214,7 @@ SWIFT_CLASS("_TtC4GHub21DetailsViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (void)tableViewDataLoad;
 - (IBAction)handleSend:(id _Nonnull)sender;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (void)loadImageFromChatRoom;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -223,7 +226,6 @@ SWIFT_CLASS("_TtC4GHub21DetailsViewController")
 - (void)dismissKeyboard;
 @end
 
-@class UIView;
 @class UIButton;
 @class UISegmentedControl;
 @class NSLayoutConstraint;

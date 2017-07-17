@@ -14,7 +14,7 @@
         <scene sceneID="Ftf-my-en0">
             <objects>
                 <navigationController id="OdW-v3-mC2" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleAspectFit" translucent="NO" id="6o8-UV-mkB">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleAspectFit" misplaced="YES" translucent="NO" id="6o8-UV-mkB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,7 +110,7 @@
                             <constraint firstAttribute="trailing" secondItem="Do2-8Q-f56" secondAttribute="trailing" id="TZ0-tz-aLf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="GHub" id="zVW-77-WL9">
+                    <navigationItem key="navigationItem" title="GHUB" id="zVW-77-WL9">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="uv4-tR-XUr">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dco-3E-pa8">
                                 <rect key="frame" x="16" y="7" width="63" height="30"/>
@@ -154,7 +154,7 @@
         <scene sceneID="GmU-2F-0Y7">
             <objects>
                 <navigationController id="ttt-VP-uZv" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleToFill" id="1zy-wh-rkV">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" id="1zy-wh-rkV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -170,7 +170,7 @@
             </objects>
             <point key="canvasLocation" x="-2394" y="124"/>
         </scene>
-        <!--GHub-->
+        <!--GHUB-->
         <scene sceneID="URj-E9-Zwh">
             <objects>
                 <viewController storyboardIdentifier="DetailsVC" automaticallyAdjustsScrollViewInsets="NO" id="0se-Jf-eqo" customClass="DetailsViewController" customModule="GHub" customModuleProvider="target" sceneMemberID="viewController">
@@ -277,10 +277,11 @@
                             <constraint firstAttribute="trailing" secondItem="foY-bI-alW" secondAttribute="trailing" id="tsX-J4-oA3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="GHub" id="BQg-4f-tMf"/>
+                    <navigationItem key="navigationItem" title="GHUB" id="BQg-4f-tMf"/>
                     <connections>
                         <outlet property="chatTableViewController" destination="foY-bI-alW" id="Bcr-QC-ivW"/>
                         <outlet property="commentTextField" destination="xXY-cc-AUC" id="5e6-8m-lDt"/>
+                        <outlet property="commentView" destination="gRg-6b-bDG" id="oDE-3Q-gyP"/>
                         <outlet property="topImageView" destination="VCb-zA-202" id="chh-q0-aIs"/>
                     </connections>
                 </viewController>
