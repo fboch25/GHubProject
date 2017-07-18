@@ -18,6 +18,7 @@ struct Object {
     var title: String!
     var ratio: Double
     var name: String?
+    var id: String
 }
 class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     
@@ -41,14 +42,13 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     // MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Firebase Data
         ref = Database.database().reference()
         fetchData()
         // Refresh Photo Collection View
         refreshPhotoCollectionView()
         // User Logged In
-       checkIfUserLoggedIn()
+        checkIfUserLoggedIn()
         // CollectionView Data Loading
         photoCollectionViewDataLoad()
     }
@@ -116,14 +116,14 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         ref?.child("posts").observeSingleEvent(of: .value, with: { (snapshot) in
             self.objects.removeAll()
             snapshot.children.forEach({ (child) in
-                if let value = (child as? DataSnapshot)?.value as? [String : Any] {
+                if let value = (child as? DataSnapshot)?.value as? [String : Any], let id = (child as? DataSnapshot)?.key {
                     if let imagePath = value["image"] as? String, let title = value["title"] as? String {
                         var ratio: Double = 1
                         if let height = value["height"] as? Double, let width = value["width"] as? Double {
                             ratio = height  / width
                         }
                         let name = value["author"] as? String
-                        let aObject = Object(image: nil, imagePath: imagePath, title: title, ratio: ratio, name: name)
+                        let aObject = Object(image: nil, imagePath: imagePath, title: title, ratio: ratio, name: name, id: id)
                         self.objects.insert(aObject, at: 0)
                     }
                 }
@@ -191,7 +191,7 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
     
         switch info[UIImagePickerControllerOriginalImage] as? UIImage {
         case let .some(image):
-            object = Object(image: image, imagePath: nil, title: "", ratio: 1, name: Auth.auth().currentUser!.displayName!)
+            object = Object(image: image, imagePath: nil, title: "", ratio: 1, name: Auth.auth().currentUser!.displayName!, id: "")
             object?.image = image
         default:
             break

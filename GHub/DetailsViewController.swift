@@ -14,6 +14,7 @@ import SDWebImage
     struct Message {
         var author: String
         var comment: String!
+        //var timeStamp: String!
     }
 
 class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
@@ -22,20 +23,28 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
     var objects: [Object] = []
     var messages: [Message] = []
     
+    @IBOutlet weak var commentViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var topImageView: UIImageView!
     @IBOutlet weak var chatTableViewController: UITableView!
     @IBOutlet weak var commentTextField: UITextField!
     @IBOutlet weak var commentView: UIView!
     // Instance of cell
     var tableChatCell: TableChatCell!
-    var ref = DatabaseReference()
-    // MARK: viewDidLoad()
+    var ref: DatabaseReference!
+    // MARK: viewDidAppear()
+    override func viewDidAppear(_ animated: Bool) {
+    }
+    // MARK: viewDidLoad() 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref = Database.database().reference()
+        
+        loadData()
+        tableViewDataLoad()
         cleanUp()
         loadImageFromChatRoom()
-        tableViewDataLoad()
-        loadData()
+        setupViewResizerOnKeyboardShown()
     }
     // clean up UI function
     func cleanUp(){
@@ -46,7 +55,8 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     // MARK: Load to Firebase
     func loadData() {
-        ref.child("Comments").observeSingleEvent(of: .value, with: { (snapshot) in
+        if let theObject = object {
+        ref.child("Comments").child(theObject.id).observeSingleEvent(of: .value, with: { (snapshot) in
             self.messages.removeAll()
             snapshot.children.forEach({ (child) in
                 if let obj = (child as? DataSnapshot)?.value as? [String : Any] {
@@ -58,6 +68,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
             })
            self.chatTableViewController.reloadData()
         })
+        }
     }
     // MARK: Table View creation
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -73,21 +84,22 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableViewDataLoad() {
         chatTableViewController?.delegate = self
         chatTableViewController?.dataSource = self
-        chatTableViewController?.reloadData()
         self.commentTextField.delegate = self
     }
     // MARK: Send to Firebase
     @IBAction func handleSend(_ sender: Any) {
-        let ref = Database.database().reference().child("Comments")
-        let childRef = ref.childByAutoId()
-        if let author = Auth.auth().currentUser?.displayName, let text = commentTextField.text {
-            let values = ["author": author, "text": text]
-            let aMessage = Message(author: author, comment: text)
-            self.messages.append(aMessage)
-            chatTableViewController.reloadData()
-            childRef.updateChildValues(values)
+        if let theObject = object {
+            let ref = Database.database().reference().child("Comments").child(theObject.id)
+            let childRef = ref.childByAutoId()
+            if let author = Auth.auth().currentUser?.displayName, let text = commentTextField.text {
+                let values = ["author": author, "text": text]
+                let aMessage = Message(author: author, comment: text)
+                self.messages.append(aMessage)
+                childRef.updateChildValues(values)
+            }
+            self.chatTableViewController.reloadData()
+            commentTextField.text = nil
         }
-        commentTextField.text = nil
     }
     // Dismiss Text Field
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -107,6 +119,37 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
             }
         }
     }
+    
+    
+    
+    // MARK - Scroll View Resize on Keyboard Events
+    
+    func setupViewResizerOnKeyboardShown() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillShowForResizing),
+                                               name: Notification.Name.UIKeyboardWillShow,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillHideForResizing),
+                                               name: Notification.Name.UIKeyboardWillHide,
+                                               object: nil)
+    }
+    
+    func keyboardWillShowForResizing(notification: Notification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            // We're not just minusing the kb height from the view height because
+            // the view could already have been resized for the keyboard before
+            commentViewBottomConstraint.constant = keyboardSize.height
+        } else {
+            debugPrint("We're showing the keyboard and either the keyboard size or window is nil: panic widely.")
+        }
+    }
+    
+    func keyboardWillHideForResizing(notification: Notification) {
+        commentViewBottomConstraint.constant = 0
+    }
+    
+    
 }
 extension DetailsViewController {
     func hideKeyboardWhenTappedAround() {

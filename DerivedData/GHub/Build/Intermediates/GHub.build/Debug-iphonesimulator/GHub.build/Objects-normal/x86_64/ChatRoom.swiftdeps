@@ -11,88 +11,88 @@ provides-member:
 - ["CSo7UIColor", ""]
 - ["CSo7UIColor", "init"]
 provides-dynamic-lookup:
-- "openCamera"
-- "fetchData"
-- "ref"
-- "openPhotoLibrary"
-- "refresher"
-- "viewDidAppear"
 - "nameForCreatedCell"
-- "accessPhotoControls"
-- "showCellTitleAlert"
-- "chatCellView"
+- "storage"
+- "didSelectCreateButton"
+- "refresher"
+- "fetchData"
+- "imagePickerController"
+- "openCamera"
 - "saveToFirebase"
+- "ref"
+- "chatCellView"
+- "refreshPhotoCollectionView"
+- "handleLogout"
 - "imagePickerControllerDidCancel"
+- "picker"
+- "attributesForRefresherTitle"
 - "collectionView"
 - "collectionView"
 - "collectionView"
 - "collectionView"
+- "didReceiveMemoryWarning"
+- "photoCollectionView"
+- "viewDidAppear"
+- "uid"
 - "viewDidLoad"
 - "photoCollectionViewDataLoad"
-- "picker"
-- "refreshPhotoCollectionView"
-- "imagePickerController"
-- "uid"
-- "photoCollectionView"
-- "didReceiveMemoryWarning"
-- "didSelectCreateButton"
-- "attributesForRefresherTitle"
-- "storage"
-- "handleLogout"
+- "showCellTitleAlert"
+- "accessPhotoControls"
+- "openPhotoLibrary"
 depends-top-level:
-- !private "StringLiteralType"
-- !private "URL"
-- "Bool"
-- "UICollectionView"
-- !private "-"
-- "UIImagePickerController"
-- !private "UIAlertAction"
-- !private "UIImageJPEGRepresentation"
-- !private "DetailsViewController"
-- "Object"
-- "UILabel"
-- !private "BooleanLiteralType"
-- !private "??"
-- "UIRefreshControl"
-- !private "arc4random"
-- "String"
-- "UIColor"
-- "Auth"
-- !private "print"
-- "Double"
-- "Dictionary"
-- !private "UIImagePickerControllerOriginalImage"
-- "CastingPrecedence"
-- "IndexPath"
-- "AssignmentPrecedence"
-- "ChatCell"
-- !private "=="
-- !private "/"
-- "Int"
-- "DatabaseReference"
-- "UIImage"
 - "ChatRoom"
-- !private "UserDefaults"
-- "NSForegroundColorAttributeName"
-- !private "+"
+- "DatabaseReference"
+- !private "??"
+- !private "UIImagePickerControllerOriginalImage"
+- "AssignmentPrecedence"
 - !private "NSAttributedString"
-- "CGSize"
-- "Storage"
-- "UICollectionViewLayout"
-- "UIImagePickerControllerDelegate"
-- !private "Database"
-- !private "DataSnapshot"
-- "UINavigationControllerDelegate"
-- !private "UIAlertController"
-- "UIViewController"
+- !private "-"
+- "UILabel"
+- "CastingPrecedence"
+- !private "=="
+- !private "UIAlertAction"
+- "ChatCell"
 - "UICollectionViewDelegateFlowLayout"
-- "UICollectionViewCell"
-- "UICollectionViewDataSource"
-- "CGFloat"
-- !private "*"
+- "UIViewController"
+- "CGSize"
 - "UICollectionViewDelegate"
+- !private "BooleanLiteralType"
+- "UICollectionView"
+- "UIImagePickerControllerDelegate"
+- !private "+"
+- "UICollectionViewDataSource"
+- "Storage"
+- "NSForegroundColorAttributeName"
 - !private "UIAlertControllerStyle"
+- "Dictionary"
+- !private "*"
+- "UINavigationControllerDelegate"
+- "UIImagePickerController"
+- "Int"
+- "Bool"
+- !private "StringLiteralType"
+- "Object"
+- !private "Database"
+- !private "/"
+- "UICollectionViewCell"
+- !private "DataSnapshot"
+- "CGFloat"
+- !private "print"
+- !private "UIAlertController"
+- "UIImage"
 - !private "UIAlertActionStyle"
+- "IndexPath"
+- "UIColor"
+- "String"
+- !private "DetailsViewController"
+- !private "UIImageJPEGRepresentation"
+- "Auth"
+- "Double"
+- !private "UserDefaults"
+- !private "arc4random"
+- !private "URL"
+- "UICollectionViewLayout"
+- "UIRefreshControl"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "Auth"]
@@ -162,6 +162,7 @@ depends-member:
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewController"]
+- !private ["Ps9AnyObject", "key"]
 - !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "masksToBounds"]
 - ["Ps9AnyObject", "nameForCreatedCell"]
@@ -389,6 +390,7 @@ depends-member:
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "insert"]
 - !private ["Ps7CVarArg", "instantiateViewController"]
+- !private ["Ps7CVarArg", "key"]
 - !private ["Ps7CVarArg", "layer"]
 - !private ["Ps7CVarArg", "masksToBounds"]
 - ["Ps7CVarArg", "nameForCreatedCell"]
@@ -646,6 +648,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "insert"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "key"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "masksToBounds"]
 - ["Ps28CustomDebugStringConvertible", "nameForCreatedCell"]
@@ -821,6 +824,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "insert"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
+- !private ["Ps23CustomStringConvertible", "key"]
 - !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "masksToBounds"]
 - ["Ps23CustomStringConvertible", "nameForCreatedCell"]
@@ -891,6 +895,7 @@ depends-member:
 - !private ["OSC13DataEventType", "value"]
 - !private ["CSo12DataSnapshot", "children"]
 - !private ["CSo12DataSnapshot", "deinit"]
+- !private ["CSo12DataSnapshot", "key"]
 - !private ["CSo12DataSnapshot", "value"]
 - !private ["CSo8Database", "database"]
 - ["CSo8Database", "deinit"]
@@ -999,6 +1004,7 @@ depends-member:
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateViewController"]
+- !private ["Ps9Equatable", "key"]
 - !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "masksToBounds"]
 - ["Ps9Equatable", "nameForCreatedCell"]
@@ -1174,6 +1180,7 @@ depends-member:
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateViewController"]
+- !private ["Ps8Hashable", "key"]
 - !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "masksToBounds"]
 - ["Ps8Hashable", "nameForCreatedCell"]
@@ -1599,6 +1606,7 @@ depends-member:
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewController"]
+- !private ["CSo8NSObject", "key"]
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "masksToBounds"]
 - ["CSo8NSObject", "nameForCreatedCell"]
@@ -1726,6 +1734,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewController"]
+- !private ["PSo16NSObjectProtocol", "key"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "masksToBounds"]
 - ["PSo16NSObjectProtocol", "nameForCreatedCell"]
@@ -1796,6 +1805,7 @@ depends-member:
 - ["V4GHub6Object", "String"]
 - ["V4GHub6Object", "UIImage"]
 - ["V4GHub6Object", "deinit"]
+- ["V4GHub6Object", "id"]
 - ["V4GHub6Object", "image"]
 - ["V4GHub6Object", "imagePath"]
 - ["V4GHub6Object", "init"]
@@ -3495,6 +3505,7 @@ depends-member:
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instantiateViewController"]
+- !private ["Ps9_Hashable", "key"]
 - !private ["Ps9_Hashable", "layer"]
 - !private ["Ps9_Hashable", "masksToBounds"]
 - ["Ps9_Hashable", "nameForCreatedCell"]
@@ -3990,4 +4001,4 @@ depends-external:
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
-interface-hash: "ba3d4167c3d6a5c146eba0f3497d2c90"
+interface-hash: "de65520985dd6e1cad4f8336f81f4fcc"
