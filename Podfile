@@ -18,6 +18,7 @@ target 'GHub' do
   pod 'Firebase/RemoteConfig'
   pod 'Firebase/Storage'
   pod 'SDWebImage'
+  pod 'MBProgressHUD'
   target 'GHubTests' do
     inherit! :search_paths
     # Pods for testing

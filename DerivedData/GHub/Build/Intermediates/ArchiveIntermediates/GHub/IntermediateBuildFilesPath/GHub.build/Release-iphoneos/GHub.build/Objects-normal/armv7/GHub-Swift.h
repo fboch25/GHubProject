@@ -157,6 +157,7 @@ SWIFT_CLASS("_TtC4GHub8ChatCell")
 @class UIColor;
 @class UICollectionView;
 @class UICollectionViewLayout;
+@class UIImage;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC4GHub8ChatRoom")
@@ -181,6 +182,7 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)fetchData;
 - (void)saveToFirebase;
+- (UIImage * _Nullable)resizeImageWithImage:(UIImage * _Nonnull)image newWidth:(CGFloat)newWidth;
 - (void)openCamera;
 - (void)openPhotoLibrary;
 - (void)accessPhotoControls;
@@ -197,14 +199,20 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 @class UITableView;
 @class UITableViewCell;
 @class UITextField;
+@class UITapGestureRecognizer;
+@class NSLayoutConstraint;
+@class UIView;
 
 SWIFT_CLASS("_TtC4GHub21DetailsViewController")
 @interface DetailsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified commentViewBottomConstraint;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified topImageView;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified chatTableViewController;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified commentTextField;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified commentView;
 @property (nonatomic, strong) TableChatCell * _Null_unspecified tableChatCell;
-@property (nonatomic, strong) FIRDatabaseReference * _Nonnull ref;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)cleanUp;
 - (void)loadData;
@@ -212,7 +220,14 @@ SWIFT_CLASS("_TtC4GHub21DetailsViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (void)tableViewDataLoad;
 - (IBAction)handleSend:(id _Nonnull)sender;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (void)loadImageFromChatRoom;
+- (IBAction)imageTapped:(UITapGestureRecognizer * _Nonnull)sender;
+- (void)dismissFullscreenImage:(UITapGestureRecognizer * _Nonnull)sender;
+- (void)loadImageFullScreen;
+- (void)setupViewResizerOnKeyboardShown;
+- (void)keyboardWillShowForResizingWithNotification:(NSNotification * _Nonnull)notification;
+- (void)keyboardWillHideForResizingWithNotification:(NSNotification * _Nonnull)notification;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -223,10 +238,8 @@ SWIFT_CLASS("_TtC4GHub21DetailsViewController")
 - (void)dismissKeyboard;
 @end
 
-@class UIView;
 @class UIButton;
 @class UISegmentedControl;
-@class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC4GHub19LoginViewController")
 @interface LoginViewController : UIViewController

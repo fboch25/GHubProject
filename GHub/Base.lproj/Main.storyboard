@@ -14,7 +14,7 @@
         <scene sceneID="Ftf-my-en0">
             <objects>
                 <navigationController id="OdW-v3-mC2" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleAspectFit" misplaced="YES" translucent="NO" id="6o8-UV-mkB">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleAspectFit" translucent="NO" id="6o8-UV-mkB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -62,10 +62,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="deH-WR-nhy">
-                                                    <rect key="frame" x="8" y="0.0" width="359" height="199"/>
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="169"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXp-mK-CVB">
-                                                    <rect key="frame" x="0.0" y="209" width="375" height="20"/>
+                                                    <rect key="frame" x="0.0" y="179" width="375" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="DzU-1w-fDK"/>
                                                     </constraints>
@@ -74,7 +74,10 @@
                                                     <color key="highlightedColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lui-EN-7sR">
-                                                    <rect key="frame" x="20" y="239" width="0.0" height="0.0"/>
+                                                    <rect key="frame" x="20" y="209" width="335" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="cOA-wP-onL"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -83,6 +86,7 @@
                                         </view>
                                         <constraints>
                                             <constraint firstItem="lui-EN-7sR" firstAttribute="leading" secondItem="rdT-cv-yYT" secondAttribute="leading" constant="20" id="4yj-9D-htE"/>
+                                            <constraint firstAttribute="trailing" secondItem="lui-EN-7sR" secondAttribute="trailing" constant="20" id="5FK-wu-kjp"/>
                                             <constraint firstItem="RXp-mK-CVB" firstAttribute="trailing" secondItem="deH-WR-nhy" secondAttribute="trailing" constant="8" id="5O7-sg-sWX"/>
                                             <constraint firstItem="deH-WR-nhy" firstAttribute="leading" secondItem="rdT-cv-yYT" secondAttribute="leading" constant="8" id="7FE-3n-1Ta"/>
                                             <constraint firstItem="deH-WR-nhy" firstAttribute="top" secondItem="rdT-cv-yYT" secondAttribute="top" id="8Y0-gO-ZiT"/>
@@ -154,7 +158,7 @@
         <scene sceneID="GmU-2F-0Y7">
             <objects>
                 <navigationController id="ttt-VP-uZv" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" id="1zy-wh-rkV">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleToFill" id="1zy-wh-rkV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -190,7 +194,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="186"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VCb-zA-202">
+                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VCb-zA-202">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="186"/>
                                         </imageView>
                                     </subviews>

@@ -157,6 +157,7 @@ SWIFT_CLASS("_TtC4GHub8ChatCell")
 @class UIColor;
 @class UICollectionView;
 @class UICollectionViewLayout;
+@class UIImage;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC4GHub8ChatRoom")
@@ -181,6 +182,7 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)fetchData;
 - (void)saveToFirebase;
+- (UIImage * _Nullable)resizeImageWithImage:(UIImage * _Nonnull)image newWidth:(CGFloat)newWidth;
 - (void)openCamera;
 - (void)openPhotoLibrary;
 - (void)accessPhotoControls;
@@ -197,6 +199,7 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 @class UITableView;
 @class UITableViewCell;
 @class UITextField;
+@class UITapGestureRecognizer;
 @class NSLayoutConstraint;
 @class UIView;
 
@@ -219,6 +222,9 @@ SWIFT_CLASS("_TtC4GHub21DetailsViewController")
 - (IBAction)handleSend:(id _Nonnull)sender;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (void)loadImageFromChatRoom;
+- (IBAction)imageTapped:(UITapGestureRecognizer * _Nonnull)sender;
+- (void)dismissFullscreenImage:(UITapGestureRecognizer * _Nonnull)sender;
+- (void)loadImageFullScreen;
 - (void)setupViewResizerOnKeyboardShown;
 - (void)keyboardWillShowForResizingWithNotification:(NSNotification * _Nonnull)notification;
 - (void)keyboardWillHideForResizingWithNotification:(NSNotification * _Nonnull)notification;

@@ -45,6 +45,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
         cleanUp()
         loadImageFromChatRoom()
         setupViewResizerOnKeyboardShown()
+        loadImageFullScreen()
     }
     // clean up UI function
     func cleanUp(){
@@ -55,7 +56,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     // MARK: Load to Firebase
     func loadData() {
-        if let theObject = object {
+        if let theObject = object, object?.id.isEmpty == false {
         ref.child("Comments").child(theObject.id).observeSingleEvent(of: .value, with: { (snapshot) in
             self.messages.removeAll()
             snapshot.children.forEach({ (child) in
@@ -107,7 +108,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
         self.view.endEditing(true)
         return true
     }
-    // Loads image from chatroom
+    // MARK: Loads image from chatroom
     func loadImageFromChatRoom() {
     
     if let theImage = object?.image {
@@ -119,11 +120,30 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
             }
         }
     }
-    
-    
-    
-    // MARK - Scroll View Resize on Keyboard Events
-    
+    // MARK: Image Tap --> Full Screen
+    @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
+        let imageView = sender.view as! UIImageView
+        let newImageView = UIImageView(image: imageView.image)
+        newImageView.frame = UIScreen.main.bounds
+        newImageView.backgroundColor = .black
+        newImageView.contentMode = .scaleAspectFit
+        newImageView.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+        newImageView.addGestureRecognizer(tap)
+        self.view.addSubview(newImageView)
+        self.navigationController?.isNavigationBarHidden = true
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
+        self.navigationController?.isNavigationBarHidden = false
+        self.tabBarController?.tabBar.isHidden = false
+        sender.view?.removeFromSuperview()
+    }
+    func loadImageFullScreen() {
+        let pictureTap = UITapGestureRecognizer(target: self, action: #selector(DetailsViewController.imageTapped(_:)))
+        topImageView.addGestureRecognizer(pictureTap)
+    }
+    // MARK: Scroll View Resize on Keyboard Events
     func setupViewResizerOnKeyboardShown() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardWillShowForResizing),
@@ -134,7 +154,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
                                                name: Notification.Name.UIKeyboardWillHide,
                                                object: nil)
     }
-    
+    // MARK: Keyboard Scroll
     func keyboardWillShowForResizing(notification: Notification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             // We're not just minusing the kb height from the view height because

@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Firebase
 import SDWebImage
+import MBProgressHUD
 
 // MARK: Struct of Objects
 struct Object {
@@ -72,7 +73,7 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     func photoCollectionViewDataLoad() {
         photoCollectionView?.delegate = self
         photoCollectionView?.dataSource = self
-        photoCollectionView?.reloadData()
+        //photoCollectionView?.reloadData()
     }
     // MARK: Create collection View cell with title, image, and rounded border
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -113,6 +114,8 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     }
     // MARK: Firebase Database saving posts
     func fetchData() {
+        MBProgressHUD.hide(for: self.view, animated: true)
+        MBProgressHUD.showAdded(to: self.view, animated: true).detailsLabel.text = "Loading"
         ref?.child("posts").observeSingleEvent(of: .value, with: { (snapshot) in
             self.objects.removeAll()
             snapshot.children.forEach({ (child) in
@@ -127,6 +130,7 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
                         self.objects.insert(aObject, at: 0)
                     }
                 }
+                MBProgressHUD.hide(for: self.view, animated: true)
             })
             self.photoCollectionView.reloadData()
             self.refresher.endRefreshing()
@@ -135,20 +139,43 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     // MARK: Save to Firebase
     func saveToFirebase() {
         if let theObject = object {
-            if let theImage = theObject.image {
-                if let imageData = UIImageJPEGRepresentation(theImage, 1.0) {
-                    let storageRef = storage.reference()
-                    let imageRef = storageRef.child("images").child(uid)
-                    let storagePath = "\(arc4random()).jpg"
-                    imageRef.child(storagePath).putData(imageData, metadata: nil, completion: { (metadata, error) in
-                        if let imagePath = metadata?.downloadURL()?.absoluteString {
-                            self.ref?.child("posts").childByAutoId().setValue(["author": Auth.auth().currentUser!.displayName!,"users" : self.uid,"image" : imagePath, "title" : theObject.title])
-                        }
-                    })
+            if let orgImage = theObject.image {
+                if let theImage = resizeImage(image: orgImage, newWidth: 650) {
+                    let width = theImage.size.width
+                    let height = theImage.size.height
+                    if let imageData = UIImageJPEGRepresentation(theImage, 1.0) {
+                        let storageRef = storage.reference()
+                        let imageRef = storageRef.child("images").child(uid)
+                        let storagePath = "\(arc4random()).jpg"
+                        MBProgressHUD.showAdded(to: self.view, animated: true)
+                        imageRef.child(storagePath).putData(imageData, metadata: nil, completion: { (metadata, error) in
+                            if let imagePath = metadata?.downloadURL()?.absoluteString {
+                                self.ref?.child("posts").childByAutoId().setValue(["author": Auth.auth().currentUser?.displayName ?? "","users" : self.uid,"image" : imagePath, "title" : theObject.title, "width" : width, "height" : height], withCompletionBlock: { (error, reference) in
+                                    self.fetchData()
+                                })
+                            }
+                        })
+                    }
                 }
             }
         }
     }
+    
+    
+    func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage? {
+        
+        let scale = newWidth / image.size.width
+        let newHeight = image.size.height * scale
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+        image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage
+    }
+    
+    
     // MARK: Camera / PhotoLibrary
     func openCamera()
     {
@@ -188,10 +215,14 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     self.present(alert, animated: true, completion: nil)
 }
 func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    guard let user = Auth.auth().currentUser else {
+        print("Please login first")
+        return
+    }
     
         switch info[UIImagePickerControllerOriginalImage] as? UIImage {
         case let .some(image):
-            object = Object(image: image, imagePath: nil, title: "", ratio: 1, name: Auth.auth().currentUser!.displayName!, id: "")
+            object = Object(image: image, imagePath: nil, title: "", ratio: 1, name: user.displayName, id: "" )
             object?.image = image
         default:
             break
@@ -215,8 +246,8 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
         })
         alert.addAction(UIAlertAction(title: "Save", style: .default) { _ in
             self.object?.title = (alert.textFields?.first.flatMap { $0.text })!
-            self.object.flatMap { self.objects.insert($0, at: 0) }
-            self.photoCollectionView?.reloadData()
+            //self.object.flatMap { self.objects.insert($0, at: 0) }
+            //self.photoCollectionView?.reloadData()
             self.saveToFirebase()
         })
         

@@ -6,12 +6,12 @@ provides-nominal:
 provides-member:
 - ["C4GHub13TableChatCell", ""]
 provides-dynamic-lookup:
-- "usernameForChat"
 - "loadCommentToView"
+- "usernameForChat"
 depends-top-level:
-- "UITableViewCell"
 - "UILabel"
 - "TableChatCell"
+- "UITableViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "loadCommentToView"]

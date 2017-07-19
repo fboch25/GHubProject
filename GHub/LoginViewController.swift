@@ -111,8 +111,8 @@ class LoginViewController: UIViewController {
                 self.loginErrorAlert("Error!", message: "Could not be Registered at this time, please try again later.")
                 return
             }
-            print("***************")
-            print(user?.displayName! as Any)
+           // print("***************")
+           // print(user?.displayName)
             guard let uid = user?.uid else {
                 return
             }
