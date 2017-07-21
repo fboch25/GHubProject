@@ -687,6 +687,53 @@
           'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/module.modulemap"
         }
       ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "nanopb-Swift.h",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Headers/nanopb-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "nanopb-umbrella.h",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Target Support Files/nanopb/nanopb-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb.h",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/nanopb/pb.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_common.h",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/nanopb/pb_common.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_decode.h",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/nanopb/pb_decode.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_encode.h",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/nanopb/pb_encode.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Intermediates/Pods.build/Debug-iphonesimulator/nanopb.build/module.modulemap"
+        }
+      ]
     }
   ]
 }

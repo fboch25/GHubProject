@@ -1,37 +1,37 @@
 PODS:
-  - Firebase/AdMob (4.0.3):
+  - Firebase/AdMob (4.0.4):
     - Firebase/Core
     - Google-Mobile-Ads-SDK (= 7.21.0)
-  - Firebase/Analytics (4.0.3):
+  - Firebase/Analytics (4.0.4):
     - Firebase/Core
-  - Firebase/Auth (4.0.3):
+  - Firebase/Auth (4.0.4):
     - Firebase/Core
     - FirebaseAuth (= 4.0.0)
-  - Firebase/Core (4.0.3):
+  - Firebase/Core (4.0.4):
     - FirebaseAnalytics (= 4.0.2)
-    - FirebaseCore (= 4.0.3)
-  - Firebase/Crash (4.0.3):
+    - FirebaseCore (= 4.0.4)
+  - Firebase/Crash (4.0.4):
     - Firebase/Core
     - FirebaseCrash (= 2.0.0)
-  - Firebase/Database (4.0.3):
+  - Firebase/Database (4.0.4):
     - Firebase/Core
     - FirebaseDatabase (= 4.0.0)
-  - Firebase/DynamicLinks (4.0.3):
+  - Firebase/DynamicLinks (4.0.4):
     - Firebase/Core
     - FirebaseDynamicLinks (= 2.0.0)
-  - Firebase/Invites (4.0.3):
+  - Firebase/Invites (4.0.4):
     - Firebase/Core
     - FirebaseInvites (= 2.0.0)
-  - Firebase/Messaging (4.0.3):
+  - Firebase/Messaging (4.0.4):
     - Firebase/Core
     - FirebaseMessaging (= 2.0.0)
-  - Firebase/Performance (4.0.3):
+  - Firebase/Performance (4.0.4):
     - Firebase/Core
     - FirebasePerformance (= 1.0.3)
-  - Firebase/RemoteConfig (4.0.3):
+  - Firebase/RemoteConfig (4.0.4):
     - Firebase/Core
     - FirebaseRemoteConfig (= 2.0.1)
-  - Firebase/Storage (4.0.3):
+  - Firebase/Storage (4.0.4):
     - Firebase/Core
     - FirebaseStorage (= 2.0.0)
   - FirebaseAnalytics (4.0.2):
@@ -42,8 +42,9 @@ PODS:
     - FirebaseAnalytics (~> 4.0)
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseCore (4.0.3):
+  - FirebaseCore (4.0.4):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - nanopb (~> 0.3)
   - FirebaseCrash (2.0.0):
     - FirebaseAnalytics (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -126,12 +127,17 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GTMOAuth2 (1.1.4):
     - GTMSessionFetcher (~> 1.1)
-  - GTMSessionFetcher (1.1.10):
-    - GTMSessionFetcher/Full (= 1.1.10)
-  - GTMSessionFetcher/Core (1.1.10)
-  - GTMSessionFetcher/Full (1.1.10):
-    - GTMSessionFetcher/Core (= 1.1.10)
+  - GTMSessionFetcher (1.1.11):
+    - GTMSessionFetcher/Full (= 1.1.11)
+  - GTMSessionFetcher/Core (1.1.11)
+  - GTMSessionFetcher/Full (1.1.11):
+    - GTMSessionFetcher/Core (= 1.1.11)
   - MBProgressHUD (1.0.0)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
   - Protobuf (3.3.0)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
@@ -153,10 +159,10 @@ DEPENDENCIES:
   - SDWebImage
 
 SPEC CHECKSUMS:
-  Firebase: 9e33fdfbca37cab635c693883caa90a4475b842b
+  Firebase: 1492bf04e1b73a7353b4fb2cf5a20bac9692f341
   FirebaseAnalytics: ad41720e3e67fc63fbe3d2948d3e26932a8de311
   FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
-  FirebaseCore: c709067051de07bdaffdc4e735cd7299a23c463a
+  FirebaseCore: cfc042628ef9f20debe09c0eb683135fcd404cb4
   FirebaseCrash: 600ec2cbd8e10c3064a42de2c6ee7687bd02a076
   FirebaseDatabase: d829b3a8c3e2ac7a16773c5df226966b0805dfc2
   FirebaseDynamicLinks: ad3bef2e8addfa1490af9db02201429c5c9447dd
@@ -171,8 +177,9 @@ SPEC CHECKSUMS:
   GoogleSignIn: d7ad83f13480e1f30453471d00d19b5293ac46af
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
-  GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
+  GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  nanopb: 22bc080fa3955e2116b6ff3ee6c2cb3c15ab97cb
   Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 

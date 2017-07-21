@@ -1,0 +1,679 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FloatyManager"
+provides-nominal:
+- "C4GHub13FloatyManager"
+- "VC4GHub13FloatyManager14StaticInstance"
+provides-member:
+- ["C4GHub13FloatyManager", ""]
+- ["VC4GHub13FloatyManager14StaticInstance", ""]
+provides-dynamic-lookup:
+- "floatyWindow"
+- "_floatyWindow"
+- "floatyController"
+- "toggle"
+- "hide"
+- "button"
+- "_floatyController"
+- "defaultInstance"
+- "show"
+- "hidden"
+depends-top-level:
+- !private "Void"
+- "FloatyViewController"
+- "BooleanLiteralType"
+- "AssignmentPrecedence"
+- !private "=="
+- !private "UIView"
+- !private "UIScreen"
+- "FloatyWindow"
+- "FloatyManager"
+- "Bool"
+- "Floaty"
+- "NSObject"
+- "Int"
+depends-member:
+- ["Ps9AnyObject", "FloatyManager"]
+- !private ["Ps9AnyObject", "FloatyViewController"]
+- !private ["Ps9AnyObject", "FloatyWindow"]
+- ["Ps9AnyObject", "StaticInstance"]
+- !private ["Ps9AnyObject", "UIScreen"]
+- !private ["Ps9AnyObject", "UIView"]
+- ["Ps9AnyObject", "__once"]
+- ["Ps9AnyObject", "_floatyController"]
+- ["Ps9AnyObject", "_floatyWindow"]
+- !private ["Ps9AnyObject", "alpha"]
+- !private ["Ps9AnyObject", "animate"]
+- !private ["Ps9AnyObject", "bounds"]
+- ["Ps9AnyObject", "button"]
+- ["Ps9AnyObject", "defaultInstance"]
+- !private ["Ps9AnyObject", "floaty"]
+- ["Ps9AnyObject", "floatyController"]
+- ["Ps9AnyObject", "floatyWindow"]
+- ["Ps9AnyObject", "hidden"]
+- ["Ps9AnyObject", "hide"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isHidden"]
+- !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "rootViewController"]
+- ["Ps9AnyObject", "show"]
+- ["Ps9AnyObject", "toggle"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "alpha"]
+- !private ["PSo15CALayerDelegate", "animate"]
+- !private ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "isHidden"]
+- !private ["PSo15CALayerDelegate", "rootViewController"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- ["VSC6CGRect", "deinit"]
+- ["Ps7CVarArg", "FloatyManager"]
+- !private ["Ps7CVarArg", "FloatyViewController"]
+- !private ["Ps7CVarArg", "FloatyWindow"]
+- ["Ps7CVarArg", "StaticInstance"]
+- !private ["Ps7CVarArg", "UIScreen"]
+- !private ["Ps7CVarArg", "UIView"]
+- ["Ps7CVarArg", "__once"]
+- ["Ps7CVarArg", "_floatyController"]
+- ["Ps7CVarArg", "_floatyWindow"]
+- !private ["Ps7CVarArg", "alpha"]
+- !private ["Ps7CVarArg", "animate"]
+- !private ["Ps7CVarArg", "bounds"]
+- ["Ps7CVarArg", "button"]
+- ["Ps7CVarArg", "defaultInstance"]
+- !private ["Ps7CVarArg", "floaty"]
+- ["Ps7CVarArg", "floatyController"]
+- ["Ps7CVarArg", "floatyWindow"]
+- ["Ps7CVarArg", "hidden"]
+- ["Ps7CVarArg", "hide"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isHidden"]
+- !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "rootViewController"]
+- ["Ps7CVarArg", "show"]
+- ["Ps7CVarArg", "toggle"]
+- ["Ps7CVarArg", ""]
+- ["Ps28CustomDebugStringConvertible", "FloatyManager"]
+- !private ["Ps28CustomDebugStringConvertible", "FloatyViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "FloatyWindow"]
+- ["Ps28CustomDebugStringConvertible", "StaticInstance"]
+- !private ["Ps28CustomDebugStringConvertible", "UIScreen"]
+- !private ["Ps28CustomDebugStringConvertible", "UIView"]
+- ["Ps28CustomDebugStringConvertible", "__once"]
+- ["Ps28CustomDebugStringConvertible", "_floatyController"]
+- ["Ps28CustomDebugStringConvertible", "_floatyWindow"]
+- !private ["Ps28CustomDebugStringConvertible", "alpha"]
+- !private ["Ps28CustomDebugStringConvertible", "animate"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- ["Ps28CustomDebugStringConvertible", "button"]
+- ["Ps28CustomDebugStringConvertible", "defaultInstance"]
+- !private ["Ps28CustomDebugStringConvertible", "floaty"]
+- ["Ps28CustomDebugStringConvertible", "floatyController"]
+- ["Ps28CustomDebugStringConvertible", "floatyWindow"]
+- ["Ps28CustomDebugStringConvertible", "hidden"]
+- ["Ps28CustomDebugStringConvertible", "hide"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isHidden"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
+- ["Ps28CustomDebugStringConvertible", "show"]
+- ["Ps28CustomDebugStringConvertible", "toggle"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "FloatyManager"]
+- !private ["Ps23CustomStringConvertible", "FloatyViewController"]
+- !private ["Ps23CustomStringConvertible", "FloatyWindow"]
+- ["Ps23CustomStringConvertible", "StaticInstance"]
+- !private ["Ps23CustomStringConvertible", "UIScreen"]
+- !private ["Ps23CustomStringConvertible", "UIView"]
+- ["Ps23CustomStringConvertible", "__once"]
+- ["Ps23CustomStringConvertible", "_floatyController"]
+- ["Ps23CustomStringConvertible", "_floatyWindow"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "alpha"]
+- !private ["Ps23CustomStringConvertible", "animate"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- ["Ps23CustomStringConvertible", "button"]
+- ["Ps23CustomStringConvertible", "defaultInstance"]
+- !private ["Ps23CustomStringConvertible", "floaty"]
+- ["Ps23CustomStringConvertible", "floatyController"]
+- ["Ps23CustomStringConvertible", "floatyWindow"]
+- ["Ps23CustomStringConvertible", "hidden"]
+- ["Ps23CustomStringConvertible", "hide"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isHidden"]
+- !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "rootViewController"]
+- ["Ps23CustomStringConvertible", "show"]
+- ["Ps23CustomStringConvertible", "toggle"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Sd", "deinit"]
+- ["Ps9Equatable", "FloatyManager"]
+- !private ["Ps9Equatable", "FloatyViewController"]
+- !private ["Ps9Equatable", "FloatyWindow"]
+- ["Ps9Equatable", "StaticInstance"]
+- !private ["Ps9Equatable", "UIScreen"]
+- !private ["Ps9Equatable", "UIView"]
+- ["Ps9Equatable", "__once"]
+- ["Ps9Equatable", "_floatyController"]
+- ["Ps9Equatable", "_floatyWindow"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "alpha"]
+- !private ["Ps9Equatable", "animate"]
+- !private ["Ps9Equatable", "bounds"]
+- ["Ps9Equatable", "button"]
+- ["Ps9Equatable", "defaultInstance"]
+- !private ["Ps9Equatable", "floaty"]
+- ["Ps9Equatable", "floatyController"]
+- ["Ps9Equatable", "floatyWindow"]
+- ["Ps9Equatable", "hidden"]
+- ["Ps9Equatable", "hide"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isHidden"]
+- !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "rootViewController"]
+- ["Ps9Equatable", "show"]
+- ["Ps9Equatable", "toggle"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["C4GHub6Floaty", "deinit"]
+- ["C4GHub13FloatyManager", "Bool"]
+- ["C4GHub13FloatyManager", "Floaty"]
+- ["C4GHub13FloatyManager", "FloatyManager"]
+- ["C4GHub13FloatyManager", "FloatyViewController"]
+- ["C4GHub13FloatyManager", "FloatyWindow"]
+- ["C4GHub13FloatyManager", "Int"]
+- ["C4GHub13FloatyManager", "StaticInstance"]
+- !private ["C4GHub13FloatyManager", "UIScreen"]
+- !private ["C4GHub13FloatyManager", "UIView"]
+- !private ["C4GHub13FloatyManager", "Void"]
+- !private ["C4GHub13FloatyManager", "__once"]
+- ["C4GHub13FloatyManager", "_floatyController"]
+- ["C4GHub13FloatyManager", "_floatyWindow"]
+- ["C4GHub13FloatyManager", "button"]
+- ["C4GHub13FloatyManager", "defaultInstance"]
+- ["C4GHub13FloatyManager", "deinit"]
+- ["C4GHub13FloatyManager", "floatyController"]
+- ["C4GHub13FloatyManager", "floatyWindow"]
+- ["C4GHub13FloatyManager", "hidden"]
+- ["C4GHub13FloatyManager", "hide"]
+- ["C4GHub13FloatyManager", "init"]
+- ["C4GHub13FloatyManager", "show"]
+- ["C4GHub13FloatyManager", "toggle"]
+- ["C4GHub20FloatyViewController", "deinit"]
+- !private ["C4GHub20FloatyViewController", "floaty"]
+- !private ["C4GHub20FloatyViewController", "init"]
+- !private ["C4GHub12FloatyWindow", "alpha"]
+- ["C4GHub12FloatyWindow", "deinit"]
+- !private ["C4GHub12FloatyWindow", "init"]
+- !private ["C4GHub12FloatyWindow", "isHidden"]
+- !private ["C4GHub12FloatyWindow", "rootViewController"]
+- ["Ps8Hashable", "FloatyManager"]
+- !private ["Ps8Hashable", "FloatyViewController"]
+- !private ["Ps8Hashable", "FloatyWindow"]
+- ["Ps8Hashable", "StaticInstance"]
+- !private ["Ps8Hashable", "UIScreen"]
+- !private ["Ps8Hashable", "UIView"]
+- ["Ps8Hashable", "__once"]
+- ["Ps8Hashable", "_floatyController"]
+- ["Ps8Hashable", "_floatyWindow"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "alpha"]
+- !private ["Ps8Hashable", "animate"]
+- !private ["Ps8Hashable", "bounds"]
+- ["Ps8Hashable", "button"]
+- ["Ps8Hashable", "defaultInstance"]
+- !private ["Ps8Hashable", "floaty"]
+- ["Ps8Hashable", "floatyController"]
+- ["Ps8Hashable", "floatyWindow"]
+- ["Ps8Hashable", "hidden"]
+- ["Ps8Hashable", "hide"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isHidden"]
+- !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "rootViewController"]
+- ["Ps8Hashable", "show"]
+- ["Ps8Hashable", "toggle"]
+- ["Ps8Hashable", ""]
+- ["Si", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSo8NSCoding", "alpha"]
+- !private ["PSo8NSCoding", "animate"]
+- !private ["PSo8NSCoding", "floaty"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isHidden"]
+- !private ["PSo8NSCoding", "rootViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "floaty"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "Floaty"]
+- ["CSo8NSObject", "FloatyManager"]
+- ["CSo8NSObject", "FloatyViewController"]
+- ["CSo8NSObject", "FloatyWindow"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "StaticInstance"]
+- !private ["CSo8NSObject", "UIScreen"]
+- !private ["CSo8NSObject", "UIView"]
+- !private ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "__once"]
+- ["CSo8NSObject", "_floatyController"]
+- ["CSo8NSObject", "_floatyWindow"]
+- !private ["CSo8NSObject", "alpha"]
+- !private ["CSo8NSObject", "animate"]
+- !private ["CSo8NSObject", "bounds"]
+- ["CSo8NSObject", "button"]
+- ["CSo8NSObject", "defaultInstance"]
+- ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "floaty"]
+- ["CSo8NSObject", "floatyController"]
+- ["CSo8NSObject", "floatyWindow"]
+- ["CSo8NSObject", "hidden"]
+- ["CSo8NSObject", "hide"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isHidden"]
+- !private ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "rootViewController"]
+- ["CSo8NSObject", "show"]
+- ["CSo8NSObject", "toggle"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "FloatyManager"]
+- !private ["PSo16NSObjectProtocol", "FloatyViewController"]
+- !private ["PSo16NSObjectProtocol", "FloatyWindow"]
+- ["PSo16NSObjectProtocol", "StaticInstance"]
+- !private ["PSo16NSObjectProtocol", "UIScreen"]
+- !private ["PSo16NSObjectProtocol", "UIView"]
+- ["PSo16NSObjectProtocol", "__once"]
+- ["PSo16NSObjectProtocol", "_floatyController"]
+- ["PSo16NSObjectProtocol", "_floatyWindow"]
+- !private ["PSo16NSObjectProtocol", "alpha"]
+- !private ["PSo16NSObjectProtocol", "animate"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- ["PSo16NSObjectProtocol", "button"]
+- ["PSo16NSObjectProtocol", "defaultInstance"]
+- !private ["PSo16NSObjectProtocol", "floaty"]
+- ["PSo16NSObjectProtocol", "floatyController"]
+- ["PSo16NSObjectProtocol", "floatyWindow"]
+- ["PSo16NSObjectProtocol", "hidden"]
+- ["PSo16NSObjectProtocol", "hide"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isHidden"]
+- !private ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "rootViewController"]
+- ["PSo16NSObjectProtocol", "show"]
+- ["PSo16NSObjectProtocol", "toggle"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- ["VC4GHub13FloatyManager14StaticInstance", "FloatyManager"]
+- ["VC4GHub13FloatyManager14StaticInstance", "Int"]
+- ["VC4GHub13FloatyManager14StaticInstance", "dispatchToken"]
+- ["VC4GHub13FloatyManager14StaticInstance", "init"]
+- ["VC4GHub13FloatyManager14StaticInstance", "instance"]
+- !private ["PSo29UIAccessibilityIdentification", "alpha"]
+- !private ["PSo29UIAccessibilityIdentification", "animate"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "isHidden"]
+- !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
+- !private ["PSo12UIAppearance", "alpha"]
+- !private ["PSo12UIAppearance", "animate"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "isHidden"]
+- !private ["PSo12UIAppearance", "rootViewController"]
+- !private ["PSo21UIAppearanceContainer", "alpha"]
+- !private ["PSo21UIAppearanceContainer", "animate"]
+- !private ["PSo21UIAppearanceContainer", "floaty"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isHidden"]
+- !private ["PSo21UIAppearanceContainer", "rootViewController"]
+- !private ["PSo18UIContentContainer", "floaty"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo17UICoordinateSpace", "alpha"]
+- !private ["PSo17UICoordinateSpace", "animate"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "isHidden"]
+- !private ["PSo17UICoordinateSpace", "rootViewController"]
+- !private ["PSo13UIDynamicItem", "alpha"]
+- !private ["PSo13UIDynamicItem", "animate"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "isHidden"]
+- !private ["PSo13UIDynamicItem", "rootViewController"]
+- !private ["PSo18UIFocusEnvironment", "alpha"]
+- !private ["PSo18UIFocusEnvironment", "animate"]
+- !private ["PSo18UIFocusEnvironment", "floaty"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isHidden"]
+- !private ["PSo18UIFocusEnvironment", "rootViewController"]
+- !private ["PSo11UIFocusItem", "alpha"]
+- !private ["PSo11UIFocusItem", "animate"]
+- !private ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "isHidden"]
+- !private ["PSo11UIFocusItem", "rootViewController"]
+- !private ["CSo11UIResponder", "alpha"]
+- !private ["CSo11UIResponder", "animate"]
+- !private ["CSo11UIResponder", "floaty"]
+- !private ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "isHidden"]
+- !private ["CSo11UIResponder", "rootViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "alpha"]
+- !private ["PSo30UIResponderStandardEditActions", "animate"]
+- !private ["PSo30UIResponderStandardEditActions", "floaty"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "isHidden"]
+- !private ["PSo30UIResponderStandardEditActions", "rootViewController"]
+- !private ["CSo8UIScreen", "bounds"]
+- ["CSo8UIScreen", "deinit"]
+- !private ["CSo8UIScreen", "main"]
+- !private ["PSo16UIStateRestoring", "floaty"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo18UITraitEnvironment", "alpha"]
+- !private ["PSo18UITraitEnvironment", "animate"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- !private ["PSo18UITraitEnvironment", "floaty"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isHidden"]
+- !private ["PSo18UITraitEnvironment", "main"]
+- !private ["PSo18UITraitEnvironment", "rootViewController"]
+- !private ["CSo6UIView", "alpha"]
+- !private ["CSo6UIView", "animate"]
+- !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "isHidden"]
+- !private ["CSo6UIView", "rootViewController"]
+- !private ["CSo16UIViewController", "floaty"]
+- !private ["CSo16UIViewController", "init"]
+- !private ["CSo8UIWindow", "alpha"]
+- !private ["CSo8UIWindow", "init"]
+- !private ["CSo8UIWindow", "isHidden"]
+- !private ["CSo8UIWindow", "rootViewController"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "alpha"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "animate"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rootViewController"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "FloatyManager"]
+- !private ["Ps9_Hashable", "FloatyViewController"]
+- !private ["Ps9_Hashable", "FloatyWindow"]
+- ["Ps9_Hashable", "StaticInstance"]
+- !private ["Ps9_Hashable", "UIScreen"]
+- !private ["Ps9_Hashable", "UIView"]
+- ["Ps9_Hashable", "__once"]
+- ["Ps9_Hashable", "_floatyController"]
+- ["Ps9_Hashable", "_floatyWindow"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "alpha"]
+- !private ["Ps9_Hashable", "animate"]
+- !private ["Ps9_Hashable", "bounds"]
+- ["Ps9_Hashable", "button"]
+- ["Ps9_Hashable", "defaultInstance"]
+- !private ["Ps9_Hashable", "floaty"]
+- ["Ps9_Hashable", "floatyController"]
+- ["Ps9_Hashable", "floatyWindow"]
+- ["Ps9_Hashable", "hidden"]
+- ["Ps9_Hashable", "hide"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isHidden"]
+- !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "rootViewController"]
+- ["Ps9_Hashable", "show"]
+- ["Ps9_Hashable", "toggle"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- !private "PSo15CALayerDelegate"
+- !private "V12CoreGraphics7CGFloat"
+- "VSC6CGRect"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Sd"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "C4GHub6Floaty"
+- "C4GHub13FloatyManager"
+- "C4GHub20FloatyViewController"
+- "C4GHub12FloatyWindow"
+- "Ps8Hashable"
+- "Si"
+- !private "Ps25LosslessStringConvertible"
+- !private "PSo8NSCoding"
+- !private "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "VC4GHub13FloatyManager14StaticInstance"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- "CSo8UIScreen"
+- !private "PSo16UIStateRestoring"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "CSo16UIViewController"
+- !private "CSo8UIWindow"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthSwiftNameSupport.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Headers/FIRCrashLog.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Headers/FIRCrash.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Headers/FirebaseCrash.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseSwiftNameSupport.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDynamicLinks/Frameworks/FirebaseDynamicLinks.framework/Headers/FIRDynamicLinksCommon.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDynamicLinks/Frameworks/FirebaseDynamicLinks.framework/Headers/FIRDynamicLinks.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDynamicLinks/Frameworks/FirebaseDynamicLinks.framework/Headers/FIRDynamicLinksSwiftNameSupport.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDynamicLinks/Frameworks/FirebaseDynamicLinks.framework/Headers/FIRDynamicLink.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDynamicLinks/Frameworks/FirebaseDynamicLinks.framework/Headers/FDLURLComponents.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDynamicLinks/Frameworks/FirebaseDynamicLinks.framework/Headers/FirebaseDynamicLinks.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseDynamicLinks/Frameworks/FirebaseDynamicLinks.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseInvites/Frameworks/FirebaseInvites.framework/Headers/FIRInvitesTargetApplication.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseInvites/Frameworks/FirebaseInvites.framework/Headers/FIRInvitesError.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseInvites/Frameworks/FirebaseInvites.framework/Headers/FIRInvitesSwiftNameSupport.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseInvites/Frameworks/FirebaseInvites.framework/Headers/FIRInvites.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseInvites/Frameworks/FirebaseInvites.framework/Headers/FirebaseInvites.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseInvites/Frameworks/FirebaseInvites.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRTrace.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRPerformanceSwiftNameSupport.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRPerformance.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FirebasePerformance.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseRemoteConfig/Frameworks/FirebaseRemoteConfig.framework/Headers/FIRRemoteConfig.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseRemoteConfig/Frameworks/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseRemoteConfig/Frameworks/FirebaseRemoteConfig.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageSwiftNameSupport.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkConnectorProtocol.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkAdapterProtocol.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMEnums.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdRequest.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkConnectorProtocol.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkAdapterProtocol.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdViewAdOptions.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAdAssetIDs.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAdAssetIDs.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdChoicesView.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerViewOptions.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDebugOptionsViewController.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManager.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManagerDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdDelegate.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSImage+WebCache.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Modules/module.modulemap"
+interface-hash: "a6ffb4e5b05af3104098bce66f304c1b"

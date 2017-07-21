@@ -14,7 +14,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Setup view
         view.backgroundColor = UIColor(red:0.79, green:0.78, blue:0.78, alpha:1.0)
         view.addSubview(inputsContainerView)
@@ -28,7 +27,6 @@ class LoginViewController: UIViewController {
         // Hides keyboard by tapping anywhere on the screen
         hideKeyboardWhenTappedAround()
     }
-
     // Keep user logged In
      override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

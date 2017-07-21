@@ -116,8 +116,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
-@import CoreGraphics;
+@import ObjectiveC;
 @import Foundation;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -137,9 +138,50 @@ SWIFT_CLASS("_TtC4GHub11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
+@class UIImage;
+@class FIRDataSnapshot;
+
+SWIFT_CLASS("_TtC4GHub8Category")
+@interface Category : NSObject
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, copy) NSString * _Nullable moreInfo;
+@property (nonatomic, strong) UIImage * _Nullable image;
+@property (nonatomic, copy) NSString * _Nonnull id;
+- (nonnull instancetype)initWithSnapshot:(FIRDataSnapshot * _Nonnull)snapshot OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
 @class UILabel;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC4GHub12CategoryCell")
+@interface CategoryCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified categoryLabel;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class FIRDatabaseReference;
+@class UITableView;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC4GHub17CategoryTableView")
+@interface CategoryTableView : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITextFieldDelegate, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified menuTableView;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
+@property (nonatomic, copy) NSArray<Category *> * _Nonnull categories;
+- (void)viewDidLoad;
+- (void)categoryTableViewCleanUp;
+- (void)loadData;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (IBAction)handleLogout:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImageView;
 
 SWIFT_CLASS("_TtC4GHub8ChatCell")
 @interface ChatCell : UICollectionViewCell
@@ -151,14 +193,11 @@ SWIFT_CLASS("_TtC4GHub8ChatCell")
 @end
 
 @class UIImagePickerController;
-@class FIRDatabaseReference;
 @class FIRStorage;
 @class UIRefreshControl;
 @class UIColor;
 @class UICollectionView;
 @class UICollectionViewLayout;
-@class UIImage;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC4GHub8ChatRoom")
 @interface ChatRoom : UIViewController <UIScrollViewDelegate, UIImagePickerControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UINavigationControllerDelegate>
@@ -171,6 +210,7 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified photoCollectionView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameForCreatedCell;
 @property (nonatomic, strong) ChatCell * _Nullable chatCellView;
+@property (nonatomic, strong) Category * _Nullable category;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
@@ -196,8 +236,6 @@ SWIFT_CLASS("_TtC4GHub8ChatRoom")
 @end
 
 @class TableChatCell;
-@class UITableView;
-@class UITableViewCell;
 @class UITextField;
 @class UITapGestureRecognizer;
 @class NSLayoutConstraint;

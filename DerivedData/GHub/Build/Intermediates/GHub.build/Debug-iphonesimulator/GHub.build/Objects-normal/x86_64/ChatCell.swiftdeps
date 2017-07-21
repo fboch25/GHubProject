@@ -6,12 +6,12 @@ provides-nominal:
 provides-member:
 - ["C4GHub8ChatCell", ""]
 provides-dynamic-lookup:
-- "chatLabel"
-- "chatImage"
 - "nameForCreatedCell"
+- "chatImage"
+- "chatLabel"
 depends-top-level:
-- "ChatCell"
 - "UICollectionViewCell"
+- "ChatCell"
 - "UILabel"
 - "UIImageView"
 depends-member:
@@ -394,4 +394,7 @@ depends-external:
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
 - "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/Mrbochiballs1/Develop/Software/GHub/DerivedData/GHub/Build/Products/Debug-iphonesimulator/MBProgressHUD/MBProgressHUD.framework/Modules/module.modulemap"
 interface-hash: "35dc324f6441a77a55113fe42ef31ba3"

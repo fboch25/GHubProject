@@ -12,6 +12,7 @@ import Firebase
 import SDWebImage
 import MBProgressHUD
 
+
 // MARK: Struct of Objects
 struct Object {
     var image: UIImage?
@@ -20,6 +21,7 @@ struct Object {
     var ratio: Double
     var name: String?
     var id: String
+    var likePosts: Int
 }
 class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     
@@ -39,6 +41,7 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     @IBOutlet weak var nameForCreatedCell: UILabel!
     // Instance of a class
     var chatCellView: ChatCell?
+    var category: Category?
     
     // MARK: ViewDidLoad
     override func viewDidLoad() {
@@ -52,6 +55,7 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         checkIfUserLoggedIn()
         // CollectionView Data Loading
         photoCollectionViewDataLoad()
+        self.title = category?.name
     }
     override func viewDidAppear(_ animated: Bool) {
         
@@ -114,54 +118,60 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
     }
     // MARK: Firebase Database saving posts
     func fetchData() {
-        MBProgressHUD.hide(for: self.view, animated: true)
-        MBProgressHUD.showAdded(to: self.view, animated: true).detailsLabel.text = "Loading"
-        ref?.child("posts").observeSingleEvent(of: .value, with: { (snapshot) in
-            self.objects.removeAll()
-            snapshot.children.forEach({ (child) in
-                if let value = (child as? DataSnapshot)?.value as? [String : Any], let id = (child as? DataSnapshot)?.key {
-                    if let imagePath = value["image"] as? String, let title = value["title"] as? String {
-                        var ratio: Double = 1
-                        if let height = value["height"] as? Double, let width = value["width"] as? Double {
-                            ratio = height  / width
+        if let key = category?.id {
+            MBProgressHUD.hide(for: self.view, animated: true)
+            MBProgressHUD.showAdded(to: self.view, animated: true).detailsLabel.text = "Loading"
+            ref?.child("posts").child(key).observeSingleEvent(of: .value, with: { (snapshot) in
+                self.objects.removeAll()
+                snapshot.children.forEach({ (child) in
+                    if let value = (child as? DataSnapshot)?.value as? [String : Any], let id = (child as? DataSnapshot)?.key {
+                        if let imagePath = value["image"] as? String, let title = value["title"] as? String/*, let likePosts = value["likePosts"] as? Int*/ {
+                            var ratio: Double = 1
+                            if let height = value["height"] as? Double, let width = value["width"] as? Double {
+                                ratio = height  / width
+                            }
+                            let name = value["author"] as? String
+                            let aObject = Object(image: nil, imagePath: imagePath, title: title, ratio: ratio, name: name, id: id, likePosts: 0)
+                            self.objects.insert(aObject, at: 0)
                         }
-                        let name = value["author"] as? String
-                        let aObject = Object(image: nil, imagePath: imagePath, title: title, ratio: ratio, name: name, id: id)
-                        self.objects.insert(aObject, at: 0)
                     }
-                }
+                    MBProgressHUD.hide(for: self.view, animated: true)
+                })
+                self.photoCollectionView.reloadData()
                 MBProgressHUD.hide(for: self.view, animated: true)
+                self.refresher.endRefreshing()
             })
-            self.photoCollectionView.reloadData()
-            self.refresher.endRefreshing()
-        })
+        }
     }
     // MARK: Save to Firebase
     func saveToFirebase() {
-        if let theObject = object {
-            if let orgImage = theObject.image {
-                if let theImage = resizeImage(image: orgImage, newWidth: 650) {
-                    let width = theImage.size.width
-                    let height = theImage.size.height
-                    if let imageData = UIImageJPEGRepresentation(theImage, 1.0) {
-                        let storageRef = storage.reference()
-                        let imageRef = storageRef.child("images").child(uid)
-                        let storagePath = "\(arc4random()).jpg"
-                        MBProgressHUD.showAdded(to: self.view, animated: true)
-                        imageRef.child(storagePath).putData(imageData, metadata: nil, completion: { (metadata, error) in
-                            if let imagePath = metadata?.downloadURL()?.absoluteString {
-                                self.ref?.child("posts").childByAutoId().setValue(["author": Auth.auth().currentUser?.displayName ?? "","users" : self.uid,"image" : imagePath, "title" : theObject.title, "width" : width, "height" : height], withCompletionBlock: { (error, reference) in
-                                    self.fetchData()
-                                })
-                            }
-                        })
+        if let key = category?.id {
+            if let theObject = object {
+                if let orgImage = theObject.image {
+                    if let theImage = resizeImage(image: orgImage, newWidth: 650) {
+                        let width = theImage.size.width
+                        let height = theImage.size.height
+                        let likePosts = 1
+                        if let imageData = UIImageJPEGRepresentation(theImage, 1.0) {
+                            let storageRef = storage.reference()
+                            let imageRef = storageRef.child("images").child(uid)
+                            let storagePath = "\(arc4random()).jpg"
+                            MBProgressHUD.showAdded(to: self.view, animated: true)
+                            imageRef.child(storagePath).putData(imageData, metadata: nil, completion: { (metadata, error) in
+                                if let imagePath = metadata?.downloadURL()?.absoluteString {
+                                    self.ref?.child("posts").child(key).childByAutoId().setValue(["author": Auth.auth().currentUser?.displayName ?? "","users" : self.uid,"image" : imagePath, "title" : theObject.title,"likePosts": likePosts, "width" : width, "height" : height], withCompletionBlock: { (error, reference) in
+                                        self.fetchData()
+                                    })
+                                }
+                            })
+                        }
                     }
                 }
             }
         }
     }
     
-    
+    // Resize Image for download to and from Firebase
     func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage? {
         
         let scale = newWidth / image.size.width
@@ -174,8 +184,6 @@ class ChatRoom: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         
         return newImage
     }
-    
-    
     // MARK: Camera / PhotoLibrary
     func openCamera()
     {
@@ -222,7 +230,7 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
     
         switch info[UIImagePickerControllerOriginalImage] as? UIImage {
         case let .some(image):
-            object = Object(image: image, imagePath: nil, title: "", ratio: 1, name: user.displayName, id: "" )
+            object = Object(image: image, imagePath: nil, title: "", ratio: 1, name: user.displayName, id: "", likePosts: 0)
             object?.image = image
         default:
             break
